@@ -48,8 +48,17 @@ Preset ładuje biblioteki, włącza potrzebne moduły i tworzy:
 
 ## Istniejąca instancja (np. testowa cisorisk)
 
-Dotyczy instancji postawionej z oryginalnego `docker-compose.yml` intuitem w wersji **v4.1.5** (sprawdź: menu
-użytkownika → O aplikacji). Baza zostaje ta sama, migracji nie ma.
+Dotyczy instancji postawionej z `docker-compose.yml` z usługami backend, huey i frontend w wersji **v4.1.5**
+(sprawdź: menu użytkownika → O aplikacji). Baza zostaje ta sama, migracji nie ma.
+
+Najprościej skryptem (sam znajduje katalog compose, robi kopię bazy, pobiera obraz, biblioteki i nakładkę):
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/rulkdo/ciso-assistant-octopus/octopus-nis2/octopus/aktualizuj-istniejaca-instancje.sh
+sudo bash aktualizuj-istniejaca-instancje.sh
+```
+
+Ręcznie:
 
 1. Kopia bazy: `docker compose stop backend huey && cp -a db db-kopia-$(date +%F) && docker compose start backend huey`
 2. Obok `docker-compose.yml` skopiuj `octopus/docker-compose.istniejaca-instancja.yml` i katalog `octopus/libraries` jako `octopus-libraries`.

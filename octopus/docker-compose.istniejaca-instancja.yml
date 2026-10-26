@@ -1,6 +1,7 @@
 # Przejscie istniejacej instancji (oryginalny docker-compose.yml intuitem) na wersje Octopus Lab.
 # Baza zostaje ta sama: zmienia sie tylko obraz frontendu, a backend dostaje biblioteki i presety.
-# Uzycie (w katalogu z dotychczasowym docker-compose.yml, katalog octopus-libraries obok):
+# Najprosciej skryptem: octopus/aktualizuj-istniejaca-instancje.sh (pobiera ten plik jako docker-compose.octopus.yml).
+# Recznie (w katalogu z dotychczasowym docker-compose.yml, katalog octopus-libraries obok):
 #   docker compose -f docker-compose.yml -f docker-compose.istniejaca-instancja.yml up -d
 # Szczegoly i kopia bazy przed zmiana: README.md, rozdzial "Istniejaca instancja".
 
@@ -24,4 +25,4 @@ services:
     image: ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5
     pull_policy: missing
     environment:
-      - PUBLIC_DEFAULT_LANGUAGE=pl
+      PUBLIC_DEFAULT_LANGUAGE: pl
