@@ -1,0 +1,94 @@
+urn: urn:octopuslab:risk:library:macierz-ryzyka-4x4-sxp
+locale: pl
+ref_id: macierz-ryzyka-4x4-sxp
+name: Macierz ryzyka 4x4 S x P (Octopus Lab)
+description: Macierz 4x4 skutek x prawdopodobieństwo. Skutek wynika z klasyfikacji CIA aktywa (skala 1-4). Prostsza
+  metoda dla mniejszych podmiotów NIS2/KSC.
+copyright: Octopus Lab
+version: 1
+publication_date: 2026-10-26
+provider: Octopus Lab
+packager: octopuslab
+objects:
+  risk_matrix:
+  - urn: urn:octopuslab:risk:matrix:4x4-sxp
+    ref_id: octopus-4x4-sxp
+    name: 4x4 S x P (Octopus Lab)
+    description: 'Skutek S = najwyższa ocena C, I lub A aktywa naruszona w scenariuszu (skala 1-4), prawdopodobieństwo
+      P 1-4, poziom R = S x P: niskie 1-3, średnie 4-6, wysokie 8-9, krytyczne 12-16.'
+    probability:
+    - id: 0
+      abbreviation: '1'
+      name: 1 - rzadkie
+      description: Rzadziej niż raz na 5 lat.
+    - id: 1
+      abbreviation: '2'
+      name: 2 - możliwe
+      description: Raz na 1-5 lat.
+    - id: 2
+      abbreviation: '3'
+      name: 3 - prawdopodobne
+      description: Raz w roku.
+    - id: 3
+      abbreviation: '4'
+      name: 4 - częste
+      description: Kilka razy w roku albo znane aktywne wykorzystanie podatności.
+    impact:
+    - id: 0
+      abbreviation: '1'
+      name: 1 - niski
+      description: 'Narusza aktywo z oceną 1: dane publiczne, błąd łatwy do wykrycia i poprawienia, brak wpływu
+        na klientów, odtworzenie ponad 7 dni dopuszczalne.'
+    - id: 1
+      abbreviation: '2'
+      name: 2 - średni
+      description: 'Narusza aktywo z oceną 2: dane wewnętrzne, zakłócenie pracy podmiotu bez wpływu na usługi klientów,
+        odtworzenie do 72 h.'
+    - id: 2
+      abbreviation: '3'
+      name: 3 - wysoki
+      description: 'Narusza aktywo z oceną 3: dane klientów i abonentów, zmiana dotykająca usług pojedynczych klientów,
+        naruszenie RODO, odtworzenie do 24 h.'
+    - id: 3
+      abbreviation: '4'
+      name: 4 - krytyczny
+      description: 'Narusza aktywo z oceną 4: ujawnienie sekretów, zmiana masowa (przekierowanie lub transfer domen,
+        podmiana stref albo kopii), niedostępność ponad 4 h, incydent poważny.'
+    risk:
+    - id: 0
+      abbreviation: N
+      name: niskie
+      description: 'R 1-3: akceptowane, monitorowane w przeglądzie rocznym.'
+      hexcolor: '#9FDCD4'
+    - id: 1
+      abbreviation: S
+      name: średnie
+      description: 'R 4-6: akceptacja kierownika podmiotu z uzasadnieniem albo postępowanie.'
+      hexcolor: '#F3D98B'
+    - id: 2
+      abbreviation: W
+      name: wysokie
+      description: 'R 8-9: plan postępowania do 3 miesięcy.'
+      hexcolor: '#E9A15A'
+    - id: 3
+      abbreviation: K
+      name: krytyczne
+      description: 'R 12-16: działanie do 30 dni, do tego czasu środki tymczasowe.'
+      hexcolor: '#C9302C'
+    grid:
+    - - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 1
+      - 1
+      - 2
+    - - 0
+      - 1
+      - 2
+      - 3
+    - - 1
+      - 2
+      - 3
+      - 3

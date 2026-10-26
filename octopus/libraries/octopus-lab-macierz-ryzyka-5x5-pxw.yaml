@@ -1,0 +1,114 @@
+urn: urn:octopuslab:risk:library:macierz-ryzyka-5x5-pxw
+locale: pl
+ref_id: macierz-ryzyka-5x5-pxw
+name: Macierz ryzyka 5x5 P x W (ISO 27005, Octopus Lab)
+description: Macierz 5x5 prawdopodobieństwo x wpływ zgodna z metodyką ISO/IEC 27005 (metodyka szacowania ryzyka
+  Octopus Lab). Do szacowania ryzyka w SZBI podmiotów NIS2/KSC i ISO 27001.
+copyright: Octopus Lab
+version: 1
+publication_date: 2026-10-26
+provider: Octopus Lab
+packager: octopuslab
+objects:
+  risk_matrix:
+  - urn: urn:octopuslab:risk:matrix:5x5-pxw
+    ref_id: octopus-5x5-pxw
+    name: 5x5 P x W (ISO 27005, Octopus Lab)
+    description: 'Prawdopodobieństwo P 1-5, skutek W 1-5 (najwyższa wartość spośród wymiarów: dostępność, poufność
+      i integralność, odbiorcy usług, prawne, finansowe), poziom = P x W: niski 1-4, średni 5-9, wysoki 10-16, krytyczny
+      20-25.'
+    probability:
+    - id: 0
+      abbreviation: '1'
+      name: 1 - bardzo rzadkie
+      description: Raz na 10 lat lub rzadziej; brak znanych przypadków w podobnych podmiotach.
+    - id: 1
+      abbreviation: '2'
+      name: 2 - rzadkie
+      description: Raz na 5-10 lat; znane pojedyncze przypadki w branży.
+    - id: 2
+      abbreviation: '3'
+      name: 3 - możliwe
+      description: Raz na 1-5 lat; zdarzenie występujące w branży.
+    - id: 3
+      abbreviation: '4'
+      name: 4 - prawdopodobne
+      description: Raz w roku; obserwowane próby lub słabość łatwa do wykorzystania.
+    - id: 4
+      abbreviation: '5'
+      name: 5 - prawie pewne
+      description: Kilka razy w roku; obserwowane próby lub zdarzenia w podmiocie.
+    impact:
+    - id: 0
+      abbreviation: '1'
+      name: 1 - pomijalny
+      description: Niedostępność usługi wspierającej krótsza niż 1 h, brak ujawnienia lub zmiany danych, brak wpływu
+        na klientów.
+    - id: 1
+      abbreviation: '2'
+      name: 2 - niewielki
+      description: Niedostępność usługi wspierającej do 4 h lub u pojedynczego klienta, szybko skorygowana zmiana
+        danych.
+    - id: 2
+      abbreviation: '3'
+      name: 3 - średni
+      description: Niedostępność części usług do 24 h, ujawnienie danych pojedynczych klientów, naruszenie podlegające
+        zgłoszeniu do UODO.
+    - id: 3
+      abbreviation: '4'
+      name: 4 - poważny
+      description: Niedostępność usług krytycznych (np. serwerów nazw) ponad 30 min albo hostingu ponad 24 h, przejęcie
+        domen pojedynczych klientów, incydent poważny.
+    - id: 4
+      abbreviation: '5'
+      name: 5 - krytyczny
+      description: Długotrwała niedostępność usług krytycznych dla większości klientów, utrata kontroli nad portfelem
+        domen lub serwerami nazw, trwała utrata danych, kary i środki nadzorcze.
+    risk:
+    - id: 0
+      abbreviation: N
+      name: niski
+      description: '1-4: akceptowany, monitorowany w przeglądzie rocznym.'
+      hexcolor: '#9FDCD4'
+    - id: 1
+      abbreviation: S
+      name: średni
+      description: '5-9: akceptacja kierownika z uzasadnieniem albo postępowanie do 12 miesięcy.'
+      hexcolor: '#F3D98B'
+    - id: 2
+      abbreviation: W
+      name: wysoki
+      description: '10-16: postępowanie obowiązkowe do 6 miesięcy; akceptacja wyjątkowo, z uzasadnieniem i środkami
+        kompensującymi.'
+      hexcolor: '#E9A15A'
+    - id: 3
+      abbreviation: K
+      name: krytyczny
+      description: '20-25: nieakceptowalny, działania natychmiastowe do 30 dni.'
+      hexcolor: '#C9302C'
+    grid:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 1
+      - 1
+      - 2
+    - - 0
+      - 1
+      - 1
+      - 2
+      - 2
+    - - 0
+      - 1
+      - 2
+      - 2
+      - 3
+    - - 1
+      - 2
+      - 2
+      - 3
+      - 3
