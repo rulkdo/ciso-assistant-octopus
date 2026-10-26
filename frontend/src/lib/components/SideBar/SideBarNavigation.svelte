@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { navData } from '$lib/components/SideBar/navData';
+	// Octopus Lab: uproszczone menu NIS2/KSC (uklad w octopusNav.ts)
+	import { navData } from '$lib/components/SideBar/octopusNav';
 
 	import SideBarItem from '$lib/components/SideBar/SideBarItem.svelte';
 	import SideBarCategory from '$lib/components/SideBar/SideBarCategory.svelte';

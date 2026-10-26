@@ -3,7 +3,8 @@ import { CREATE_ROUTE_OVERRIDES, NON_CREATABLE_URL_MODELS, URL_MODEL_MAP } from 
 import { safeTranslate } from '$lib/utils/i18n';
 import { getSidebarVisibleItems } from '$lib/utils/sidebar-config';
 import type { User } from '$lib/utils/types';
-import { navData } from '../SideBar/navData';
+// Octopus Lab: paleta polecen pokazuje te same strony co uproszczone menu
+import { navData } from '../SideBar/octopusNav';
 import { canSeeNavItem, type NavItem } from '../SideBar/navVisibility';
 
 export type PaletteGroup = 'navigation' | 'create' | 'action';
