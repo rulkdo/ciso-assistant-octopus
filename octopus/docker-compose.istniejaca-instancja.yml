@@ -11,6 +11,8 @@ x-octopus-libraries: &octopus-libraries
   - ./octopus-libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:ro
   - ./octopus-libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:/code/library/libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:ro
   - ./octopus-libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:/code/library/libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:ro
+  # polskie tlumaczenia zagrozen ICT-001..ICT-023 (w miejsce oryginalu intuitem)
+  - ./octopus-libraries/intuitem-common-catalog.yaml:/code/library/libraries/intuitem-common-catalog.yaml:ro
 
 services:
   backend:

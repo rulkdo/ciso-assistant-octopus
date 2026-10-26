@@ -15,6 +15,7 @@ zmieniony jest frontend i dołożone są biblioteki z presetami.
 | Teksty | Polski jako język domyślny i pierwszy na liście, poprawione nazwy (Środki zabezpieczające, Podmioty zewnętrzne, Dowody audytowe, Dashboard) | `frontend/messages/pl.json`, `en.json` |
 | AGPL | W menu użytkownika link "Kod źródłowy (AGPL v3)" i "Wsparcie Octopus Lab", w oknie "O aplikacji" informacja o wersji bazowej | `SideBarFooter.svelte` |
 | Biblioteki | Obowiązki krajowe z ustawy o KSC (54 wymagania, grupy PK / PW / DOM, zagrożenia OL-001..OL-005), macierze 5x5 P x W (ISO 27005) i 4x4 S x P | `octopus/libraries/` |
+| Tłumaczenia | Polskie nazwy i opisy zagrożeń ICT-001..ICT-023 z katalogu intuitem (plik montowany w miejsce oryginału, wersja +1) | `octopus/libraries/intuitem-common-catalog.yaml`, generator `octopus/translations/` |
 | Presety | "NIS2 i KSC - Octopus Lab" w dwóch wariantach macierzy: flagi funkcji, audyty 2024/2690 i KSC, szacowanie ryzyka z 10 scenariuszami, zbiory ustaleń, harmonogram Z-01..Z-20, ścieżka wdrożenia | `octopus/libraries/preset-*.yaml`, generator `octopus/presets/build_presets.py` |
 | CI | Workflow budujący obraz frontendu do GHCR; workflowy upstream usunięte z tej gałęzi | `.github/workflows/octopus-frontend-image.yml` |
 
