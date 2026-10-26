@@ -4549,7 +4549,7 @@
 	"targetObject": "Obiekt docelowy",
 	"metric": "Metryka",
 	"metricUnit": "Jednostka metryki",
-	"dashboard": "Pulpit",
+	"dashboard": "Dashboard",
 	"dashboards": "Pulpity",
 	"addDashboard": "Dodaj pulpit",
 	"dashboardDefinition": "Definicja pulpitu",
