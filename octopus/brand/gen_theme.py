@@ -109,6 +109,18 @@ css = f"""/*
 .octo-accent {{
 	color: var(--color-primary-500);
 }}
+
+/* Menu boczne: dluzsze nazwy (Srodki zabezpieczajace, Podmioty zewnetrzne) w dwoch liniach zamiast ucietych */
+a[data-testid^='accordion-item-'] {{
+	white-space: normal;
+}}
+a[data-testid^='accordion-item-'] .truncate {{
+	white-space: normal;
+	overflow: visible;
+	text-overflow: clip;
+	letter-spacing: normal;
+	line-height: 1.25;
+}}
 .dark .octo-accent {{
 	color: var(--color-primary-300);
 }}

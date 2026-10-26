@@ -26,7 +26,8 @@ const LAYOUT: { name: string; items: string[] }[] = [
 			'entities',
 			'contracts',
 			'evidences',
-			'reports'
+			'reports',
+			'complianceAssessments'
 		]
 	},
 	{
@@ -41,7 +42,6 @@ const LAYOUT: { name: string; items: string[] }[] = [
 
 // Na poczatku "Dodatkowe": pozycje uzywane w pracy z SZBI, ktorych nie ma w kategoriach wyzej
 const EXTRA_FIRST = [
-	'complianceAssessments',
 	'followUp',
 	'findings',
 	'tasksReview',
