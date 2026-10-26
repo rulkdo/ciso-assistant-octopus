@@ -1,5 +1,5 @@
 /*
- * Octopus Lab: menu boczne pod NIS2/KSC i ISO 27001 (uklad uzgodniony 26.10.2026).
+ * Octopus Lab: menu boczne pod NIS2/KSC i ISO 27001 (uklad uzgodniony 26.10.2026, Centrum operacyjne na gorze od 27.10.2026).
  *
  * Plik upstream navData.ts zostaje bez zmian (latwiejsze aktualizacje). Tutaj wybieramy pozycje
  * po nazwie i ukladamy je w trzy kategorie na gorze. Wszystkie pozostale pozycje trafiaja do
@@ -10,7 +10,14 @@ import { navData as upstreamNav } from './navData';
 
 type NavEntry = (typeof upstreamNav.items)[number]['items'][number];
 
+// Kategorie rozwiniete przy pierwszym wejsciu (potem menu pamieta wybor uzytkownika)
+export const OCTO_DEFAULT_OPEN = ['octoNavOperations'];
+
 const LAYOUT: { name: string; items: string[] }[] = [
+	{
+		name: 'octoNavOperations',
+		items: ['analytics', 'assets', 'tasks', 'incidents']
+	},
 	{
 		name: 'octoNavCompliance',
 		items: [
@@ -29,10 +36,6 @@ const LAYOUT: { name: string; items: string[] }[] = [
 			'reports',
 			'complianceAssessments'
 		]
-	},
-	{
-		name: 'octoNavOperations',
-		items: ['analytics', 'assets', 'tasks', 'incidents']
 	},
 	{
 		name: 'octoNavAdmin',

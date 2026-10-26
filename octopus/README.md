@@ -11,7 +11,7 @@ zmieniony jest frontend i dołożone są biblioteki z presetami.
 | Obszar | Zmiana | Pliki |
 |---|---|---|
 | Branding | Logo "CISO Assistant by Octopus Lab" (jasne i ciemne), favicon, kolory i fonty z octopus-lab.pl (granat #0a0d1a / #141937, akcent #4f63ff, Sora + Manrope), tytuły kart, nazwa w aplikacji MFA | `frontend/octopus-brand.css`, `frontend/src/lib/brand.ts`, `frontend/src/lib/assets/octopus-logo-*.svg`, `frontend/static/` |
-| Menu | Trzy kategorie na górze (Zgodność i dokumentacja, Centrum operacyjne, Administracja), reszta w "Dodatkowe" | `frontend/src/lib/components/SideBar/octopusNav.ts` |
+| Menu | Trzy kategorie na górze (Centrum operacyjne, rozwinięte domyślnie; Zgodność i dokumentacja; Administracja), reszta w "Dodatkowe" | `frontend/src/lib/components/SideBar/octopusNav.ts` |
 | Teksty | Polski jako język domyślny i pierwszy na liście, poprawione nazwy (Środki zabezpieczające, Podmioty zewnętrzne, Dowody audytowe, Dashboard) | `frontend/messages/pl.json`, `en.json` |
 | AGPL | W menu użytkownika link "Kod źródłowy (AGPL v3)" i "Wsparcie Octopus Lab", w oknie "O aplikacji" informacja o wersji bazowej | `SideBarFooter.svelte` |
 | Biblioteki | Obowiązki krajowe z ustawy o KSC (54 wymagania, grupy PK / PW / DOM, zagrożenia OL-001..OL-005), macierze 5x5 P x W (ISO 27005) i 4x4 S x P | `octopus/libraries/` |

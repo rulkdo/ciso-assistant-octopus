@@ -19,7 +19,12 @@
 		}))
 		.filter((item) => item.items.length > 0); // Filter out items with no sub-items
 
-	import { lastAccordionItem } from '$lib/utils/stores';
+	// Octopus Lab: kilka kategorii moze byc otwartych naraz, "Centrum operacyjne" otwarte domyslnie.
+	// Osobny klucz zamiast upstreamowego lastAccordionItem, zeby domyslny stan zadzialal tez
+	// u uzytkownikow, ktorzy mieli juz zapamietana inna kategorie.
+	import { persisted } from 'svelte-persisted-store';
+	import { OCTO_DEFAULT_OPEN } from '$lib/components/SideBar/octopusNav';
+	const openGroups = persisted<string[]>('octoNavOpen', OCTO_DEFAULT_OPEN);
 	interface Props {
 		sideBarVisibleItems: Record<string, boolean>;
 	}
@@ -27,7 +32,7 @@
 	let { sideBarVisibleItems }: Props = $props();
 
 	function handleValueChange(details: { value: string[] }) {
-		$lastAccordionItem = details.value;
+		$openGroups = details.value;
 		setTimeout(() => {
 			$driverInstance?.moveNext();
 		}, 0);
@@ -36,8 +41,9 @@
 
 <nav class="grow scrollbar">
 	<Accordion
-		value={$lastAccordionItem}
+		value={$openGroups}
 		onValueChange={handleValueChange}
+		multiple
 		collapsible
 		class="space-y-4"
 	>
