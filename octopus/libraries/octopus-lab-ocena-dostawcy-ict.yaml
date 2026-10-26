@@ -1,0 +1,348 @@
+urn: urn:octopuslab:risk:library:ocena-dostawcy-ict
+locale: pl
+ref_id: ocena-dostawcy-ict
+name: Ocena dostawcy ICT - NIS2/KSC (Octopus Lab)
+description: 'Ocena bezpieczeństwa dostawcy produktów, usług i procesów ICT według polityki łańcucha dostaw Octopus
+  Lab: 17 kryteriów w skali 0-2, czynniki z art. 8 ust. 2 i art. 67b ustawy o KSC, pkt 5 załącznika do rozporządzenia
+  2024/2690, ISO/IEC 27001:2022 A.5.19-A.5.23.'
+copyright: Octopus Lab
+version: 1
+publication_date: 2026-10-27
+provider: Octopus Lab
+packager: octopuslab
+objects:
+  framework:
+    urn: urn:octopuslab:risk:framework:ocena-dostawcy-ict
+    ref_id: ocena-dostawcy-ict
+    name: Ocena dostawcy ICT - NIS2/KSC
+    description: 'Grupy wdrożeniowe: POD - ocena podstawowa (dostawca średni lub niski, 10 kryteriów), PEL - ocena
+      pełna (dostawca krytyczny lub wysoki, 17 kryteriów). Dostawca krytyczny z niskim wynikiem wymaga środków kompensujących
+      i wpisu ryzyka.'
+    min_score: 0
+    max_score: 2
+    scores_definition:
+    - score: 0
+      name: Nie spełnia
+      description: Brak zabezpieczenia albo brak informacji.
+    - score: 1
+      name: Częściowo
+      description: Zabezpieczenie częściowe albo bez potwierdzenia.
+    - score: 2
+      name: Spełnia
+      description: Zabezpieczenie pełne i potwierdzone.
+    implementation_groups_definition:
+    - ref_id: POD
+      name: Ocena podstawowa
+      description: 'Dostawca średni lub niski: 10 kryteriów.'
+    - ref_id: PEL
+      name: Ocena pełna
+      description: 'Dostawca krytyczny lub wysoki: wszystkie 17 kryteriów.'
+    requirement_nodes:
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:a
+      assessable: false
+      depth: 1
+      ref_id: A
+      name: Dostęp i konta
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-01
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:a
+      ref_id: OD-01
+      name: Bezpieczeństwo kont klienta u dostawcy
+      description: Konta podmiotu w panelu dostawcy są chronione uwierzytelnianiem wieloskładnikowym, a dostawca
+        powiadamia o logowaniach i zmianach.
+      annotation: 'Ocena: 0 - brak MFA; 1 - MFA bez powiadomień o logowaniach i zmianach; 2 - MFA odporne na phishing
+        (klucz FIDO2), powiadomienia i dziennik zdarzeń.
+
+        Podstawa: 2024/2690 pkt 11.6, 11.7; ISO/IEC 27001:2022 A.5.17, A.8.5.'
+      typical_evidence: '- Zrzut ustawień bezpieczeństwa konta (rodzaj MFA, powiadomienia, dziennik).'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-02
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:a
+      ref_id: OD-02
+      name: Dostęp personelu dostawcy
+      description: Personel dostawcy ma dostęp do systemów i danych podmiotu tylko w niezbędnym zakresie, z MFA
+        i z rejestrowaniem działań.
+      annotation: 'Ocena: 0 - dostęp bez ograniczeń albo brak informacji; 1 - zasady opisane, bez potwierdzenia;
+        2 - minimalne uprawnienia, MFA i rejestrowanie potwierdzone w umowie lub raporcie.
+
+        Podstawa: 2024/2690 pkt 5.1.4; ISO/IEC 27001:2022 A.5.20, A.8.2.'
+      typical_evidence: '- Umowa lub regulamin, opis dostępu personelu dostawcy, raport z audytu.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-03
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:a
+      ref_id: OD-03
+      name: Weryfikacja osób dostawcy (art. 8f)
+      description: Osoby dostawcy realizujące w podmiocie zadania z art. 8 lub 11 ustawy o KSC zostały sprawdzone
+        w Krajowym Rejestrze Karnym i zobowiązane do poufności. Nie dotyczy dostawców bez takich zadań.
+      annotation: 'Ocena: 0 - brak weryfikacji; 1 - zobowiązanie do poufności bez informacji z KRK; 2 - informacja
+        z KRK i zobowiązanie do poufności dla każdej osoby.
+
+        Podstawa: Art. 8f ustawy o KSC; ISO/IEC 27001:2022 A.6.1, A.6.6.'
+      typical_evidence: '- Informacja z KRK, podpisane zobowiązania do poufności.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:b
+      assessable: false
+      depth: 1
+      ref_id: B
+      name: Incydenty
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-04
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:b
+      ref_id: OD-04
+      name: Informowanie o incydentach
+      description: Dostawca informuje podmiot o incydentach dotyczących jego usług w ustalonym terminie i wskazuje
+        kontakt.
+      annotation: 'Ocena: 0 - brak zobowiązania; 1 - tylko strona statusu; 2 - zobowiązanie umowne z terminem (np.
+        24 h) i kontaktem.
+
+        Podstawa: Art. 8 ust. 1 pkt 4 ustawy o KSC; 2024/2690 pkt 5.1.4; ISO/IEC 27001:2022 A.5.20, A.5.24.'
+      typical_evidence: '- Klauzula umowy lub regulaminu, adres strony statusu, kontakt awaryjny.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-05
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:b
+      ref_id: OD-05
+      name: Współpraca przy obsłudze incydentu
+      description: Dostawca przekazuje informacje i logi potrzebne do obsługi incydentu i do zgłoszenia do CSIRT
+        w terminach 24 h i 72 h.
+      annotation: 'Ocena: 0 - brak współpracy; 1 - współpraca deklarowana bez szczegółów; 2 - zakres, terminy i
+        kanał współpracy opisane w umowie.
+
+        Podstawa: Art. 11 ustawy o KSC; 2024/2690 pkt 3.5, 5.1.4.'
+      typical_evidence: '- Klauzula umowy, procedura dostawcy.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:c
+      assessable: false
+      depth: 1
+      ref_id: C
+      name: Ciągłość i wyjście
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-06
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:c
+      ref_id: OD-06
+      name: Dostępność i wsparcie
+      description: Dostawca gwarantuje dostępność usługi i wsparcie odpowiednie do jej krytyczności.
+      annotation: 'Ocena: 0 - brak SLA; 1 - SLA bez kar umownych; 2 - SLA z karami i wsparcie 24/7 dla usług krytycznych.
+
+        Podstawa: Art. 8 ust. 1 pkt 2 lit. e i f ustawy o KSC; ISO/IEC 27001:2022 A.5.20, A.5.30.'
+      typical_evidence: '- SLA, regulamin, cennik wsparcia.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-07
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:c
+      ref_id: OD-07
+      name: Kopie i odtwarzanie po stronie dostawcy
+      description: Dostawca wykonuje kopie danych podmiotu i potrafi je odtworzyć.
+      annotation: 'Ocena: 0 - brak kopii; 1 - kopie bez testów i bez odtworzenia na żądanie; 2 - kopie z testami
+        i odtworzenie na żądanie.
+
+        Podstawa: 2024/2690 pkt 4.2; ISO/IEC 27001:2022 A.8.13.'
+      typical_evidence: '- Opis kopii w regulaminie lub umowie, wynik odtworzenia.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-08
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:c
+      ref_id: OD-08
+      name: Możliwość wyjścia
+      description: Dane i konfiguracje (np. domeny, strefy DNS, certyfikaty) można wyeksportować i przenieść do
+        innego dostawcy.
+      annotation: 'Ocena: 0 - brak eksportu; 1 - eksport ręczny lub niepełny; 2 - eksport w standardowych formatach
+        i wsparcie transferu.
+
+        Podstawa: Art. 8 ust. 1 pkt 2 lit. e ustawy o KSC; ISO/IEC 27001:2022 A.5.23.'
+      typical_evidence: '- Opis eksportu, wykonany eksport testowy.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-09
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:c
+      ref_id: OD-09
+      name: Plan wyjścia od dostawcy
+      description: 'Podmiot ma plan wyjścia: dostawcę zastępczego, aktualne eksporty i kopie poza dostawcą, szacowany
+        czas przeniesienia i wynik testu wykonalności.'
+      annotation: 'Ocena: 0 - brak planu; 1 - plan bez testu; 2 - plan z aktualnym eksportem i testem wykonalności
+        w ostatnim roku.
+
+        Podstawa: 2024/2690 pkt 4.1, 5.1; ISO/IEC 27001:2022 A.5.23, A.5.30.'
+      typical_evidence: '- Plan wyjścia, protokół testu przeniesienia.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:d
+      assessable: false
+      depth: 1
+      ref_id: D
+      name: Ochrona danych
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-10
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:d
+      ref_id: OD-10
+      name: Powierzenie i lokalizacja danych
+      description: Przetwarzanie danych osobowych przez dostawcę ma podstawę (umowa powierzenia), a dane są przetwarzane
+        w UE albo z właściwą podstawą transferu.
+      annotation: 'Ocena: 0 - brak umowy powierzenia albo transfer bez podstawy; 1 - umowa powierzenia; 2 - umowa
+        powierzenia i przetwarzanie w UE.
+
+        Podstawa: RODO art. 28, art. 44-49; ISO/IEC 27001:2022 A.5.34.'
+      typical_evidence: '- Umowa powierzenia (DPA), informacja o lokalizacji danych.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-11
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:d
+      ref_id: OD-11
+      name: Szyfrowanie, zwrot i usunięcie danych
+      description: Dane są szyfrowane w transmisji i w spoczynku, a po zakończeniu umowy zwracane i usuwane.
+      annotation: 'Ocena: 0 - brak informacji; 1 - szyfrowanie w transmisji, bez zasad usunięcia; 2 - szyfrowanie
+        w transmisji i w spoczynku oraz potwierdzenie usunięcia po zakończeniu.
+
+        Podstawa: 2024/2690 pkt 9, 12.5; ISO/IEC 27001:2022 A.8.10, A.8.24.'
+      typical_evidence: '- Dokumentacja bezpieczeństwa dostawcy, klauzula o usunięciu danych.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:e
+      assessable: false
+      depth: 1
+      ref_id: E
+      name: Wiarygodność dostawcy (art. 8 ust. 2)
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-12
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:e
+      ref_id: OD-12
+      name: Certyfikaty i niezależne potwierdzenia
+      description: Praktyki bezpieczeństwa dostawcy są potwierdzone przez niezależną stronę, a zakres obejmuje usługę
+        świadczoną podmiotowi.
+      annotation: 'Ocena: 0 - brak informacji; 1 - publiczne zasady bezpieczeństwa; 2 - ISO/IEC 27001, SOC 2 lub
+        równoważne z zakresem obejmującym usługę.
+
+        Podstawa: Art. 8 ust. 2 ustawy o KSC; 2024/2690 pkt 5.1.2; ISO/IEC 27001:2022 A.5.19.'
+      typical_evidence: '- Certyfikat z zakresem, raport SOC 2, strona z zasadami bezpieczeństwa.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-13
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:e
+      ref_id: OD-13
+      name: Podatności i aktualizacje produktów
+      description: Dostawca publikuje biuletyny bezpieczeństwa, usuwa podatności w określonych terminach i stosuje
+        bezpieczny rozwój oprogramowania.
+      annotation: 'Ocena: 0 - brak informacji o podatnościach; 1 - biuletyny bez terminów; 2 - biuletyny, terminy
+        poprawek i opisany bezpieczny rozwój.
+
+        Podstawa: Art. 8 ust. 2 ustawy o KSC; 2024/2690 pkt 5.1.2, 6.10; ISO/IEC 27001:2022 A.5.21, A.8.8.'
+      typical_evidence: '- Strona biuletynów bezpieczeństwa, polityka zgłaszania podatności.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-14
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:e
+      ref_id: OD-14
+      name: Podwykonawcy dostawcy
+      description: Dostawca ujawnia podwykonawców mających dostęp do usługi lub danych i stawia im te same wymagania.
+      annotation: 'Ocena: 0 - brak informacji; 1 - lista podwykonawców bez wymagań; 2 - lista, zgoda podmiotu i
+        te same wymagania wobec podwykonawców.
+
+        Podstawa: 2024/2690 pkt 5.1.4; ISO/IEC 27001:2022 A.5.21.'
+      typical_evidence: '- Lista podwykonawców, klauzula umowy.'
+      implementation_groups:
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-15
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:e
+      ref_id: OD-15
+      name: Dostawca wysokiego ryzyka
+      description: Sprawdzono skoordynowane oceny ryzyka Grupy Współpracy NIS i decyzje o uznaniu za dostawcę wysokiego
+        ryzyka (art. 67b ustawy o KSC).
+      annotation: 'Ocena: 0 - nie sprawdzono; 1 - sprawdzono jednorazowo; 2 - sprawdzane przy ocenie i raz w roku,
+        z notatką.
+
+        Podstawa: Art. 8 ust. 2 i art. 67b ustawy o KSC.'
+      typical_evidence: '- Notatka ze sprawdzenia z datą.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:f
+      assessable: false
+      depth: 1
+      ref_id: F
+      name: Umowa i środki kompensujące
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-16
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:f
+      ref_id: OD-16
+      name: Wymagania bezpieczeństwa w umowie
+      description: 'Umowa zawiera: poufność, zgłaszanie incydentów, MFA i minimalne uprawnienia personelu, prawo
+        do audytu lub raportów, zasady dla podwykonawców, zwrot i usunięcie danych.'
+      annotation: 'Ocena: 0 - brak wymagań; 1 - regulamin przeczytany i porównany z wymaganiami, braki opisane;
+        2 - wymagania zapisane w umowie lub aneksie bezpieczeństwa.
+
+        Podstawa: Art. 8 ust. 1 pkt 2 lit. e ustawy o KSC; 2024/2690 pkt 5.1.4; ISO/IEC 27001:2022 A.5.20.'
+      typical_evidence: '- Umowa, aneks bezpieczeństwa albo porównanie regulaminu z wymaganiami.'
+      implementation_groups:
+      - POD
+      - PEL
+    - urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:od-17
+      assessable: true
+      depth: 2
+      parent_urn: urn:octopuslab:risk:req_node:ocena-dostawcy-ict:f
+      ref_id: OD-17
+      name: Środki kompensujące i akceptacja ryzyka
+      description: Gdy dostawca nie spełnia wymagań, braki są skompensowane własnymi środkami (kopie poza dostawcą,
+        eksporty, MFA, monitorowanie), a ryzyko jest wpisane i zaakceptowane.
+      annotation: 'Ocena: 0 - braki bez reakcji; 1 - środki kompensujące bez wpisu ryzyka; 2 - środki kompensujące,
+        wpis ryzyka i akceptacja kierownika.
+
+        Podstawa: Art. 8 ust. 1 pkt 1 ustawy o KSC; 2024/2690 pkt 2.1, 5.1.'
+      typical_evidence: '- Rejestr ryzyka, decyzja o akceptacji, lista środków kompensujących.'
+      implementation_groups:
+      - POD
+      - PEL

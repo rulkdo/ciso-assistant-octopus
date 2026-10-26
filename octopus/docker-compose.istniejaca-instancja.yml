@@ -7,6 +7,7 @@
 
 x-octopus-libraries: &octopus-libraries
   - ./octopus-libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:/code/library/libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:ro
+  - ./octopus-libraries/octopus-lab-ocena-dostawcy-ict.yaml:/code/library/libraries/octopus-lab-ocena-dostawcy-ict.yaml:ro
   - ./octopus-libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:ro
   - ./octopus-libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:ro
   - ./octopus-libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:/code/library/libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:ro

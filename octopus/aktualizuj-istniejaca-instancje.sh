@@ -9,7 +9,7 @@ set -euo pipefail
 
 REPO_RAW="${REPO_RAW:-https://raw.githubusercontent.com/rulkdo/ciso-assistant-octopus/octopus-nis2/octopus}"
 FRONTEND_IMAGE="${FRONTEND_IMAGE:-ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5}"
-LIBS="octopus-lab-ksc-obowiazki-krajowe.yaml octopus-lab-macierz-ryzyka-5x5-pxw.yaml octopus-lab-macierz-ryzyka-4x4-sxp.yaml preset-octopus-nis2-ksc-iso27005-5x5.yaml preset-octopus-nis2-ksc-octopus-4x4.yaml intuitem-common-catalog.yaml"
+LIBS="octopus-lab-ksc-obowiazki-krajowe.yaml octopus-lab-ocena-dostawcy-ict.yaml octopus-lab-macierz-ryzyka-5x5-pxw.yaml octopus-lab-macierz-ryzyka-4x4-sxp.yaml preset-octopus-nis2-ksc-iso27005-5x5.yaml preset-octopus-nis2-ksc-octopus-4x4.yaml intuitem-common-catalog.yaml"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 
 say() { printf '\n== %s\n' "$*"; }

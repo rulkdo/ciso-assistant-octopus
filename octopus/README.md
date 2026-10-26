@@ -14,7 +14,7 @@ zmieniony jest frontend i dołożone są biblioteki z presetami.
 | Menu | Trzy kategorie na górze (Centrum operacyjne, rozwinięte domyślnie; Zgodność i dokumentacja; Administracja), reszta w "Dodatkowe" | `frontend/src/lib/components/SideBar/octopusNav.ts` |
 | Teksty | Polski jako język domyślny i pierwszy na liście, poprawione nazwy (Środki zabezpieczające, Podmioty zewnętrzne, Dowody audytowe, Dashboard) | `frontend/messages/pl.json`, `en.json` |
 | AGPL | W menu użytkownika link "Kod źródłowy (AGPL v3)" i "Wsparcie Octopus Lab", w oknie "O aplikacji" informacja o wersji bazowej | `SideBarFooter.svelte` |
-| Biblioteki | Obowiązki krajowe z ustawy o KSC (54 wymagania, grupy PK / PW / DOM, zagrożenia OL-001..OL-005), macierze 5x5 P x W (ISO 27005) i 4x4 S x P | `octopus/libraries/` |
+| Biblioteki | Obowiązki krajowe z ustawy o KSC (54 wymagania, grupy PK / PW / DOM, zagrożenia OL-001..OL-005), ocena dostawcy ICT (17 kryteriów 0-2, grupy POD / PEL, zamiast francuskiego VDD intuitem), macierze 5x5 P x W (ISO 27005) i 4x4 S x P | `octopus/libraries/`, generator `octopus/frameworks/` |
 | Tłumaczenia | Polskie nazwy i opisy zagrożeń ICT-001..ICT-023 z katalogu intuitem (plik montowany w miejsce oryginału, wersja +1) | `octopus/libraries/intuitem-common-catalog.yaml`, generator `octopus/translations/` |
 | Presety | "NIS2 i KSC - Octopus Lab" w dwóch wariantach macierzy: flagi funkcji, audyty 2024/2690 i KSC, szacowanie ryzyka z 10 scenariuszami, zbiory ustaleń, harmonogram Z-01..Z-20, ścieżka wdrożenia | `octopus/libraries/preset-*.yaml`, generator `octopus/presets/build_presets.py` |
 | CI | Workflow budujący obraz frontendu do GHCR; workflowy upstream usunięte z tej gałęzi | `.github/workflows/octopus-frontend-image.yml` |
@@ -111,6 +111,7 @@ zmiana `CISO_BACKEND_TAG` i `OCTOPUS_FRONTEND_TAG` w `.env`, `docker compose pul
 - Logo i favicon: `python3 octopus/brand/make_brand.py` (wektor ośmiornicy z `octopus/brand/trace.py`, tekst fontem Sora zamieniony na krzywe).
 - Kolory i fonty: `python3 octopus/brand/gen_theme.py > frontend/octopus-brand.css`. Fiolety i róże Tailwinda użyte na sztywno w komponentach są przemapowane na kolory marki w tym samym pliku.
 - Presety: `python3 octopus/presets/build_presets.py` (nazwy zadań, scenariusze, kroki ścieżki).
+- Ocena dostawcy ICT: `python3 octopus/frameworks/build_ocena_dostawcy.py` (kryteria z polityki łańcucha dostaw).
 - Menu: `frontend/src/lib/components/SideBar/octopusNav.ts`.
 
 Lokalny build frontendu potrzebuje ok. 10 GB RAM, a kompilator tłumaczeń pobiera wtyczki z cdn.jsdelivr.net.

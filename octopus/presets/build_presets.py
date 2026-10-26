@@ -18,6 +18,7 @@ LIB_KSC = "urn:octopuslab:risk:library:ksc-obowiazki-krajowe"
 LIB_ISO = "urn:intuitem:risk:library:iso27001-2022"
 LIB_MAP = "urn:intuitem:risk:library:mapping-annex-technical-and-methodological-requirements-nis2-and-iso27001-2022"
 LIB_CAT = "urn:intuitem:risk:library:intuitem-common-catalog"
+LIB_DOS = "urn:octopuslab:risk:library:ocena-dostawcy-ict"
 T = "urn:intuitem:risk:threat:intuitem-common-catalog:"
 OL = "urn:octopuslab:risk:threat:"
 
@@ -164,7 +165,8 @@ def preset(v):
          "Wpisz usługi objęte ustawą jako aktywa główne i systemy, które je wspierają, jako aktywa wspierające."
          " Nadaj klasyfikację CIA i właściciela.", "assets", None),
         ("suppliers", "Dostawcy",
-         "Dodaj dostawców usług ICT i oceń krytycznych (łańcuch dostaw, 2024/2690 pkt 5).", "entities", None),
+         "Dodaj dostawców usług ICT i oceń krytycznych (łańcuch dostaw, 2024/2690 pkt 5): ocena podmiotu z ramami"
+         " Ocena dostawcy ICT, grupa PEL dla krytycznych i wysokich, POD dla pozostałych.", "entities", None),
         ("gap", "Analiza luk 2024/2690",
          "Przejdź wymagania rozporządzenia i oceń stan każdego z nich. Luki zapisz jako ustalenia.",
          "compliance-assessments", "nis2_audit"),
@@ -197,10 +199,10 @@ def preset(v):
             " do ISO/IEC 27001:2022. Ładuje załącznik do rozporządzenia 2024/2690, obowiązki krajowe z ustawy o KSC,"
             f" ISO 27001 z mapowaniem i {v['matrix_txt']}. Tworzy audyty, szacowanie ryzyka ze scenariuszami"
             " startowymi, zbiory ustaleń, harmonogram czynności Z-01..Z-20 i ścieżkę wdrożenia."),
-        "version": 1,
+        "version": 2,
         "provider": "Octopus Lab",
         "packager": "octopuslab",
-        "dependencies": [LIB_2690, LIB_KSC, LIB_ISO, LIB_MAP, LIB_CAT, v["matrix"]],
+        "dependencies": [LIB_2690, LIB_KSC, LIB_ISO, LIB_MAP, LIB_CAT, LIB_DOS, v["matrix"]],
         "objects": {"preset": {
             "profile": {"company_size": ["micro", "sme", "large"], "industry": ["general", "critical-infrastructure"],
                         "region": ["eu"], "goal": "nis2-compliance"},

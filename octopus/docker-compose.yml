@@ -17,6 +17,7 @@ x-backend-env: &backend-env
 x-octopus-libraries: &octopus-libraries
   - ./db:/code/db
   - ./libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:/code/library/libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:ro
+  - ./libraries/octopus-lab-ocena-dostawcy-ict.yaml:/code/library/libraries/octopus-lab-ocena-dostawcy-ict.yaml:ro
   - ./libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:ro
   - ./libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:ro
   - ./libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:/code/library/libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:ro
