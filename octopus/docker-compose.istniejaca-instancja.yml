@@ -21,7 +21,7 @@ services:
     image: ghcr.io/intuitem/ciso-assistant-community/backend:v4.1.5
     pull_policy: missing
   frontend:
-    image: ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5-1
+    image: ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5
     pull_policy: missing
     environment:
       - PUBLIC_DEFAULT_LANGUAGE=pl

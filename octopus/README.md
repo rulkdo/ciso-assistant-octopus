@@ -23,7 +23,7 @@ zmieniony jest frontend i dołożone są biblioteki z presetami.
 Wymagania: serwer z Dockerem i docker compose v2.24+, 2 vCPU, 4 GB RAM, domena z rekordem A na serwer, otwarte porty 80 i 443.
 
 ```bash
-git clone --depth 1 --branch octopus-v4.1.5-1 https://github.com/rulkdo/ciso-assistant-octopus.git
+git clone --depth 1 --branch octopus-nis2 https://github.com/rulkdo/ciso-assistant-octopus.git
 cd ciso-assistant-octopus/octopus
 cp .env.example .env            # uzupełnij CISO_DOMAIN i ACME_EMAIL
 cp mail.env.example mail.env    # opcjonalnie: poczta wychodząca
@@ -65,14 +65,11 @@ Na nowych instancjach problem nie występuje.
 
 ## Wydanie nowego obrazu frontendu
 
-Obraz buduje GitHub Actions po wypchnięciu tagu `octopus-*`:
+Obraz buduje GitHub Actions po każdej zmianie w `frontend/` na gałęzi `octopus-nis2` (albo po tagu `octopus-*`,
+albo ręcznie: Actions → Octopus Lab - obraz frontendu → Run workflow).
 
-```bash
-git tag octopus-v4.1.5-2
-git push origin octopus-v4.1.5-2
-```
-
-Wynik: `ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5-2`. Jeśli serwer nie może pobrać obrazu
+Wynik: `ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5` (bieżąca wersja linii 4.1.5), `:latest`
+i `:sha-<commit>` (konkretna wersja, gdy trzeba wrócić do poprzedniej). Jeśli serwer nie może pobrać obrazu
 (błąd unauthorized), ustaw w GitHub → Packages → frontend → Package settings widoczność Public.
 Na serwerze zmień `OCTOPUS_FRONTEND_TAG` w `.env` i wykonaj `docker compose pull && docker compose up -d`.
 
@@ -81,16 +78,22 @@ Na serwerze zmień `OCTOPUS_FRONTEND_TAG` w `.env` i wykonaj `docker compose pul
 Backend i frontend muszą pochodzić z tej samej wersji upstream.
 
 ```bash
+Gałąź `upstream-v4.1.5` to czysty import v4.1.5 (drzewo identyczne z tagiem intuitem), a `octopus-nis2` to nasze
+zmiany na nim. Przejście na nową wersję to przeniesienie naszych commitów na import nowej wersji:
+
+```bash
 git remote add upstream https://github.com/intuitem/ciso-assistant-community.git   # raz
-git fetch upstream --tags
-git checkout -b octopus-v4.2.0 octopus-nis2
-git rebase --onto v4.2.0 v4.1.5
+git fetch upstream tag v4.2.0 --no-tags
+git checkout -b upstream-v4.2.0 upstream-v4.1.5
+git rm -r -q . && git checkout v4.2.0 -- . && git commit -m "Import CISO Assistant Community Edition v4.2.0"
+git checkout -b octopus-nis2-v4.2.0 octopus-nis2
+git rebase --onto upstream-v4.2.0 upstream-v4.1.5
 # konflikty w .github/workflows rozwiązuj przez git rm (workflowy upstream nie są używane)
 # konflikty w messages/*.json: zostaw nowe klucze upstream i nasze wartości
 ```
 
-Potem: build i test lokalnie albo w Actions, tag `octopus-v4.2.0-1`, kopia bazy, zmiana `CISO_BACKEND_TAG`
-i `OCTOPUS_FRONTEND_TAG` w `.env`, `docker compose pull && docker compose up -d`.
+Potem: w workflow i plikach compose zmień `octopus-v4.1.5` na `octopus-v4.2.0`, build w Actions, kopia bazy,
+zmiana `CISO_BACKEND_TAG` i `OCTOPUS_FRONTEND_TAG` w `.env`, `docker compose pull && docker compose up -d`.
 
 ## Branding i presety: skąd się biorą
 

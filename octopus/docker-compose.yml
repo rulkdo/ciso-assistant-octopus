@@ -79,7 +79,7 @@ services:
 
   frontend:
     container_name: frontend
-    image: ghcr.io/${OCTOPUS_IMAGE_OWNER:-rulkdo}/ciso-assistant-octopus/frontend:${OCTOPUS_FRONTEND_TAG:-octopus-v4.1.5-1}
+    image: ghcr.io/${OCTOPUS_IMAGE_OWNER:-rulkdo}/ciso-assistant-octopus/frontend:${OCTOPUS_FRONTEND_TAG:-octopus-v4.1.5}
     restart: always
     environment:
       PUBLIC_BACKEND_API_URL: http://backend:8000/api
