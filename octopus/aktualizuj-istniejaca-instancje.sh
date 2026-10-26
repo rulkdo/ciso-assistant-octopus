@@ -29,8 +29,9 @@ if [ -z "$DIR" ] || [ ! -d "$DIR" ] || [ "$DIR" = "/" ] || [ -z "$PROJECT" ] || 
 fi
 IFS=',' read -r -a FILES <<< "$CONFIGS"
 BASE=(docker compose -p "$PROJECT")
+BASEFILES=()
 for f in "${FILES[@]}"; do
-  case "$f" in */docker-compose.octopus.yml) ;; *) BASE+=(-f "$f") ;; esac
+  case "$f" in */docker-compose.octopus.yml) ;; *) BASE+=(-f "$f"); BASEFILES+=("$f") ;; esac
 done
 OCTO=("${BASE[@]}" -f "$DIR/docker-compose.octopus.yml")
 
@@ -88,7 +89,7 @@ for urn in ['urn:intuitem:risk:library:intuitem-common-catalog']:
 
 "${OCTO[@]}" ps
 
-QF="$(printf -- '-f %s ' "${FILES[@]}")"
+QF="$(printf -- '-f %s ' "${BASEFILES[@]}")"
 cat <<EOF
 
 Gotowe. Odswiez przegladarke (Ctrl+F5).
