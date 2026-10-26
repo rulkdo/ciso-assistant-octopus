@@ -110,7 +110,12 @@
 	});
 </script>
 
-<svelte:head><link rel="icon" href="/favicon.ico" /></svelte:head>
+<svelte:head
+	><link rel="icon" href="/favicon.ico" /><link
+		rel="apple-touch-icon"
+		href="/apple-touch-icon.png"
+	/></svelte:head
+>
 <Dialog components={modalRegistry} />
 <Toast zIndex="z-[1000]" />
 {@render children?.()}

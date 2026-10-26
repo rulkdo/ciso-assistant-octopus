@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { BRAND } from '$lib/brand';
 	import type { PageData } from './$types';
 	import { page } from '$app/state';
 	import LossExceedanceCurve from '$lib/components/Chart/LossExceedanceCurve.svelte';
@@ -18,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>{m.executiveSummary()} - CISO Assistant</title>
+	<title>{m.executiveSummary()} - {BRAND.name}</title>
 </svelte:head>
 
 <main class="p-6 space-y-6">

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { BRAND, brandLabel } from '$lib/brand';
 	import { breadcrumbs } from '$lib/utils/breadcrumbs';
 	import { LOCALE_MAP, language, defaultLangLabels } from '$lib/utils/locales';
 	import { m } from '$paraglide/messages';
@@ -28,7 +29,14 @@
 			type: 'component',
 			component: 'displayJSONModal',
 			title: m.aboutCiso(),
-			body: JSON.stringify(res)
+			body: JSON.stringify({
+				...res,
+				edition: BRAND.name,
+				based_on: `${BRAND.upstreamName} ${BRAND.upstreamVersion}`,
+				license: 'AGPL v3',
+				source: BRAND.sourceUrl,
+				support: BRAND.supportEmail
+			})
 		};
 		openState = false;
 		modalStore.trigger(modal);
@@ -108,7 +116,7 @@
 							class="border-y-transparent border-x-surface-100-900 focus:border-y-transparent focus:border-x-surface-100-900 w-full px-4 py-2.5 cursor-pointer block text-sm text-surface-950-50 bg-surface-50-950 focus:ring-0"
 							data-testid="language-select"
 						>
-							{#each locales as lang}
+							{#each [...locales].sort((a, b) => (a === 'pl' ? -1 : b === 'pl' ? 1 : 0)) as lang}
 								<option value={lang} selected={lang === getLocale()}>
 									{defaultLangLabels[lang]} ({language[LOCALE_MAP[lang].name]})
 								</option>
@@ -141,6 +149,21 @@
 							target="_blank"
 							class="unstyled cursor-pointer flex items-center gap-2 w-full px-4 py-2.5 text-left text-sm hover:bg-surface-200-800 disabled:text-surface-400-600 text-surface-950-50"
 							data-testid="docs-button"><i class="fa-solid fa-book mr-2"></i>{m.onlineDocs()}</a
+						>
+						<!-- Octopus Lab: wsparcie i kod zrodlowy (AGPL v3, par. 13) -->
+						<a
+							href="mailto:{BRAND.supportEmail}"
+							class="unstyled cursor-pointer flex items-center gap-2 w-full px-4 py-2.5 text-left text-sm hover:bg-surface-200-800 disabled:text-surface-400-600 text-surface-950-50"
+							data-testid="octopus-support-button"
+							><i class="fa-solid fa-life-ring mr-2"></i>{brandLabel('support')}</a
+						>
+						<a
+							href={BRAND.sourceUrl}
+							target="_blank"
+							rel="noopener"
+							class="unstyled cursor-pointer flex items-center gap-2 w-full px-4 py-2.5 text-left text-sm hover:bg-surface-200-800 disabled:text-surface-400-600 text-surface-950-50"
+							data-testid="octopus-source-button"
+							><i class="fa-brands fa-github mr-2"></i>{brandLabel('source')}</a
 						>
 						<form action="/logout" method="POST" onsubmit={() => breadcrumbs.clear()}>
 							<button class="w-full" type="submit" data-testid="logout-button">

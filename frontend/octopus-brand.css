@@ -1,0 +1,321 @@
+/*
+  Octopus Lab: branding CISO Assistant by Octopus Lab.
+  Paleta z www.octopus-lab.pl (granat #0a0d1a / #141937, akcent #4f63ff, #6c7dff, #3b46a8).
+  Plik generowany skryptem octopus/brand/gen_theme.py. Nie edytuj recznie, zmien skrypt.
+  Laduje sie po ciso-theme.css, wiec nadpisuje kolory motywu bez ruszania pliku upstream.
+*/
+
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-ext-400-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-400-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-ext-500-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-500-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-ext-600-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-600-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-ext-700-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/manrope-latin-700-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/sora-latin-ext-400-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/sora-latin-400-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/sora-latin-ext-600-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/sora-latin-600-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/sora-latin-ext-700-normal.woff2') format('woff2');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/sora-latin-700-normal.woff2') format('woff2');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Fiolety i roze Tailwinda wpiete na sztywno w komponentach -> kolory marki */
+@theme {
+	--font-sans:
+		'Manrope', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+	--font-heading: 'Sora', 'Manrope', ui-sans-serif, system-ui, sans-serif;
+	--color-violet-50: oklch(95.8% 0.02 279.94deg);
+	--color-violet-100: oklch(92.41% 0.037 278.96deg);
+	--color-violet-200: oklch(85.96% 0.07 278.58deg);
+	--color-violet-300: oklch(77.46% 0.115 274.14deg);
+	--color-violet-400: oklch(64.25% 0.192 274.1deg);
+	--color-violet-500: oklch(57.93% 0.23 271.5deg);
+	--color-violet-600: oklch(51.66% 0.214 271.3deg);
+	--color-violet-700: oklch(44.41% 0.156 273.38deg);
+	--color-violet-800: oklch(37.65% 0.128 273.51deg);
+	--color-violet-900: oklch(30.88% 0.097 273.82deg);
+	--color-violet-950: oklch(22.69% 0.058 273.75deg);
+	--color-purple-50: oklch(95.8% 0.02 279.94deg);
+	--color-purple-100: oklch(92.41% 0.037 278.96deg);
+	--color-purple-200: oklch(85.96% 0.07 278.58deg);
+	--color-purple-300: oklch(77.46% 0.115 274.14deg);
+	--color-purple-400: oklch(64.25% 0.192 274.1deg);
+	--color-purple-500: oklch(57.93% 0.23 271.5deg);
+	--color-purple-600: oklch(51.66% 0.214 271.3deg);
+	--color-purple-700: oklch(44.41% 0.156 273.38deg);
+	--color-purple-800: oklch(37.65% 0.128 273.51deg);
+	--color-purple-900: oklch(30.88% 0.097 273.82deg);
+	--color-purple-950: oklch(22.69% 0.058 273.75deg);
+	--color-pink-50: oklch(96.19% 0.011 274.89deg);
+	--color-pink-100: oklch(92.33% 0.021 274.03deg);
+	--color-pink-200: oklch(84.6% 0.038 275.63deg);
+	--color-pink-300: oklch(73.55% 0.06 275.16deg);
+	--color-pink-400: oklch(59.7% 0.09 274.43deg);
+	--color-pink-500: oklch(44.41% 0.156 273.38deg);
+	--color-pink-600: oklch(40.34% 0.139 273.37deg);
+	--color-pink-700: oklch(35.64% 0.117 273.89deg);
+	--color-pink-800: oklch(30.8% 0.095 273.85deg);
+	--color-pink-900: oklch(26.25% 0.074 273.75deg);
+	--color-pink-950: oklch(21.44% 0.057 274.68deg);
+	--color-fuchsia-50: oklch(96.19% 0.011 274.89deg);
+	--color-fuchsia-100: oklch(92.33% 0.021 274.03deg);
+	--color-fuchsia-200: oklch(84.6% 0.038 275.63deg);
+	--color-fuchsia-300: oklch(73.55% 0.06 275.16deg);
+	--color-fuchsia-400: oklch(59.7% 0.09 274.43deg);
+	--color-fuchsia-500: oklch(44.41% 0.156 273.38deg);
+	--color-fuchsia-600: oklch(40.34% 0.139 273.37deg);
+	--color-fuchsia-700: oklch(35.64% 0.117 273.89deg);
+	--color-fuchsia-800: oklch(30.8% 0.095 273.85deg);
+	--color-fuchsia-900: oklch(26.25% 0.074 273.75deg);
+	--color-fuchsia-950: oklch(21.44% 0.057 274.68deg);
+}
+
+[data-theme='cisotheme'] {
+	--typo-heading--font-family: var(--font-heading);
+	--color-primary-50: oklch(95.8% 0.02 279.94deg);
+	--color-primary-100: oklch(92.41% 0.037 278.96deg);
+	--color-primary-200: oklch(85.96% 0.07 278.58deg);
+	--color-primary-300: oklch(77.46% 0.115 274.14deg);
+	--color-primary-400: oklch(64.25% 0.192 274.1deg);
+	--color-primary-500: oklch(57.93% 0.23 271.5deg);
+	--color-primary-600: oklch(51.66% 0.214 271.3deg);
+	--color-primary-700: oklch(44.41% 0.156 273.38deg);
+	--color-primary-800: oklch(37.65% 0.128 273.51deg);
+	--color-primary-900: oklch(30.88% 0.097 273.82deg);
+	--color-primary-950: oklch(22.69% 0.058 273.75deg);
+	--color-primary-contrast-dark: var(--color-primary-950);
+	--color-primary-contrast-light: var(--color-primary-50);
+	--color-primary-contrast-50: var(--color-primary-contrast-dark);
+	--color-primary-contrast-100: var(--color-primary-contrast-dark);
+	--color-primary-contrast-200: var(--color-primary-contrast-dark);
+	--color-primary-contrast-300: var(--color-primary-contrast-dark);
+	--color-primary-contrast-400: var(--color-primary-contrast-light);
+	--color-primary-contrast-500: var(--color-primary-contrast-light);
+	--color-primary-contrast-600: var(--color-primary-contrast-light);
+	--color-primary-contrast-700: var(--color-primary-contrast-light);
+	--color-primary-contrast-800: var(--color-primary-contrast-light);
+	--color-primary-contrast-900: var(--color-primary-contrast-light);
+	--color-primary-contrast-950: var(--color-primary-contrast-light);
+	--color-secondary-50: oklch(96.19% 0.011 274.89deg);
+	--color-secondary-100: oklch(92.33% 0.021 274.03deg);
+	--color-secondary-200: oklch(84.6% 0.038 275.63deg);
+	--color-secondary-300: oklch(73.55% 0.06 275.16deg);
+	--color-secondary-400: oklch(59.7% 0.09 274.43deg);
+	--color-secondary-500: oklch(44.41% 0.156 273.38deg);
+	--color-secondary-600: oklch(40.34% 0.139 273.37deg);
+	--color-secondary-700: oklch(35.64% 0.117 273.89deg);
+	--color-secondary-800: oklch(30.8% 0.095 273.85deg);
+	--color-secondary-900: oklch(26.25% 0.074 273.75deg);
+	--color-secondary-950: oklch(21.44% 0.057 274.68deg);
+	--color-secondary-contrast-dark: var(--color-secondary-950);
+	--color-secondary-contrast-light: var(--color-secondary-50);
+	--color-secondary-contrast-50: var(--color-secondary-contrast-dark);
+	--color-secondary-contrast-100: var(--color-secondary-contrast-dark);
+	--color-secondary-contrast-200: var(--color-secondary-contrast-dark);
+	--color-secondary-contrast-300: var(--color-secondary-contrast-dark);
+	--color-secondary-contrast-400: var(--color-secondary-contrast-light);
+	--color-secondary-contrast-500: var(--color-secondary-contrast-light);
+	--color-secondary-contrast-600: var(--color-secondary-contrast-light);
+	--color-secondary-contrast-700: var(--color-secondary-contrast-light);
+	--color-secondary-contrast-800: var(--color-secondary-contrast-light);
+	--color-secondary-contrast-900: var(--color-secondary-contrast-light);
+	--color-secondary-contrast-950: var(--color-secondary-contrast-light);
+	--color-tertiary-50: oklch(97.53% 0.015 207.11deg);
+	--color-tertiary-100: oklch(93.97% 0.034 208.01deg);
+	--color-tertiary-200: oklch(88.15% 0.062 208.87deg);
+	--color-tertiary-300: oklch(80.32% 0.092 210.75deg);
+	--color-tertiary-400: oklch(71.45% 0.107 213.41deg);
+	--color-tertiary-500: oklch(62.81% 0.104 215.22deg);
+	--color-tertiary-600: oklch(54.3% 0.091 217.25deg);
+	--color-tertiary-700: oklch(46.74% 0.077 218.73deg);
+	--color-tertiary-800: oklch(40.89% 0.064 219.81deg);
+	--color-tertiary-900: oklch(34.5% 0.05 222.13deg);
+	--color-tertiary-950: oklch(26.4% 0.037 222.13deg);
+	--color-tertiary-contrast-dark: var(--color-tertiary-950);
+	--color-tertiary-contrast-light: var(--color-tertiary-50);
+	--color-tertiary-contrast-50: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-100: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-200: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-300: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-400: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-500: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-600: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-700: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-800: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-900: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-950: var(--color-tertiary-contrast-light);
+	--color-surface-50: oklch(97.68% 0.007 277.16deg);
+	--color-surface-100: oklch(95.59% 0.011 274.89deg);
+	--color-surface-200: oklch(91.66% 0.018 272.3deg);
+	--color-surface-300: oklch(84.05% 0.029 272.46deg);
+	--color-surface-400: oklch(72.59% 0.046 268.05deg);
+	--color-surface-500: oklch(57.64% 0.051 271.22deg);
+	--color-surface-600: oklch(45.82% 0.052 271.72deg);
+	--color-surface-700: oklch(34.25% 0.059 273.8deg);
+	--color-surface-800: oklch(26.58% 0.064 273.76deg);
+	--color-surface-900: oklch(22.69% 0.058 273.75deg);
+	--color-surface-950: oklch(16.34% 0.028 273.08deg);
+	--color-surface-contrast-dark: var(--color-surface-950);
+	--color-surface-contrast-light: var(--color-surface-50);
+	--color-surface-contrast-50: var(--color-surface-contrast-dark);
+	--color-surface-contrast-100: var(--color-surface-contrast-dark);
+	--color-surface-contrast-200: var(--color-surface-contrast-dark);
+	--color-surface-contrast-300: var(--color-surface-contrast-dark);
+	--color-surface-contrast-400: var(--color-surface-contrast-dark);
+	--color-surface-contrast-500: var(--color-surface-contrast-dark);
+	--color-surface-contrast-600: var(--color-surface-contrast-light);
+	--color-surface-contrast-700: var(--color-surface-contrast-light);
+	--color-surface-contrast-800: var(--color-surface-contrast-light);
+	--color-surface-contrast-900: var(--color-surface-contrast-light);
+	--color-surface-contrast-950: var(--color-surface-contrast-light);
+}
+
+/* Tytul strony i naglowek logowania: kolor marki zamiast gradientu roz-fiolet */
+.octo-title {
+	font-family: var(--font-heading);
+	letter-spacing: -0.01em;
+	color: var(--color-surface-900);
+}
+.dark .octo-title {
+	color: var(--color-surface-50);
+}
+.octo-accent {
+	color: var(--color-primary-500);
+}
+.dark .octo-accent {
+	color: var(--color-primary-300);
+}

@@ -93,9 +93,7 @@
 			<div class="bg-primary-300 px-6 py-5 rounded-full text-3xl">
 				<i class="fa-solid fa-right-to-bracket"></i>
 			</div>
-			<h3
-				class="font-bold leading-tight tracking-tight md:text-2xl bg-linear-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent"
-			>
+			<h3 class="octo-title font-bold leading-tight tracking-tight md:text-2xl">
 				{m.logIntoYourAccount()}
 			</h3>
 			<p class="text-center text-surface-600-400 text-sm">

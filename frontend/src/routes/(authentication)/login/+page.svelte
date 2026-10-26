@@ -4,6 +4,7 @@
 	import Greetings from './Greetings.svelte';
 	import FormCard from './FormCard.svelte';
 	import { m } from '$paraglide/messages';
+	import { BRAND } from '$lib/brand';
 
 	interface Props {
 		data: PageData;
@@ -14,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>CISO Assistant | {m.login()}</title>
+	<title>{BRAND.name} | {m.login()}</title>
 </svelte:head>
 
 <main class="lg:relative h-screen bg-surface-200-800">

@@ -8,6 +8,8 @@
   Add your theme import for your theme: "ciso-theme" here
 */
 @import '../ciso-theme.css';
+/* Octopus Lab: paleta i fonty marki (nadpisuje kolory motywu) */
+@import '../octopus-brand.css';
 @import '@skeletonlabs/skeleton-svelte';
 
 @source './**/*.{html,js,svelte,ts}';

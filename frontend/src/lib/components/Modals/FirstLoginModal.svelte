@@ -43,7 +43,7 @@
 		style="width: min(540px, 92vw);"
 	>
 		<!-- Decorative top band -->
-		<div class="h-2 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-amber-400"></div>
+		<div class="h-2 bg-gradient-to-r from-violet-500 via-violet-400 to-violet-300"></div>
 
 		<div class="px-8 pt-8 pb-6">
 			<!-- Header area -->

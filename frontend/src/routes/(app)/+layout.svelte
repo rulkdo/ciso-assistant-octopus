@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { BRAND } from '$lib/brand';
 	import { run } from 'svelte/legacy';
 
 	// Most of your app wide CSS should be put in this file
@@ -159,7 +160,7 @@
 </script>
 
 <svelte:head>
-	<title>CISO Assistant | {safeTranslate(displayTitle)}</title>
+	<title>{BRAND.name} | {safeTranslate(displayTitle)}</title>
 </svelte:head>
 
 <!-- App Shell -->
@@ -174,10 +175,7 @@
 	>
 		<div class="flex items-start justify-between px-4">
 			<div>
-				<div
-					class="text-2xl font-bold pb-1 bg-linear-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent"
-					id="page-title"
-				>
+				<div class="octo-title text-2xl font-bold pb-1" id="page-title">
 					{safeTranslate(displayTitle)}
 				</div>
 				{#if displayModelName}
@@ -227,10 +225,9 @@
 				{#if data?.user?.is_admin && data?.settings?.show_get_started !== false}
 					<button
 						onclick={() => getStartedTrigger.set(true)}
-						class="shrink-0 px-3 py-1.5 rounded-full bg-violet-500 dark:bg-violet-600 text-white text-xs font-semibold shadow-lg
-			ring-2 ring-violet-400 ring-offset-2 transition-all duration-300 hover:bg-violet-600
-			hover:ring-violet-300 hover:ring-offset-violet-100 hover:shadow-violet-500/50
-			focus:outline-hidden focus:ring-violet-500 cursor-pointer"
+						class="shrink-0 px-3 py-1.5 rounded-md bg-primary-500 text-white text-xs font-semibold shadow-sm
+			transition-colors duration-200 hover:bg-primary-600
+			focus:outline-hidden focus:ring-2 focus:ring-primary-300 cursor-pointer"
 					>
 						<i class="fa-solid fa-rocket mr-1"></i>
 						{m.getStarted()}

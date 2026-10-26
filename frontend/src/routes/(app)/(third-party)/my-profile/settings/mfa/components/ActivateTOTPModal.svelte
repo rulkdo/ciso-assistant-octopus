@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { BRAND } from '$lib/brand';
 	import { m } from '$paraglide/messages';
 
 	import SuperForm from '$lib/components/Forms/Form.svelte';
@@ -52,7 +53,7 @@
 						<QR
 							data={totp.totp_url.replace(
 								/issuer=[^&]+/,
-								'issuer=' + encodeURIComponent('CISO Assistant')
+								'issuer=' + encodeURIComponent(BRAND.name)
 							)}
 							moduleFill="black"
 							anchorInnerFill="black"
