@@ -88,9 +88,9 @@ Gotowe. Odswiez przegladarke (Ctrl+F5).
 Kopia bazy: $DIR/db-kopia-$STAMP
 
 Uruchamianie z nakladka Octopus Lab (np. po zmianach w compose):
-  cd $DIR && docker compose -p $PROJECT ${QF}-f docker-compose.octopus.yml up -d
-Nowsza wersja frontendu Octopus Lab:
-  cd $DIR && docker compose -p $PROJECT ${QF}-f docker-compose.octopus.yml pull frontend && docker compose -p $PROJECT ${QF}-f docker-compose.octopus.yml up -d frontend
+  docker compose -p $PROJECT ${QF}-f $DIR/docker-compose.octopus.yml up -d
+Nowsza wersja frontendu Octopus Lab (nakladka ma pull_policy: missing, wiec obraz pobierasz recznie):
+  docker pull $FRONTEND_IMAGE && docker compose -p $PROJECT ${QF}-f $DIR/docker-compose.octopus.yml up -d frontend
 Powrot do wygladu intuitem (baza bez zmian):
-  cd $DIR && docker compose -p $PROJECT ${QF}up -d backend huey frontend
+  docker compose -p $PROJECT ${QF}up -d backend huey frontend
 EOF
