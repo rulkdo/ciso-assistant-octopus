@@ -1,0 +1,27 @@
+# Przejscie istniejacej instancji (oryginalny docker-compose.yml intuitem) na wersje Octopus Lab.
+# Baza zostaje ta sama: zmienia sie tylko obraz frontendu, a backend dostaje biblioteki i presety.
+# Uzycie (w katalogu z dotychczasowym docker-compose.yml, katalog octopus-libraries obok):
+#   docker compose -f docker-compose.yml -f docker-compose.istniejaca-instancja.yml up -d
+# Szczegoly i kopia bazy przed zmiana: README.md, rozdzial "Istniejaca instancja".
+
+x-octopus-libraries: &octopus-libraries
+  - ./octopus-libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:/code/library/libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:ro
+  - ./octopus-libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:ro
+  - ./octopus-libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:ro
+  - ./octopus-libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:/code/library/libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:ro
+  - ./octopus-libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:/code/library/libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:ro
+
+services:
+  backend:
+    # przypiecie wersji: frontend Octopus Lab jest budowany z tej samej wersji upstream
+    image: ghcr.io/intuitem/ciso-assistant-community/backend:v4.1.5
+    pull_policy: missing
+    volumes: *octopus-libraries
+  huey:
+    image: ghcr.io/intuitem/ciso-assistant-community/backend:v4.1.5
+    pull_policy: missing
+  frontend:
+    image: ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5-1
+    pull_policy: missing
+    environment:
+      - PUBLIC_DEFAULT_LANGUAGE=pl

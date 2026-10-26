@@ -1,0 +1,17 @@
+# CISO Assistant by Octopus Lab: reverse proxy z automatycznym certyfikatem (Let's Encrypt).
+# Domena z CISO_DOMAIN w .env musi wskazywac rekordem A na ten serwer, porty 80 i 443 otwarte.
+{
+	email {$ACME_EMAIL}
+}
+
+{$CISO_DOMAIN} {
+	encode zstd gzip
+	reverse_proxy /api/* backend:8000
+	reverse_proxy /* frontend:3000
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+}

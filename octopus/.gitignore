@@ -1,0 +1,5 @@
+.env
+mail.env
+db/
+brand/out/
+__pycache__/

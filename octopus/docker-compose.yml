@@ -1,0 +1,110 @@
+# CISO Assistant by Octopus Lab: nowa instancja dla klienta NIS2/KSC.
+# Backend = oryginalny obraz intuitem (przypiety do wersji), frontend = obraz Octopus Lab
+# (branding + uproszczone menu), biblioteki i presety Octopus Lab montowane do backendu.
+# Ustawienia w pliku .env obok (wzor: .env.example). Uruchomienie: patrz README.md.
+
+x-backend-env: &backend-env
+  ALLOWED_HOSTS: backend,localhost,${CISO_DOMAIN}
+  CISO_ASSISTANT_URL: https://${CISO_DOMAIN}
+  DJANGO_DEBUG: "False"
+  AUTH_TOKEN_TTL: "7200"
+  ENABLE_CHAT: "False"
+  HOME: /tmp
+  XDG_CACHE_HOME: /tmp/.cache
+  XDG_CONFIG_HOME: /tmp/.config
+  XDG_DATA_HOME: /tmp/.local/share
+
+x-octopus-libraries: &octopus-libraries
+  - ./db:/code/db
+  - ./libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:/code/library/libraries/octopus-lab-ksc-obowiazki-krajowe.yaml:ro
+  - ./libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-5x5-pxw.yaml:ro
+  - ./libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:/code/library/libraries/octopus-lab-macierz-ryzyka-4x4-sxp.yaml:ro
+  - ./libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:/code/library/libraries/preset-octopus-nis2-ksc-iso27005-5x5.yaml:ro
+  - ./libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:/code/library/libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:ro
+
+x-hardening: &hardening
+  read_only: true
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,nodev
+
+services:
+  backend:
+    container_name: backend
+    image: ghcr.io/intuitem/ciso-assistant-community/backend:${CISO_BACKEND_TAG:-v4.1.5}
+    restart: always
+    environment: *backend-env
+    env_file:
+      # opcjonalnie: poczta wychodzaca (EMAIL_HOST, EMAIL_PORT, ...), wzor w mail.env.example
+      - path: ./mail.env
+        required: false
+    <<: *hardening
+    volumes: *octopus-libraries
+    user: "1001:1001"
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://backend:8000/api/health/', timeout=5)"]
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 150s
+
+  huey:
+    container_name: huey
+    image: ghcr.io/intuitem/ciso-assistant-community/backend:${CISO_BACKEND_TAG:-v4.1.5}
+    restart: always
+    depends_on:
+      backend:
+        condition: service_healthy
+    environment: *backend-env
+    env_file:
+      # opcjonalnie: poczta wychodzaca (EMAIL_HOST, EMAIL_PORT, ...), wzor w mail.env.example
+      - path: ./mail.env
+        required: false
+    <<: *hardening
+    volumes:
+      - ./db:/code/db
+      - ./octopus_init.py:/code/octopus_init.py:ro
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        if [ ! -f /code/db/.octopus-init ]; then
+          python manage.py shell < /code/octopus_init.py && touch /code/db/.octopus-init
+        fi
+        exec python manage.py run_huey -w 2 --scheduler-interval 60
+    user: "1001:1001"
+
+  frontend:
+    container_name: frontend
+    image: ghcr.io/${OCTOPUS_IMAGE_OWNER:-rulkdo}/ciso-assistant-octopus/frontend:${OCTOPUS_FRONTEND_TAG:-octopus-v4.1.5-1}
+    restart: always
+    environment:
+      PUBLIC_BACKEND_API_URL: http://backend:8000/api
+      PUBLIC_DEFAULT_LANGUAGE: pl
+      PUBLIC_BACKEND_API_EXPOSED_URL: https://${CISO_DOMAIN}/api
+      PROTOCOL_HEADER: x-forwarded-proto
+      HOST_HEADER: x-forwarded-host
+    <<: *hardening
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  caddy:
+    container_name: caddy
+    image: caddy:2.11.4
+    restart: unless-stopped
+    environment:
+      CISO_DOMAIN: ${CISO_DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL:-}
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./db/caddy:/data/caddy

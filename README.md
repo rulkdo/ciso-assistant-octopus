@@ -1,3 +1,7 @@
+> **CISO Assistant by Octopus Lab**: zmodyfikowana wersja CISO Assistant Community Edition v4.1.5 (intuitem, AGPL v3).
+> Zmiany z 26.10.2026 r.: branding Octopus Lab, menu pod NIS2/KSC, polskie teksty, biblioteki i presety NIS2/KSC.
+> Opis zmian i wdrożenie: [octopus/README.md](octopus/README.md). Oryginał: https://github.com/intuitem/ciso-assistant-community
+
 <p align="center">
 Star the project 🌟 to get releases notification and help growing the community!
 </p>
