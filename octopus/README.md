@@ -36,7 +36,7 @@ docker compose exec backend python manage.py createsuperuser
 ```
 
 Pierwszy start trwa kilka minut (migracje i zapis bibliotek). Przy pierwszym starcie kontener `huey` ustawia
-polski jako język domyślny i walutę zł (skrypt `octopus_init.py`, znacznik `db/.octopus-init`).
+polski jako język domyślny i walutę PLN (skrypt `octopus_init.py`, znacznik `db/.octopus-init`).
 
 Następnie w aplikacji: **Administracja → Ścieżki** → wybierz "NIS2 i KSC - Octopus Lab" z macierzą 5x5 (ISO 27005)
 albo 4x4 → nazwa domeny = nazwa klienta → zaznacz tworzenie obiektów i flagi funkcji → zastosuj.
