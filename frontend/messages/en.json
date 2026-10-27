@@ -7611,5 +7611,6 @@
 	"noQuestionnaireAttached": "No questionnaire attached",
 	"octoNavCompliance": "Compliance and documentation",
 	"octoNavOperations": "Operations center",
-	"octoNavAdmin": "Administration"
+	"octoNavAdmin": "Administration",
+	"octoNavGdprOverview": "GDPR overview"
 }

@@ -1,5 +1,6 @@
 /*
- * Octopus Lab: menu boczne pod NIS2/KSC i ISO 27001 (uklad uzgodniony 26.10.2026, Centrum operacyjne na gorze od 27.10.2026).
+ * Octopus Lab: menu boczne pod NIS2/KSC i ISO 27001 (uklad uzgodniony 26.10.2026, przebudowa 27.10.2026:
+ * Centrum operacyjne na gorze, praca biezaca w Centrum operacyjnym, konfiguracja w Administracji).
  *
  * Plik upstream navData.ts zostaje bez zmian (latwiejsze aktualizacje). Tutaj wybieramy pozycje
  * po nazwie i ukladamy je w trzy kategorie na gorze. Wszystkie pozostale pozycje trafiaja do
@@ -16,7 +17,16 @@ export const OCTO_DEFAULT_OPEN = ['octoNavOperations'];
 const LAYOUT: { name: string; items: string[] }[] = [
 	{
 		name: 'octoNavOperations',
-		items: ['analytics', 'assets', 'tasks', 'incidents']
+		items: [
+			'analytics',
+			'myAssignments',
+			'tasksReview',
+			'tasks',
+			'calendar',
+			'incidents',
+			'findings',
+			'assets'
+		]
 	},
 	{
 		name: 'octoNavCompliance',
@@ -31,41 +41,52 @@ const LAYOUT: { name: string; items: string[] }[] = [
 			'securityExceptions',
 			'appliedControls',
 			'entities',
+			'entityAssessments',
 			'contracts',
 			'evidences',
 			'reports',
-			'complianceAssessments'
+			'complianceAssessments',
+			'followUp'
 		]
 	},
 	{
 		name: 'octoNavAdmin',
-		items: ['domains', 'presets', 'users', 'userGroups']
+		items: [
+			'domains',
+			'perimeters',
+			'presets',
+			'users',
+			'userGroups',
+			'libraries',
+			'settings',
+			'backupRestore'
+		]
 	}
 ];
 
 // Na poczatku "Dodatkowe": pozycje uzywane w pracy z SZBI, ktorych nie ma w kategoriach wyzej
 const EXTRA_FIRST = [
-	'followUp',
-	'findings',
-	'tasksReview',
-	'calendar',
-	'myAssignments',
 	'notifications',
-	'perimeters',
-	'libraries',
 	'referenceControls',
 	'requirementMappingSets',
 	'solutions',
-	'entityAssessments',
+	'tprmOverview',
+	'criticality',
+	'representatives',
 	'labels',
 	'assetClasses',
 	'terminologies',
-	'teams',
-	'settings',
-	'backupRestore'
+	'teams'
 ];
 
-const allEntries: NavEntry[] = upstreamNav.items.flatMap((group) => group.items as NavEntry[]);
+// Pozycje o tej samej nazwie w roznych miejscach upstream (np. dwa razy "Przeglad"): wlasna etykieta
+const RENAME: Record<string, string> = {
+	'/analytics/gdpr': 'octoNavGdprOverview'
+};
+
+const allEntries: NavEntry[] = upstreamNav.items
+	.flatMap((group) => group.items as NavEntry[])
+	.map((e) => (e.href && RENAME[e.href] ? ({ ...e, name: RENAME[e.href] } as NavEntry) : e));
 const byName = new Map<string, NavEntry>();
 for (const entry of allEntries) {
 	if (entry.name && !byName.has(entry.name)) byName.set(entry.name, entry);

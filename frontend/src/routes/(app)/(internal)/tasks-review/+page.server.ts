@@ -1,6 +1,7 @@
 import { BASE_API_URL } from '$lib/utils/constants';
 import { fetchAllPages } from '$lib/utils/pagination';
 import type { PageServerLoad } from './$types';
+import { m } from '$paraglide/messages';
 
 function clampInt(raw: string | null, fallback: number, min: number, max: number): number {
 	const parsed = parseInt(raw || '', 10);
@@ -80,6 +81,8 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 		selectedGranularity: granularity,
 		selectedAssignedTo: assignedTo,
 		selectedAppliedControls: appliedControls,
-		selectedStatus: status
+		selectedStatus: status,
+		// Octopus Lab: bez tytulu strona pokazywala tytul poprzednio otwartej strony
+		title: m.tasksReview()
 	};
 };

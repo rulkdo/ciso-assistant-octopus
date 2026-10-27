@@ -2796,7 +2796,7 @@
 	"author": "Autor",
 	"reauthenticateForSensitiveAction": "Działanie, które próbujesz wykonać, jest wrażliwe i wymaga ponownego uwierzytelnienia",
 	"timestampCannotBeInTheFuture": "Znacznik czasu nie może być w przyszłości",
-	"tprmOverview": "Przegląd",
+	"tprmOverview": "Przegląd dostawców",
 	"potentialThreats": "potencjalne zagrożenia",
 	"followUpUnresolvedHigh": "Nierozwiązane wysokie lub krytyczne",
 	"level": "Poziom",
@@ -7023,5 +7023,6 @@
 	"previously": "Poprzednio",
 	"octoNavCompliance": "Zgodność i dokumentacja",
 	"octoNavOperations": "Centrum operacyjne",
-	"octoNavAdmin": "Administracja"
+	"octoNavAdmin": "Administracja",
+	"octoNavGdprOverview": "Przegląd RODO"
 }
