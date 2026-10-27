@@ -1,0 +1,1404 @@
+{
+ "_opis": "Polskie nazwy i opisy wzorcowych srodkow (ISO/IEC 27001:2022 zal. A i katalog intuitem) oraz typowych dowodow. Uzywa build_reference_controls_pl.py.",
+ "iso27001_annex_a": {
+  "A.5.1": {
+   "name": "Polityki bezpieczeństwa informacji",
+   "description": "Zabezpieczenie polega na ustanowieniu i utrzymywaniu polityk bezpieczeństwa informacji spójnych z celami organizacji. Obejmuje m.in. określenie zakresu, wyznaczenie celów oraz zapewnienie zgodności z obowiązującymi wymaganiami."
+  },
+  "A.5.2": {
+   "name": "Role i odpowiedzialności w zakresie bezpieczeństwa informacji",
+   "description": "Zabezpieczenie określa i przypisuje role oraz odpowiedzialności w zakresie bezpieczeństwa informacji, zapewniając rozliczalność. Obejmuje m.in. jasne udokumentowanie zakresów odpowiedzialności, okresowe przeglądy oraz mechanizmy egzekwowania."
+  },
+  "A.5.3": {
+   "name": "Rozdzielenie obowiązków",
+   "description": "Zabezpieczenie zapewnia rozdzielenie obowiązków w celu ograniczenia ryzyka błędów, nadużyć i nieuprawnionego dostępu. Obejmuje m.in. rozdzielenie ról, ograniczenia dostępu oraz regularne audyty."
+  },
+  "A.5.4": {
+   "name": "Odpowiedzialność kierownictwa",
+   "description": "Zabezpieczenie zapewnia, że obowiązki kierownictwa w zakresie bezpieczeństwa informacji są jasno określone i realizowane. Obejmuje m.in. wyznaczanie celów, przydzielanie zasobów oraz nadzór nad zgodnością."
+  },
+  "A.5.5": {
+   "name": "Kontakt z organami władzy",
+   "description": "Zabezpieczenie zapewnia terminową komunikację z właściwymi organami w przypadku incydentów bezpieczeństwa informacji. Obejmuje m.in. ustalenie zasad kontaktu, utrzymywanie aktualnych list kontaktowych oraz przypisanie odpowiedzialności."
+  },
+  "A.5.6": {
+   "name": "Kontakt z grupami szczególnych interesów",
+   "description": "Zabezpieczenie ułatwia kontakt z grupami szczególnych interesów, aby organizacja była na bieżąco z trendami i praktykami w obszarze bezpieczeństwa. Obejmuje m.in. udział w forach, członkostwo w stowarzyszeniach oraz wspólne inicjatywy."
+  },
+  "A.5.7": {
+   "name": "Analiza zagrożeń (threat intelligence)",
+   "description": "Zabezpieczenie zapewnia gromadzenie i utrzymywanie wiedzy o zagrożeniach (threat intelligence) w celu identyfikowania i ograniczania ryzyk bezpieczeństwa. Obejmuje m.in. monitorowanie źródeł informacji o zagrożeniach, analizę trendów oraz przekazywanie praktycznych wniosków."
+  },
+  "A.5.8": {
+   "name": "Bezpieczeństwo informacji w zarządzaniu projektami",
+   "description": "Zabezpieczenie włącza bezpieczeństwo informacji do praktyk zarządzania projektami. Obejmuje m.in. oceny ryzyka, przeglądy zgodności oraz punkty kontrolne bezpieczeństwa na kolejnych etapach cyklu życia projektu."
+  },
+  "A.5.9": {
+   "name": "Inwentaryzacja informacji i innych związanych z nimi aktywów",
+   "description": "Zabezpieczenie zapewnia utrzymywanie dokładnej inwentaryzacji informacji i związanych z nimi aktywów. Obejmuje m.in. ewidencjonowanie aktywów, okresowe audyty oraz klasyfikację według wrażliwości."
+  },
+  "A.5.10": {
+   "name": "Akceptowalne użytkowanie informacji i innych związanych z nimi aktywów",
+   "description": "Zabezpieczenie określa zasady akceptowalnego użytkowania informacji i związanych z nimi aktywów, aby zapewnić właściwe postępowanie z nimi. Obejmuje m.in. udokumentowane polityki, szkolenia użytkowników oraz mechanizmy egzekwowania."
+  },
+  "A.5.11": {
+   "name": "Zwrot aktywów",
+   "description": "Zabezpieczenie zapewnia bezpieczny zwrot aktywów, gdy pracownicy lub wykonawcy odchodzą z organizacji albo zmieniają rolę. Obejmuje m.in. listy kontrolne, ewidencjonowanie aktywów oraz procedury wycofywania z użytku."
+  },
+  "A.5.12": {
+   "name": "Klasyfikacja informacji",
+   "description": "Zabezpieczenie zapewnia klasyfikację informacji według ich wrażliwości i wartości, tak aby zapewnić im odpowiedni poziom ochrony. Obejmuje m.in. schematy klasyfikacji, ograniczenia dostępu oraz wytyczne dotyczące oznaczania."
+  },
+  "A.5.13": {
+   "name": "Oznaczanie informacji",
+   "description": "Zabezpieczenie zapewnia spójne oznaczanie informacji, odzwierciedlające ich klasyfikację i wymagania dotyczące postępowania z nimi. Obejmuje m.in. ustandaryzowane szablony, szkolenia oraz audyty."
+  },
+  "A.5.14": {
+   "name": "Przekazywanie informacji",
+   "description": "Zabezpieczenie ustanawia bezpieczne procesy przekazywania informacji między systemami lub organizacjami. Obejmuje m.in. szyfrowanie, kontrolę dostępu oraz bezpieczne protokoły przesyłania."
+  },
+  "A.5.15": {
+   "name": "Kontrola dostępu",
+   "description": "Zabezpieczenie wdraża i utrzymuje mechanizmy kontroli dostępu, ograniczające dostęp wyłącznie do osób uprawnionych. Obejmuje m.in. dostęp oparty na rolach, uwierzytelnianie wieloskładnikowe (MFA) oraz okresowe przeglądy."
+  },
+  "A.5.16": {
+   "name": "Zarządzanie tożsamością",
+   "description": "Zabezpieczenie zapewnia bezpieczne zarządzanie tożsamościami, gwarantując prawidłowy i niezawodny dostęp do systemów. Obejmuje m.in. weryfikację tożsamości, zarządzanie cyklem życia tożsamości oraz nadawanie dostępu."
+  },
+  "A.5.17": {
+   "name": "Informacje uwierzytelniające",
+   "description": "Zabezpieczenie chroni informacje uwierzytelniające, takie jak hasła, aby zapobiec nieuprawnionemu dostępowi. Obejmuje m.in. szyfrowanie, bezpieczne przechowywanie oraz okresową zmianę haseł."
+  },
+  "A.5.18": {
+   "name": "Prawa dostępu",
+   "description": "Zabezpieczenie zapewnia regularny przegląd praw dostępu i zarządzanie nimi zgodnie z rolami i zakresami odpowiedzialności. Obejmuje m.in. okresowe audyty, odbieranie dostępu oraz zautomatyzowane zarządzanie dostępem."
+  },
+  "A.5.19": {
+   "name": "Bezpieczeństwo informacji w relacjach z dostawcami",
+   "description": "Zabezpieczenie zapewnia uwzględnienie bezpieczeństwa informacji w relacjach z dostawcami i w związanych z nimi procesach. Obejmuje m.in. weryfikację dostawców przed nawiązaniem współpracy (due diligence), przeglądy bezpieczeństwa oraz bieżące monitorowanie."
+  },
+  "A.5.20": {
+   "name": "Uwzględnianie bezpieczeństwa informacji w umowach z dostawcami",
+   "description": "Zabezpieczenie uwzględnia wymagania bezpieczeństwa informacji w umowach z dostawcami. Obejmuje m.in. wyraźne klauzule umowne, audyty zgodności oraz określone kary za naruszenia."
+  },
+  "A.5.21": {
+   "name": "Zarządzanie bezpieczeństwem informacji w łańcuchu dostaw ICT",
+   "description": "Zabezpieczenie służy zarządzaniu ryzykami bezpieczeństwa informacji w łańcuchu dostaw ICT, aby zapewnić bezpieczeństwo usług i komponentów. Obejmuje m.in. oceny ryzyka, ocenę dostawców oraz procedury reagowania na incydenty."
+  },
+  "A.5.22": {
+   "name": "Monitorowanie, przegląd i zarządzanie zmianami usług dostawców",
+   "description": "Zabezpieczenie zapewnia monitorowanie, przegląd i dostosowywanie usług dostawców w celu utrzymania bezpieczeństwa informacji. Obejmuje m.in. umowy o poziomie usług (SLA), okresowe przeglądy oraz aktualizacje umów."
+  },
+  "A.5.23": {
+   "name": "Bezpieczeństwo informacji przy korzystaniu z usług chmurowych",
+   "description": "Zabezpieczenie zapewnia bezpieczne korzystanie z usług chmurowych poprzez uwzględnienie związanych z nimi ryzyk. Obejmuje m.in. szyfrowanie danych, kontrolę dostępu oraz przeglądy zgodności dostawców usług."
+  },
+  "A.5.24": {
+   "name": "Planowanie i przygotowanie zarządzania incydentami bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia właściwe zaplanowanie i przygotowanie zarządzania incydentami bezpieczeństwa informacji. Obejmuje m.in. plany reagowania na incydenty, ćwiczenia szkoleniowe oraz zasady komunikacji."
+  },
+  "A.5.25": {
+   "name": "Ocena i podejmowanie decyzji w sprawie zdarzeń bezpieczeństwa informacji",
+   "description": "Zabezpieczenie ustanawia procesy oceny zdarzeń bezpieczeństwa informacji i podejmowania decyzji o dalszych działaniach. Obejmuje m.in. analizę przyczyn źródłowych, ocenę ryzyka oraz plany ograniczania skutków."
+  },
+  "A.5.26": {
+   "name": "Reagowanie na incydenty bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia skuteczne reagowanie na incydenty bezpieczeństwa informacji w celu ograniczenia ich skutków i szybkiego przywrócenia normalnego działania. Obejmuje m.in. zgłaszanie incydentów, procedury eskalacji oraz strategie powstrzymywania."
+  },
+  "A.5.27": {
+   "name": "Wyciąganie wniosków z incydentów bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia dokumentowanie i wdrażanie wniosków z incydentów bezpieczeństwa informacji w celu doskonalenia procesów. Obejmuje m.in. przeglądy poincydentalne, plany działań oraz aktualizację polityk."
+  },
+  "A.5.28": {
+   "name": "Gromadzenie dowodów",
+   "description": "Zabezpieczenie zapewnia gromadzenie i zabezpieczanie dowodów podczas incydentów bezpieczeństwa na potrzeby postępowań wyjaśniających. Obejmuje m.in. procedury zachowania łańcucha dowodowego, bezpieczne przechowywanie oraz kontrolę dostępu."
+  },
+  "A.5.29": {
+   "name": "Bezpieczeństwo informacji podczas zakłóceń",
+   "description": "Zabezpieczenie zapewnia utrzymanie bezpieczeństwa informacji w czasie zakłóceń, aby zagwarantować ciągłość działania. Obejmuje m.in. plany awaryjne, systemy zapasowe oraz mechanizmy przełączania awaryjnego (failover)."
+  },
+  "A.5.30": {
+   "name": "Gotowość ICT do zapewnienia ciągłości działania",
+   "description": "Zabezpieczenie zapewnia gotowość ICT na potrzeby ciągłości działania, aby ograniczyć przestoje w czasie zakłóceń. Obejmuje m.in. testowanie planów odtwarzania, systemy redundantne oraz zapasowe ośrodki przetwarzania (DR)."
+  },
+  "A.5.31": {
+   "name": "Wymagania prawne, ustawowe, regulacyjne i umowne",
+   "description": "Zabezpieczenie zapewnia zgodność z prawnymi, ustawowymi, regulacyjnymi i umownymi wymaganiami dotyczącymi bezpieczeństwa informacji. Obejmuje m.in. przeglądy polityk, audyty oraz dokumentowanie dowodów zgodności."
+  },
+  "A.5.32": {
+   "name": "Prawa własności intelektualnej",
+   "description": "Zabezpieczenie zapewnia ochronę praw własności intelektualnej za pomocą odpowiednich środków bezpieczeństwa informacji. Obejmuje m.in. ograniczenia dostępu, szyfrowanie oraz umowy prawne."
+  },
+  "A.5.33": {
+   "name": "Ochrona zapisów",
+   "description": "Zabezpieczenie zapewnia bezpieczne przechowywanie i ochronę zapisów przed utratą lub nieuprawnionym dostępem. Obejmuje m.in. zasady retencji, bezpieczne przechowywanie oraz kontrolę dostępu."
+  },
+  "A.5.34": {
+   "name": "Prywatność i ochrona danych osobowych",
+   "description": "Zabezpieczenie chroni prywatność i zapewnia bezpieczne przetwarzanie danych osobowych. Obejmuje m.in. anonimizację, szyfrowanie oraz zgodność z przepisami o ochronie prywatności i danych osobowych."
+  },
+  "A.5.35": {
+   "name": "Niezależny przegląd bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia niezależne przeglądy bezpieczeństwa informacji w celu oceny jego skuteczności i zgodności. Obejmuje m.in. audyty zewnętrzne, oceny ryzyka oraz działania następcze."
+  },
+  "A.5.36": {
+   "name": "Zgodność z politykami, zasadami i normami bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia zgodność ze wszystkimi politykami, zasadami i normami bezpieczeństwa informacji. Obejmuje m.in. regularne szkolenia, przeglądy polityk oraz mechanizmy egzekwowania."
+  },
+  "A.5.37": {
+   "name": "Udokumentowane procedury eksploatacyjne",
+   "description": "Zabezpieczenie polega na opracowaniu i utrzymywaniu udokumentowanych procedur eksploatacyjnych, zapewniających spójność praktyk bezpieczeństwa. Obejmuje m.in. dokumentowanie procesów, kontrolę wersji oraz dostępność dokumentacji."
+  },
+  "A.6.1": {
+   "name": "Postępowanie sprawdzające",
+   "description": "Zabezpieczenie zapewnia wdrożenie procesu weryfikacji kandydatów przed zatrudnieniem w celu potwierdzenia ich przydatności. Obejmuje m.in. sprawdzenie przeszłości kandydata, weryfikację tożsamości oraz ocenę kwalifikacji, co ogranicza ryzyka bezpieczeństwa."
+  },
+  "A.6.2": {
+   "name": "Warunki zatrudnienia",
+   "description": "Zabezpieczenie zapewnia, że warunki zatrudnienia obejmują obowiązki w zakresie bezpieczeństwa informacji. Obejmuje m.in. wyraźne zapisy dotyczące poufności, przestrzegania polityk oraz konsekwencji naruszeń."
+  },
+  "A.6.3": {
+   "name": "Uświadamianie, kształcenie i szkolenia w zakresie bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia pracownikom regularne działania uświadamiające, kształcenie i szkolenia w zakresie bezpieczeństwa informacji. Obejmuje m.in. cykliczne szkolenia, programy e-learningowe oraz symulowane kampanie phishingowe."
+  },
+  "A.6.4": {
+   "name": "Postępowanie dyscyplinarne",
+   "description": "Zabezpieczenie ustanawia postępowanie dyscyplinarne w przypadku naruszeń polityk bezpieczeństwa informacji. Obejmuje m.in. jasne wytyczne, procedury eskalacji oraz konsekwentne egzekwowanie zasad w celu utrzymania rozliczalności."
+  },
+  "A.6.5": {
+   "name": "Obowiązki po zakończeniu lub zmianie zatrudnienia",
+   "description": "Zabezpieczenie zapewnia określenie i egzekwowanie obowiązków w zakresie bezpieczeństwa informacji po zakończeniu zatrudnienia lub zmianie roli. Obejmuje m.in. odebranie praw dostępu, odebranie aktywów organizacji oraz przeprowadzanie rozmów końcowych."
+  },
+  "A.6.6": {
+   "name": "Umowy o zachowaniu poufności lub o nieujawnianiu informacji",
+   "description": "Zabezpieczenie wprowadza umowy o zachowaniu poufności lub o nieujawnianiu informacji (NDA) w celu ochrony informacji wrażliwych. Obejmuje m.in. podpisywanie umów na początku zatrudnienia, okresowe przypomnienia oraz dochodzenie roszczeń na drodze prawnej w razie naruszeń."
+  },
+  "A.6.7": {
+   "name": "Praca zdalna",
+   "description": "Zabezpieczenie zapewnia bezpieczne zarządzanie ryzykami bezpieczeństwa informacji związanymi z pracą zdalną. Obejmuje m.in. bezpieczny dostęp do systemów organizacji, obowiązkowe korzystanie z VPN oraz zasady postępowania z danymi wrażliwymi poza siedzibą."
+  },
+  "A.6.8": {
+   "name": "Zgłaszanie zdarzeń bezpieczeństwa informacji",
+   "description": "Zabezpieczenie zapewnia pracownikom możliwość niezwłocznego zgłaszania zdarzeń bezpieczeństwa informacji. Obejmuje m.in. kanały zgłaszania incydentów, kampanie uświadamiające oraz procedury wyjaśniania i obsługi zgłoszonych zdarzeń."
+  },
+  "A.7.1": {
+   "name": "Fizyczne granice obszaru bezpieczeństwa",
+   "description": "Zabezpieczenie ustanawia fizyczne granice obszarów bezpieczeństwa, chroniące krytyczne strefy przed nieuprawnionym dostępem. Obejmuje m.in. bariery fizyczne, kontrolę dostępu oraz systemy monitorowania, dzięki którym wejść mogą wyłącznie osoby uprawnione."
+  },
+  "A.7.2": {
+   "name": "Kontrola wejścia fizycznego",
+   "description": "Zabezpieczenie zapewnia kontrolę i monitorowanie fizycznych punktów wejścia w celu zapobiegania nieuprawnionemu dostępowi. Obejmuje m.in. systemy kart dostępu, personel ochrony oraz rejestry odwiedzających."
+  },
+  "A.7.3": {
+   "name": "Zabezpieczanie biur, pomieszczeń i obiektów",
+   "description": "Zabezpieczenie zapewnia fizyczną ochronę biur, pomieszczeń i obiektów, a tym samym znajdujących się w nich informacji i zasobów. Obejmuje m.in. zamykane drzwi, strefy o ograniczonym dostępie oraz systemy nadzoru wizyjnego."
+  },
+  "A.7.4": {
+   "name": "Monitorowanie bezpieczeństwa fizycznego",
+   "description": "Zabezpieczenie wprowadza monitorowanie bezpieczeństwa fizycznego w celu wykrywania zagrożeń i szybkiego reagowania na nie. Obejmuje m.in. systemy CCTV, czujniki ruchu oraz alarmy w czasie rzeczywistym."
+  },
+  "A.7.5": {
+   "name": "Ochrona przed zagrożeniami fizycznymi i środowiskowymi",
+   "description": "Zabezpieczenie chroni systemy i zasoby przed zagrożeniami fizycznymi i środowiskowymi. Obejmuje m.in. systemy gaszenia pożaru, kontrolę temperatury oraz zabezpieczenia przeciwpowodziowe."
+  },
+  "A.7.6": {
+   "name": "Praca w obszarach bezpiecznych",
+   "description": "Zabezpieczenie zapewnia takie zarządzanie obszarami bezpiecznymi, aby dostęp do nich miały wyłącznie osoby uprawnione. Obejmuje m.in. systemy kontroli dostępu, eskortowanie odwiedzających oraz monitorowanie aktywności."
+  },
+  "A.7.7": {
+   "name": "Czyste biurko i czysty ekran",
+   "description": "Zabezpieczenie zapobiega pozostawianiu informacji wrażliwych bez ochrony dzięki stosowaniu zasad czystego biurka i czystego ekranu. Obejmuje m.in. zamykanie dokumentów wrażliwych w zabezpieczonych miejscach oraz automatyczne blokowanie nieużywanych ekranów."
+  },
+  "A.7.8": {
+   "name": "Rozmieszczenie i ochrona sprzętu",
+   "description": "Zabezpieczenie zapewnia takie rozmieszczenie i ochronę sprzętu, aby zapobiec nieuprawnionemu dostępowi lub uszkodzeniom. Obejmuje m.in. bezpieczny montaż, zamykane szafy oraz strefy o ograniczonym dostępie."
+  },
+  "A.7.9": {
+   "name": "Bezpieczeństwo aktywów poza siedzibą",
+   "description": "Zabezpieczenie zapewnia ochronę aktywów używanych lub przechowywanych poza siedzibą organizacji w celu zachowania ich poufności i integralności. Obejmuje m.in. szyfrowanie, bezpieczny transport oraz ewidencjonowanie dostępu."
+  },
+  "A.7.10": {
+   "name": "Nośniki danych",
+   "description": "Zabezpieczenie chroni nośniki danych przed nieuprawnionym dostępem lub ingerencją. Obejmuje m.in. bezpieczne przechowywanie, szyfrowanie oraz ograniczenia dostępu."
+  },
+  "A.7.11": {
+   "name": "Systemy wspomagające",
+   "description": "Zabezpieczenie zapewnia niezawodność systemów wspomagających, takich jak zasilanie i chłodzenie, oraz ich ochronę przed zakłóceniami. Obejmuje m.in. systemy redundantne oraz zabezpieczenia fizyczne."
+  },
+  "A.7.12": {
+   "name": "Bezpieczeństwo okablowania",
+   "description": "Zabezpieczenie zapewnia ochronę okablowania przed nieuprawnionym przechwyceniem transmisji lub uszkodzeniem. Obejmuje m.in. kanały ochronne, właściwe oznakowanie oraz bezpieczne prowadzenie tras kablowych."
+  },
+  "A.7.13": {
+   "name": "Konserwacja sprzętu",
+   "description": "Zabezpieczenie zapewnia konserwację sprzętu, gwarantującą jego prawidłowe działanie i zapobiegającą awariom. Obejmuje m.in. regularny serwis, bezpieczne praktyki konserwacyjne oraz dopuszczanie do sprzętu wyłącznie upoważnionego personelu."
+  },
+  "A.7.14": {
+   "name": "Bezpieczne zbywanie lub ponowne użycie sprzętu",
+   "description": "Zabezpieczenie zapewnia bezpieczne zbywanie lub ponowne użycie sprzętu w celu ochrony informacji wrażliwych. Obejmuje m.in. trwałe usuwanie danych, fizyczne niszczenie nośników oraz certyfikowane procesy utylizacji."
+  },
+  "A.8.1": {
+   "name": "Urządzenia końcowe użytkowników",
+   "description": "Zabezpieczenie zapewnia ochronę urządzeń końcowych, takich jak laptopy, komputery stacjonarne i urządzenia mobilne, poprzez wdrożenie środków bezpieczeństwa, m.in. wykrywania zagrożeń na urządzeniach końcowych (EDR), szyfrowania i bezpiecznej konfiguracji, w celu ograniczenia ryzyk."
+  },
+  "A.8.2": {
+   "name": "Uprzywilejowane prawa dostępu",
+   "description": "Zabezpieczenie zapewnia staranne nadawanie, zarządzanie i monitorowanie uprzywilejowanych praw dostępu w celu zapobiegania nadużyciom i wzmocnienia bezpieczeństwa. Obejmuje m.in. kontrolę dostępu opartą na rolach, okresowe przeglądy oraz rygorystyczne zarządzanie kontami."
+  },
+  "A.8.3": {
+   "name": "Ograniczenie dostępu do informacji",
+   "description": "Zabezpieczenie ogranicza dostęp do informacji wrażliwych zgodnie z zasadą wiedzy koniecznej (need-to-know). Obejmuje m.in. uwierzytelnianie użytkowników, uprawnienia oparte na rolach oraz regularne przeglądy dostępu."
+  },
+  "A.8.4": {
+   "name": "Dostęp do kodu źródłowego",
+   "description": "Zabezpieczenie chroni dostęp do kodu źródłowego, zapobiegając jego nieuprawnionemu przeglądaniu, modyfikacji lub ujawnieniu. Obejmuje m.in. kontrolę wersji, bezpieczne repozytoria oraz ograniczony dostęp dla programistów."
+  },
+  "A.8.5": {
+   "name": "Bezpieczne uwierzytelnianie",
+   "description": "Zabezpieczenie wdraża silne mechanizmy uwierzytelniania, takie jak uwierzytelnianie wieloskładnikowe (MFA), w celu weryfikacji tożsamości użytkowników i zapobiegania nieuprawnionemu dostępowi."
+  },
+  "A.8.6": {
+   "name": "Zarządzanie pojemnością",
+   "description": "Zabezpieczenie zapewnia zarządzanie pojemnością systemów w celu utrzymania odpowiedniej wydajności i zapobiegania zakłóceniom. Obejmuje m.in. monitorowanie wykorzystania zasobów oraz planowanie przyszłych potrzeb."
+  },
+  "A.8.7": {
+   "name": "Ochrona przed złośliwym oprogramowaniem",
+   "description": "Zabezpieczenie wprowadza środki takie jak oprogramowanie antywirusowe, narzędzia do wykrywania zagrożeń i regularne aktualizacje, chroniące systemy przed złośliwym oprogramowaniem i atakami."
+  },
+  "A.8.8": {
+   "name": "Zarządzanie podatnościami technicznymi",
+   "description": "Zabezpieczenie zapewnia niezwłoczne identyfikowanie, ocenę i usuwanie podatności technicznych w celu ograniczenia ryzyk bezpieczeństwa. Obejmuje m.in. skanowanie podatności oraz zarządzanie poprawkami (patch management)."
+  },
+  "A.8.9": {
+   "name": "Zarządzanie konfiguracją",
+   "description": "Zabezpieczenie zapewnia spójne zarządzanie konfiguracją systemów w celu utrzymania ustawień bezpieczeństwa i zapobiegania nieuprawnionym zmianom."
+  },
+  "A.8.10": {
+   "name": "Usuwanie informacji",
+   "description": "Zabezpieczenie zapewnia bezpieczne usuwanie informacji wrażliwych, gdy nie są już potrzebne, aby zapobiec ich nieuprawnionemu odtworzeniu lub ujawnieniu."
+  },
+  "A.8.11": {
+   "name": "Maskowanie danych",
+   "description": "Zabezpieczenie chroni informacje wrażliwe podczas przetwarzania lub wyświetlania, stosując techniki maskowania danych, które ukrywają je przed nieuprawnionymi użytkownikami."
+  },
+  "A.8.12": {
+   "name": "Zapobieganie wyciekom danych",
+   "description": "Zabezpieczenie wprowadza mechanizmy zapobiegające przypadkowemu ujawnieniu danych wrażliwych za pośrednictwem poczty elektronicznej, nośników wymiennych lub innych kanałów."
+  },
+  "A.8.13": {
+   "name": "Kopie zapasowe informacji",
+   "description": "Zabezpieczenie zapewnia regularne i bezpieczne wykonywanie kopii zapasowych krytycznych informacji, aby zagwarantować ich dostępność w razie incydentów lub katastrof."
+  },
+  "A.8.14": {
+   "name": "Redundancja środków przetwarzania informacji",
+   "description": "Zabezpieczenie zapewnia redundancję środków przetwarzania informacji, aby utrzymać dostępność i ciągłość działania w razie awarii systemów lub sytuacji kryzysowych."
+  },
+  "A.8.15": {
+   "name": "Rejestrowanie zdarzeń",
+   "description": "Zabezpieczenie umożliwia rejestrowanie zdarzeń i aktywności w systemach na potrzeby monitorowania, wykrywania incydentów oraz analiz z zakresu informatyki śledczej."
+  },
+  "A.8.16": {
+   "name": "Monitorowanie działań",
+   "description": "Zabezpieczenie zapewnia ciągłe monitorowanie aktywności w systemach w celu wykrywania zagrożeń bezpieczeństwa, reagowania na nie i ograniczania ich skutków."
+  },
+  "A.8.17": {
+   "name": "Synchronizacja zegarów",
+   "description": "Zabezpieczenie zapewnia synchronizację zegarów systemowych w celu utrzymania dokładnych i spójnych znaczników czasu w dziennikach zdarzeń i innych krytycznych procesach."
+  },
+  "A.8.18": {
+   "name": "Używanie uprzywilejowanych programów narzędziowych",
+   "description": "Zabezpieczenie ogranicza i monitoruje używanie uprzywilejowanych programów narzędziowych w celu zapobiegania nadużyciom i nieuprawnionym działaniom."
+  },
+  "A.8.19": {
+   "name": "Instalowanie oprogramowania w systemach produkcyjnych",
+   "description": "Zabezpieczenie zapewnia bezpieczne zarządzanie instalowaniem oprogramowania w systemach produkcyjnych, aby zapobiec powstawaniu podatności lub nieuprawnionym zmianom."
+  },
+  "A.8.20": {
+   "name": "Bezpieczeństwo sieci",
+   "description": "Zabezpieczenie zapewnia bezpieczeństwo sieci za pomocą zapór sieciowych, systemów wykrywania włamań (IDS) i kontroli dostępu w celu ochrony przed nieuprawnionym dostępem i atakami."
+  },
+  "A.8.21": {
+   "name": "Bezpieczeństwo usług sieciowych",
+   "description": "Zabezpieczenie zapewnia ochronę usług sieciowych w celu utrzymania poufności, integralności i dostępności podczas ich użytkowania."
+  },
+  "A.8.22": {
+   "name": "Rozdzielenie sieci",
+   "description": "Zabezpieczenie wprowadza rozdzielenie (segmentację) sieci w celu ograniczenia rozprzestrzeniania się zagrożeń i zminimalizowania skutków ewentualnych naruszeń."
+  },
+  "A.8.23": {
+   "name": "Filtrowanie stron internetowych",
+   "description": "Zabezpieczenie wykorzystuje narzędzia filtrowania stron internetowych do blokowania dostępu do niedozwolonych lub szkodliwych treści w internecie."
+  },
+  "A.8.24": {
+   "name": "Stosowanie kryptografii",
+   "description": "Zabezpieczenie zapewnia stosowanie technik kryptograficznych w celu ochrony poufności, integralności i autentyczności danych."
+  },
+  "A.8.25": {
+   "name": "Bezpieczny cykl życia wytwarzania oprogramowania",
+   "description": "Zabezpieczenie włącza bezpieczeństwo do wszystkich etapów cyklu życia wytwarzania oprogramowania, aby systemy i aplikacje były tworzone w sposób bezpieczny."
+  },
+  "A.8.26": {
+   "name": "Wymagania bezpieczeństwa aplikacji",
+   "description": "Zabezpieczenie określa i egzekwuje wymagania bezpieczeństwa dla aplikacji w celu ochrony przed podatnościami."
+  },
+  "A.8.27": {
+   "name": "Zasady bezpiecznej architektury i inżynierii systemów",
+   "description": "Zabezpieczenie zapewnia stosowanie zasad bezpiecznego projektowania podczas opracowywania architektury systemów."
+  },
+  "A.8.28": {
+   "name": "Bezpieczne kodowanie",
+   "description": "Zabezpieczenie wprowadza praktyki bezpiecznego kodowania w celu ograniczenia podatności w wytwarzanym oprogramowaniu."
+  },
+  "A.8.29": {
+   "name": "Testowanie bezpieczeństwa w procesie wytwarzania i odbioru",
+   "description": "Zabezpieczenie zapewnia przeprowadzanie testów bezpieczeństwa na etapach wytwarzania i odbioru w celu wykrycia słabości."
+  },
+  "A.8.30": {
+   "name": "Wytwarzanie oprogramowania zlecone na zewnątrz",
+   "description": "Zabezpieczenie zapewnia skuteczne zarządzanie ryzykami bezpieczeństwa, gdy wytwarzanie oprogramowania jest zlecane zewnętrznym dostawcom."
+  },
+  "A.8.31": {
+   "name": "Rozdzielenie środowisk rozwojowych, testowych i produkcyjnych",
+   "description": "Zabezpieczenie zapewnia rozdzielenie środowisk rozwojowych, testowych i produkcyjnych w celu zapobiegania niezamierzonym interakcjom i nieuprawnionemu dostępowi."
+  },
+  "A.8.32": {
+   "name": "Zarządzanie zmianą",
+   "description": "Zabezpieczenie zapewnia bezpieczne zarządzanie zmianami w systemach w celu ograniczenia ryzyk i utrzymania stabilności działania."
+  },
+  "A.8.33": {
+   "name": "Informacje testowe",
+   "description": "Zabezpieczenie chroni dane testowe, aby zapobiec ujawnieniu informacji wrażliwych lub poufnych podczas testów."
+  },
+  "A.8.34": {
+   "name": "Ochrona systemów informacyjnych podczas testów audytowych",
+   "description": "Zabezpieczenie zapewnia ochronę systemów i danych podczas audytów poprzez zapobieganie nieuprawnionemu dostępowi, wyciekom danych lub zakłóceniom. Obejmuje m.in. korzystanie ze środowisk nieprodukcyjnych, ograniczenia dostępu oraz umowy o zachowaniu poufności, co pozwala utrzymać bezpieczeństwo i integralność systemów."
+  }
+ },
+ "intuitem": {
+  "DOC.OVERVIEW": {
+   "name": "Dokument opisu organizacji",
+   "description": "Cele organizacji\nSchemat organizacyjny\nCele SZBI\nZakres odpowiedzialności CISO\nPrzegląd zarządzania SZBI"
+  },
+  "DOC.CONTEXT": {
+   "name": "Dokument kontekstu organizacji",
+   "description": "Strony zainteresowane\nOrgany władzy\nGrupy szczególnych zainteresowań"
+  },
+  "DOC.SCOPE": {
+   "name": "Dokument zakresu SZBI",
+   "description": "Produkty i usługi\nProdukty i usługi objęte certyfikacją\nLokalizacje\nWidok organizacyjny\nWidok architektury biznesowej\nWidok architektury danych\nWidok architektury aplikacji\nWidok architektury technologicznej\nWidok sieci\nFormalne określenie zakresu"
+  },
+  "DOC.LEGAL": {
+   "name": "Rejestr wymagań prawnych",
+   "description": "Wymagania prawne\nWymagania ustawowe\nWymagania regulacyjne\nWymagania umowne\nPrawa własności intelektualnej\nUmowy o pracę\nUmowy o zachowaniu poufności (NDA)"
+  },
+  "DOC.SOA": {
+   "name": "Deklaracja stosowania (SoA)",
+   "description": "Dokument zawierający wykaz wszystkich zabezpieczeń z mającego zastosowanie standardu wraz z decyzją o ich uwzględnieniu lub wyłączeniu, uzasadnieniem i statusem wdrożenia."
+  },
+  "DOC.CONTROLS": {
+   "name": "Macierz odpowiedzialności za zabezpieczenia",
+   "description": "Macierz przypisująca każde zabezpieczenie do właściciela i pokazująca bieżący status jego wdrożenia."
+  },
+  "DOC.AUDIT_PLAN": {
+   "name": "Plan audytu",
+   "description": "Kontekst organizacji\nPrzywództwo\nPlanowanie\nWsparcie\nDziałania operacyjne\nOcena efektów działania\nDoskonalenie\nZabezpieczenia organizacyjne\nZabezpieczenia osobowe\nZabezpieczenia fizyczne\nZabezpieczenia technologiczne"
+  },
+  "DOC.COMPETENCY": {
+   "name": "Macierz kompetencji",
+   "description": "Macierz opisująca umiejętności i kwalifikacje wymagane dla poszczególnych ról oraz aktualny stopień ich pokrycia wśród personelu."
+  },
+  "DOC.RACI": {
+   "name": "Macierz odpowiedzialności (RACI)",
+   "description": "Macierz RACI dla SZBI"
+  },
+  "DOC.COM": {
+   "name": "Plan komunikacji",
+   "description": "Plan opisujący wewnętrzną i zewnętrzną komunikację w zakresie bezpieczeństwa informacji: odbiorców, kanały, częstotliwość i odpowiedzialność."
+  },
+  "DOC.RISK_REGISTER": {
+   "name": "Rejestr ryzyk",
+   "description": "Właściciel ryzyka\nWpływ\nPrawdopodobieństwo\nPoziom ryzyka\nEwaluacja\nPriorytet\nOpcja postępowania z ryzykiem\nDziałania ograniczające - zalecane środki bezpieczeństwa"
+  },
+  "DOC.SO_REGISTER": {
+   "name": "Rejestr celów bezpieczeństwa",
+   "description": "Rejestr celów bezpieczeństwa informacji z mierzalnymi wartościami docelowymi, wskaźnikami KPI, właścicielami i częstotliwością przeglądów."
+  },
+  "DOC.MGMT_REVIEW": {
+   "name": "Plan przeglądu zarządzania",
+   "description": "Przegląd ryzyk\nPrzegląd celów bezpieczeństwa\nPrzegląd incydentów bezpieczeństwa\nPrzegląd zarządzania podatnościami\nPrzegląd niezgodności"
+  },
+  "DOC.EDUC_REGISTER": {
+   "name": "Rejestr szkoleń i działań uświadamiających",
+   "description": "Rejestr przeprowadzonych działań uświadamiających i szkoleń, zawierający grupę docelową, datę, zakres tematyczny i listy obecności."
+  },
+  "DOC.DOC_REGISTER": {
+   "name": "Rejestr dokumentów",
+   "description": "Zasady redagowania i utrzymania dokumentów\nKontrola wersji\nRejestr\nCiągłe doskonalenie"
+  },
+  "DOC.PROC_REGISTER": {
+   "name": "Rejestr procedur operacyjnych",
+   "description": "Rejestr operacyjnych procedur bezpieczeństwa, ich właścicieli, wersji oraz polityk, które realizują."
+  },
+  "DOC.NC_LOG": {
+   "name": "Rejestr niezgodności",
+   "description": "Lista niezgodności (incydenty, problemy, ...)\nPodjęte działania korygujące"
+  },
+  "DOC.INTERNAL_RULES": {
+   "name": "Regulamin wewnętrzny",
+   "description": "Wewnętrzny regulamin określający zasady postępowania w zakresie bezpieczeństwa informacji dla personelu i stron trzecich."
+  },
+  "DOC.ASSET_REGISTER": {
+   "name": "Rejestr aktywów",
+   "description": "Inwentarz aktywów informacyjnych (sprzęt, oprogramowanie, dane, usługi) wraz z właścicielem, krytycznością i klasyfikacją."
+  },
+  "DOC.SUPPLIER_REGISTER": {
+   "name": "Rejestr dostawców",
+   "description": "Zarządzanie ryzykiem"
+  },
+  "DOC.EDUC_PLAN": {
+   "name": "Plan szkoleń i podnoszenia świadomości w zakresie bezpieczeństwa informacji",
+   "description": "Cel: podnoszenie świadomości wszystkich pracowników i zapewnienie ukierunkowanych szkoleń dla właściwego personelu w celu promowania bezpiecznych zachowań, zapewnienia zgodności i ograniczenia ryzyk.\nZakres: działania uświadamiające dla wszystkich pracowników i współpracowników; ukierunkowane szkolenia dla wybranych zespołów (np. IT, bezpieczeństwo, osoby zarządzające dostępami).\nRole i odpowiedzialności: przypisanie odpowiedzialności zespołom IT, HR i bezpieczeństwa.\nWymagania szkoleniowe: określenie obowiązkowych tematów (np. zarządzanie dostępem, bezpieczne konfiguracje) i częstotliwości (np. raz w roku, przy wdrożeniu nowego pracownika).\nMetody realizacji: podnoszenie świadomości poprzez e-learning i kampanie; szkolenia w formie praktycznych warsztatów i symulacji.\nOcena: monitorowanie frekwencji, wyników quizów i testów phishingowych.\nZgodność: dostosowanie do przepisów (np. RODO, ISO 27001) i prowadzenie dokumentacji gotowej do audytu.\nCiągłe doskonalenie: aktualizacja na podstawie informacji zwrotnych i pojawiających się zagrożeń."
+  },
+  "DOC.SAP": {
+   "name": "Plan zapewnienia bezpieczeństwa (SAP)",
+   "description": "Dokument dostarczany przez dostawców, opisujący środki bezpieczeństwa, zgodność ze standardami (np. ISO 27001) oraz procedury testowe zapewniające bezpieczeństwo ich produktów, usług lub systemów. Potwierdza ich zaangażowanie w utrzymanie bezpiecznego środowiska i stanowi dowód zgodności oraz stosowanych praktyk bezpieczeństwa."
+  },
+  "DOC.IS_MAP": {
+   "name": "Mapa systemu informacyjnego",
+   "description": "Wizualne odwzorowanie komponentów systemu informacyjnego organizacji i ich wzajemnych powiązań, wspierające zarządzanie nim i jego bezpieczeństwo."
+  },
+  "DOC.PAM_REGISTER": {
+   "name": "Rejestr kont z dostępem uprzywilejowanym",
+   "description": "Rejestr kont uprzywilejowanych (osobowych i serwisowych) wraz z ich zakresem, właścicielem i statusem monitorowania."
+  },
+  "DOC.INCIDENT_REGISTER": {
+   "name": "Rejestr incydentów bezpieczeństwa",
+   "description": "Rejestr incydentów bezpieczeństwa zawierający klasyfikację, przebieg w czasie, wpływ, podjęte działania reagowania i wyciągnięte wnioski."
+  },
+  "DOC.FLOW_MATRIX": {
+   "name": "Macierz przepływów",
+   "description": "Dokument odwzorowujący dozwolone przepływy danych między systemami, aplikacjami lub strefami sieciowymi w celu zapewnienia bezpiecznej i zgodnej z wymaganiami komunikacji."
+  },
+  "DOC.ARC_PRINCIPLES": {
+   "name": "Zasady architektury bezpieczeństwa",
+   "description": "Dokument referencyjny opisujący zasady architektury bezpieczeństwa (obrona w głąb, najmniejsze uprawnienia, zero trust itp.), którymi kierują się decyzje projektowe."
+  },
+  "PROC.PAM": {
+   "name": "Procedura zarządzania dostępem uprzywilejowanym (PAM)",
+   "description": "Dokument opisujący procesy i mechanizmy zarządzania kontami uprzywilejowanymi i ich zabezpieczania, zapewniający, że dostęp do krytycznych systemów i danych mają wyłącznie upoważnieni użytkownicy, z wykorzystaniem środków takich jak monitorowanie, audyt i dostęp ograniczony czasowo w celu minimalizacji ryzyk."
+  },
+  "PROC.RECERTIFICATION": {
+   "name": "Procedura recertyfikacji kont",
+   "description": "Dokument określający proces regularnego przeglądu i weryfikacji uprawnień dostępu użytkowników, certyfikacji systemów lub zgodności ze standardami. Zapewnia, że dostęp lub certyfikację zachowują wyłącznie upoważnieni użytkownicy i systemy, oraz pomaga identyfikować i odbierać nieaktualne lub zbędne uprawnienia."
+  },
+  "PROC.HR_SECURITY": {
+   "name": "Procedura bezpieczeństwa zasobów ludzkich",
+   "description": "Dokument opisujący procesy i mechanizmy kontrolne związane z zarządzaniem zasobami ludzkimi w organizacji, zapewniające zgodność z wymaganiami prawnymi, regulacyjnymi i standardami bezpieczeństwa. Obejmuje procedury rekrutacji, wdrożenia nowych pracowników, zmiany ról, szkoleń i zakończenia zatrudnienia, chroniące informacje i aktywa organizacji."
+  },
+  "PROC.PHYSICAL_SECURITY": {
+   "name": "Procedura bezpieczeństwa fizycznego",
+   "description": "Kontrola dostępu: procedury nadawania, odbierania i monitorowania dostępu fizycznego do obszarów bezpiecznych.\nOchrona aktywów: wytyczne dotyczące zabezpieczenia krytycznych aktywów (np. serwerów, urządzeń pamięci masowej).\nNadzór: wykorzystanie kamer, alarmów i systemów monitoringu do wykrywania naruszeń i zapobiegania im.\nZarządzanie gośćmi: zasady rejestrowania gości i zapewniania im asysty w obszarach bezpiecznych.\nReagowanie na incydenty: kroki postępowania w przypadku naruszeń bezpieczeństwa fizycznego lub sytuacji awaryjnych."
+  },
+  "PROC.GPO": {
+   "name": "Procedura zarządzania obiektami zasad grupy (GPO)",
+   "description": "Określa sposób tworzenia, konfigurowania i zarządzania obiektami GPO w celu wymuszania ustawień bezpieczeństwa, konfiguracji systemów i zasad użytkowników w całym środowisku Windows. Zapewnia spójne wdrażanie polityk organizacyjnych na potrzeby bezpiecznego i zgodnego z wymaganiami funkcjonowania IT."
+  },
+  "PROC.UPDATE": {
+   "name": "Procedura zarządzania aktualizacjami",
+   "description": "Role i odpowiedzialności\nKlasyfikacja aktualizacji\nPlanowanie aktualizacji\nTestowanie i walidacja\nProces wdrażania\nMonitorowanie i weryfikacja\nDokumentacja i raportowanie"
+  },
+  "PROC.INCIDENT": {
+   "name": "Procedura zarządzania incydentami",
+   "description": "Praktyczna realizacja polityki zarządzania incydentami"
+  },
+  "PROC.DISPOSAL": {
+   "name": "Procedura bezpiecznego usuwania i utylizacji",
+   "description": "Role i odpowiedzialności\nIdentyfikacja aktywów przeznaczonych do utylizacji\nMetody bezpiecznej utylizacji\nBezpieczne usuwanie danych (sanityzacja)\nZgodność z wymaganiami prawnymi i regulacyjnymi\nDokumentacja i prowadzenie ewidencji\nWeryfikacja i audyt"
+  },
+  "PROC.NTP": {
+   "name": "Procedura synchronizacji czasu (NTP)",
+   "description": "Źródło czasu: korzystanie z wiarygodnych źródeł zewnętrznych (np. serwerów NTP).\nKonfiguracja: określenie interwałów synchronizacji i mechanizmów zapasowych.\nMonitorowanie: regularna weryfikacja stanu synchronizacji czasu."
+  },
+  "PROC.EMAIL_SECURITY": {
+   "name": "Procedura bezpiecznej konfiguracji poczty elektronicznej",
+   "description": "Konfiguracja serwera pocztowego\nOchrona poczty oparta na domenie (SPF, DKIM, DMARC)\nMechanizmy ochrony przed złośliwym oprogramowaniem i spamem\nSzyfrowanie i bezpieczna komunikacja\nKontrola dostępu i monitorowanie\nKopie zapasowe i odtwarzanie\nŚwiadomość i szkolenia użytkowników"
+  },
+  "PROC.LOGGING": {
+   "name": "Procedura rejestrowania zdarzeń",
+   "description": "Gromadzenie i kategoryzacja logów\nBezpieczne przechowywanie i zasady retencji\nAnaliza na potrzeby wykrywania anomalii i reagowania na incydenty"
+  },
+  "POL.MAIN": {
+   "name": "Główna polityka bezpieczeństwa informacji",
+   "description": "Cele bezpieczeństwa informacji\nZobowiązanie kierownictwa\nPrzegląd zarządzania\nPolityki mające zastosowanie\nZarządzanie niezgodnościami\nCiągłe doskonalenie"
+  },
+  "POL.EDUC": {
+   "name": "Polityka szkoleń i podnoszenia świadomości w zakresie bezpieczeństwa informacji",
+   "description": "Konsekwencje nieprzestrzegania zasad\nZgłaszanie zdarzeń bezpieczeństwa\nCiągłe doskonalenie"
+  },
+  "POL.WORK": {
+   "name": "Polityka stanowisk pracy i pracy zdalnej",
+   "description": "Stanowiska pracy\nUrządzenia mobilne\nPraca zdalna\nPostępowanie z hasłami\nZwrot aktywów\nCiągłe doskonalenie"
+  },
+  "POL.CRYPTO": {
+   "name": "Polityka kryptograficzna",
+   "description": "Zarządzanie kluczami\nSzyfrowanie\nCiągłe doskonalenie"
+  },
+  "POL.CLASSIF": {
+   "name": "Polityka klasyfikacji informacji i postępowania z informacjami",
+   "description": "Klasyfikacja\nOchrona informacji i postępowanie z nimi\nOchrona danych osobowych (PII) i postępowanie z nimi\nZasada czystego biurka\nZasada czystego ekranu\nOchrona zapisów\nZasady retencji\nWykorzystanie informacji testowych\nCiągłe doskonalenie"
+  },
+  "POL.AUDIT": {
+   "name": "Polityka audytów wewnętrznych i zewnętrznych",
+   "description": "Ochrona informacji audytowych"
+  },
+  "POL.BCP": {
+   "name": "Polityka ciągłości działania",
+   "description": "Polityka określająca cele, zasady nadzoru i zakres ciągłości działania oraz jej powiązanie z planowaniem odtwarzania po awarii (disaster recovery)."
+  },
+  "POL.SEG_DUTY": {
+   "name": "Polityka rozdzielenia obowiązków",
+   "description": "Polityka wymuszająca rozdzielenie obowiązków w ramach wrażliwych czynności w celu ograniczenia ryzyka nadużyć, błędów i konfliktu interesów."
+  },
+  "POL.ACCESS": {
+   "name": "Polityka kontroli dostępu",
+   "description": "Identyfikacja\nUwierzytelnianie\nZarządzanie hasłami\nKontrola dostępu oparta na rolach (RBAC)\nPrzegląd uprawnień dostępu\nNadawanie uprawnień (provisioning)\nOsoby odchodzące z organizacji\nDostęp zdalny\nZarządzanie dostępem uprzywilejowanym\nDostęp stron trzecich\nMonitorowanie i raportowanie\nCiągłe doskonalenie"
+  },
+  "POL.MALWARE": {
+   "name": "Polityka ochrony przed złośliwym oprogramowaniem",
+   "description": "Oprogramowanie antywirusowe\nEDR (wykrywanie zagrożeń i reagowanie na punktach końcowych)"
+  },
+  "POL.RISK": {
+   "name": "Polityka zarządzania ryzykiem",
+   "description": "Definicja zarządzania ryzykiem\nApetyt na ryzyko\nKryteria akceptacji ryzyka\nKryteria szacowania ryzyka\nIdentyfikacja ryzyka\nSzacowanie ryzyka\nPodejście CIAP (poufność, integralność, dostępność, rozliczalność)\nRaportowanie ryzyka\nPrzegląd ryzyka\nPostępowanie z ryzykiem (ograniczenie, akceptacja, transfer)\nEwaluacja ryzyka\nWykorzystanie zabezpieczeń ISO 27002\nZarządzanie uprawnieniami dostępu\nCiągłe doskonalenie"
+  },
+  "POL.ASSET": {
+   "name": "Polityka zarządzania aktywami",
+   "description": "Polityka regulująca inwentaryzację, klasyfikację, własność i cykl życia aktywów informacyjnych."
+  },
+  "POL.BACKUP": {
+   "name": "Polityka kopii zapasowych i odtwarzania",
+   "description": "Polityka określająca zakres, częstotliwość, okres przechowywania i ochronę kopii zapasowych oraz wymagania dotyczące testowania odtwarzania."
+  },
+  "POL.SUPPLIER": {
+   "name": "Polityka bezpieczeństwa w relacjach z dostawcami",
+   "description": "Polityka określająca wymagania bezpieczeństwa wobec dostawców i usługodawców w całym cyklu trwania współpracy."
+  },
+  "POL.MONITOR": {
+   "name": "Polityka rejestrowania zdarzeń i monitorowania",
+   "description": "Rejestrowanie zdarzeń"
+  },
+  "POL.TRANSFER": {
+   "name": "Polityka przekazywania informacji",
+   "description": "Polityka określająca zasady bezpiecznego postępowania z informacjami przekazywanymi wewnątrz organizacji i poza nią, z wykorzystaniem różnych kanałów i nośników."
+  },
+  "POL.SECDEV": {
+   "name": "Polityka bezpiecznego wytwarzania oprogramowania",
+   "description": "Polityka regulująca praktyki bezpiecznego wytwarzania oprogramowania, uwzględnianie bezpieczeństwa w cyklu życia oprogramowania (SDLC) oraz wymagania dotyczące oprogramowania własnego i dostarczanego przez strony trzecie."
+  },
+  "POL.PHYSICAL": {
+   "name": "Polityka bezpieczeństwa fizycznego",
+   "description": "Fizyczne granice bezpieczeństwa\nObszary bezpieczne\nKontrola dostępu pracowników\nKontrola dostępu gości\nZarządzanie dostawami\nBezpieczeństwo okablowania\nCiągłe doskonalenie"
+  },
+  "POL.NETWORK": {
+   "name": "Polityka zarządzania bezpieczeństwem sieci",
+   "description": "Polityka określająca zasady bezpieczeństwa dotyczące architektury sieci, segmentacji, filtrowania ruchu, dostępu zdalnego i monitorowania."
+  },
+  "POL.ACCEPT": {
+   "name": "Polityka dopuszczalnego użytkowania",
+   "description": "Cel: określenie dozwolonych i zabronionych sposobów korzystania z zasobów.\nZakres: wszyscy użytkownicy systemów informacyjnych.\nZasady: dozwolone i zabronione działania, obowiązki w zakresie bezpieczeństwa.\nPoufność: ochrona danych wrażliwych.\nZgodność: monitorowanie, sankcje za nieprzestrzeganie zasad."
+  },
+  "POL.PROJECT": {
+   "name": "Polityka bezpieczeństwa w projektach informatycznych",
+   "description": "Zasady uwzględniania bezpieczeństwa w projektach systemów informacyjnych"
+  },
+  "POL.THREAT_INTEL": {
+   "name": "Polityka pozyskiwania informacji o zagrożeniach (threat intelligence)",
+   "description": "Znane wykorzystywane podatności (KEV)\nAktywność sprawców zagrożeń (threat actors)\nCiągłe doskonalenie"
+  },
+  "POL.INCIDENT": {
+   "name": "Polityka zarządzania incydentami bezpieczeństwa informacji",
+   "description": "Klasyfikacja incydentów\nZgłaszanie incydentów\nProces reagowania na incydenty\nAnaliza przyczyn źródłowych i wyciągnięte wnioski\nDokumentowanie i komunikacja\nRole i odpowiedzialności\nPrzegląd i aktualizacja"
+  },
+  "POL.MAINTENANCE": {
+   "name": "Polityka utrzymania systemów",
+   "description": "Zarządzanie przestarzałymi rozwiązaniami (EOL)\nUmowy serwisowe\nZarządzanie zmianą"
+  },
+  "POL.VULNERABILITY": {
+   "name": "Polityka zarządzania podatnościami",
+   "description": "Wykrywanie podatności i zarządzanie nimi\nZarządzanie aktualizacjami (patch management)"
+  },
+  "TRAIN.LEGAL": {
+   "name": "Szkolenie z wymagań prawnych i regulacyjnych",
+   "description": "Cel: zapewnienie świadomości w zakresie zgodności z wymaganiami prawnymi i regulacyjnymi.\nOdbiorcy: wszyscy pracownicy; treści dostosowane do określonych ról.\nTematy: kluczowe przepisy (np. RODO), postępowanie z danymi, ryzyka wynikające z niezgodności.\nMetody: e-learning, warsztaty, studia przypadków.\nWeryfikacja: quizy i testy oparte na scenariuszach."
+  },
+  "TRAIN.THREAT": {
+   "name": "Szkolenie z aktualnego krajobrazu zagrożeń",
+   "description": "Cel: zrozumienie aktualnych cyberzagrożeń i strategii ich ograniczania.\nOdbiorcy: personel IT, zespoły bezpieczeństwa i osoby decyzyjne.\nTematy: pojawiające się zagrożenia, techniki ataków, mechanizmy obronne.\nMetody: prezentacje, studia przypadków, dyskusje oparte na scenariuszach.\nRezultat: wyższa świadomość i gotowość do reagowania na zmieniające się zagrożenia."
+  },
+  "TRAIN.IAM": {
+   "name": "Szkolenie z zarządzania tożsamością i dostępem (IAM)",
+   "description": "Cel: zrozumienie i opanowanie zarządzania tożsamością i dostępem.\nOdbiorcy: administratorzy IT, zespoły bezpieczeństwa, osoby zarządzające dostępami.\nTematy:\n- Kluczowe pojęcia (tożsamość, uwierzytelnianie, autoryzacja, modele RBAC/ABAC).\n- Dobre praktyki IAM (zarządzanie uprawnieniami, nadawanie dostępu, audyty).\n- Standardy i narzędzia (SAML, OAuth, Active Directory itp.).\nMetody: praktyczne warsztaty, przypadki użycia, demonstracje.\nRezultat: rozwinięte umiejętności bezpiecznego i efektywnego zarządzania dostępem."
+  },
+  "TRAIN.NETWORK_SECURITY": {
+   "name": "Szkolenie z bezpieczeństwa sieci",
+   "description": "Cel: przekazanie dobrych praktyk w zakresie zabezpieczania infrastruktury sieciowej i zapobiegania cyberzagrożeniom.\nOdbiorcy: administratorzy IT, inżynierowie sieci, specjaliści ds. bezpieczeństwa.\nTematy:\n- Zasady separacji sieci.\n- Konfiguracja i monitorowanie zapór sieciowych (firewall).\n- Systemy wykrywania i zapobiegania włamaniom (IDS/IPS/NDR).\n- Segmentacja sieci i kontrola dostępu.\n- Bezpieczne protokoły (np. HTTPS, VPN, SSH).\n- Ograniczanie zagrożeń (np. DDoS, złośliwe oprogramowanie).\nMetody: interaktywne laboratoria, symulacje i ćwiczenia praktyczne.\nRezultat: zwiększona zdolność do ochrony i monitorowania środowisk sieciowych."
+  },
+  "TRAIN.MCS": {
+   "name": "Szkolenie z utrzymania stanu bezpieczeństwa (SCM)",
+   "description": "Cel: budowanie kompetencji w zakresie utrzymywania bezpieczeństwa systemów IT poprzez monitorowanie, aktualizacje, zapewnianie zgodności i reagowanie na incydenty.\nOdbiorcy: specjaliści ds. bezpieczeństwa IT, administratorzy systemów, specjaliści ds. zgodności i zespoły reagowania na incydenty.\nTematy:\n- Zasady utrzymywania bezpieczeństwa i ich znaczenie dla cyberbezpieczeństwa.\n- Narzędzia i techniki monitorowania bezpieczeństwa (np. SIEM, IDS).\n- Zarządzanie aktualizacjami i bezpieczne konfiguracje systemów.\n- Wykrywanie incydentów, planowanie i realizacja reagowania.\n- Zgodność z politykami bezpieczeństwa i standardami regulacyjnymi.\nMetody: praktyczne laboratoria, symulowane scenariusze i studia przypadków dotyczące utrzymania stanu bezpieczeństwa.\nRezultat: zwiększona zdolność do ciągłego zabezpieczania środowisk IT, ograniczania ryzyk i zapewniania zgodności."
+  },
+  "TRAIN.LOGGING": {
+   "name": "Szkolenie z rejestrowania zdarzeń i monitorowania",
+   "description": "1. Cel: przekazanie skutecznych praktyk rejestrowania zdarzeń i technik monitorowania w celu wzmocnienia bezpieczeństwa i reagowania na incydenty.  \n2. Odbiorcy: administratorzy IT, zespoły bezpieczeństwa i analitycy SOC.  \n3. Tematy:  \n   - Znaczenie rejestrowania zdarzeń i wymagania w zakresie zgodności.  \n   - Konfigurowanie źródeł logów i zarządzanie nimi (np. serwery, zapory sieciowe, aplikacje).  \n   - Scentralizowane systemy gromadzenia logów (np. SIEM, stos ELK).  \n   - Wykrywanie anomalii i analiza logów.  \n   - Reagowanie na incydenty w oparciu o wnioski z analizy logów.  \n4. Metody: praktyczne laboratoria, scenariusze z rzeczywistych sytuacji i ćwiczenia z analizy logów.  \n5. Rezultat: lepsza zdolność do gromadzenia i analizowania danych z logów oraz wykorzystywania ich do zapobiegania incydentom i reagowania na nie."
+  },
+  "TRAIN.HARDENING": {
+   "name": "Szkolenie z utwardzania (hardening) i bezpiecznej konfiguracji",
+   "description": "Cel: wyposażenie uczestników w wiedzę pozwalającą wdrażać bezpieczne konfiguracje i utwardzać systemy w celu ograniczenia podatności.\nOdbiorcy: administratorzy IT, inżynierowie systemów, specjaliści ds. bezpieczeństwa.\nTematy:\n- Zasady utwardzania systemów.\n- Utwardzanie systemów operacyjnych (Windows, Linux).\n- Zabezpieczanie baz danych (np. MySQL, PostgreSQL).\n- Utwardzanie urządzeń sieciowych (zapory sieciowe, routery, przełączniki).\n- Stosowanie CIS Benchmarks i wytycznych ANSSI.\n- Narzędzia do automatyzacji (np. Ansible, Puppet, Chef).\nMetody:\n- Praktyczne laboratoria z utwardzania systemów operacyjnych i aplikacji.\n- Studia przypadków dotyczące błędów w utwardzaniu i sposobów ich usunięcia.\nRezultat: uczestnicy zdobędą umiejętność wdrażania bezpiecznych konfiguracji i zwiększania ogólnej odporności systemów."
+  },
+  "TECH.NAC": {
+   "name": "Kontrola dostępu do sieci (NAC, 802.1X)",
+   "description": "Zdolność wymuszająca uwierzytelnienie i autoryzację urządzeń lub użytkowników przed przyznaniem dostępu do sieci. Zapewnia bezpieczny dostęp do sieci przewodowych i bezprzewodowych z wykorzystaniem protokołów takich jak 802.1X i RADIUS do weryfikacji poświadczeń i stosowania polityk dostępu."
+  },
+  "TECH.ACCESS_LOG": {
+   "name": "Rejestrowanie dostępu",
+   "description": "Zdolność gromadzenia i przechowywania logów dostępu i uwierzytelniania ze wszystkich systemów, zasilająca scentralizowane monitorowanie."
+  },
+  "TECH.EDR": {
+   "name": "Zdolność wykrywania zagrożeń i reagowania na punktach końcowych (EDR)",
+   "description": "Zdolność wykrywania zagrożeń i reagowania na punktach końcowych (Endpoint Detection and Response), zapewniająca wykrywanie behawioralne, analizę zdarzeń i izolowanie zagrożeń na urządzeniach końcowych."
+  },
+  "TECH.PASSWORD_MANAGER": {
+   "name": "Zdolność zarządzania hasłami (menedżer haseł)",
+   "description": "Zdolność umożliwiająca bezpieczne tworzenie, przechowywanie, zarządzanie i używanie haseł do systemów, aplikacji i kont. Ogranicza ryzyko nieuprawnionego dostępu poprzez wymuszanie silnych polityk haseł i zapewnienie bezpiecznego postępowania z poświadczeniami."
+  },
+  "TECH.UEM": {
+   "name": "Ujednolicone zarządzanie urządzeniami końcowymi (UEM)",
+   "description": "Zdolność zapewniająca scentralizowaną kontrolę i zarządzanie wszystkimi urządzeniami końcowymi, w tym komputerami stacjonarnymi, laptopami, urządzeniami mobilnymi i urządzeniami IoT, z poziomu jednej platformy. Zapewnia bezpieczną konfigurację, egzekwowanie polityk, zarządzanie aplikacjami i monitorowanie w całym ekosystemie urządzeń końcowych organizacji."
+  },
+  "TECH.ENDPOINT_PROTECTION": {
+   "name": "Antywirus, zapora sieciowa i kontrola portów USB na stacjach",
+   "description": "Zintegrowane rozwiązania do zabezpieczania urządzeń końcowych, obejmujące oprogramowanie antywirusowe, zaporę sieciową i kontrolę portów USB"
+  },
+  "TECH.DISK_ENCRYPTION": {
+   "name": "Szyfrowanie dysków",
+   "description": "Pełne szyfrowanie dysków stacji roboczych"
+  },
+  "TECH.IMMUTABLE_BACKUP": {
+   "name": "Niemodyfikowalne kopie zapasowe (immutable backup)",
+   "description": "Zdolność zapewniająca, że kopie zapasowe nie mogą zostać zmienione, usunięte ani nadpisane, co chroni integralność danych przed ransomware i nieuprawnionym dostępem."
+  },
+  "TECH.FILE_ENCRYPTION": {
+   "name": "Szyfrowanie plików",
+   "description": "Narzędzia do szyfrowania plików, takie jak 7-Zip"
+  },
+  "TECH.CMDB": {
+   "name": "Baza danych zarządzania konfiguracją (CMDB)",
+   "description": "Scentralizowane repozytorium przechowujące informacje o aktywach IT, ich konfiguracjach i wzajemnych powiązaniach, wspierające efektywne zarządzanie IT."
+  },
+  "TECH.SIEM": {
+   "name": "System zarządzania informacjami i zdarzeniami bezpieczeństwa (SIEM)",
+   "description": "System gromadzący, analizujący i korelujący dane dotyczące bezpieczeństwa z wielu źródeł w celu wykrywania zagrożeń i reagowania na nie."
+  },
+  "TECH.SCREEN_FILTER": {
+   "name": "Filtr prywatyzujący na ekran",
+   "description": "Fizyczny lub programowy filtr ograniczający widoczność ekranu do upoważnionych użytkowników, zmniejszający ryzyko podejrzenia wyświetlanych danych przez osoby postronne."
+  },
+  "TECH.NETWORK_FIREWALL": {
+   "name": "Sieciowa zapora ogniowa (firewall)",
+   "description": "System bezpieczeństwa monitorujący i kontrolujący przychodzący i wychodzący ruch sieciowy na podstawie zdefiniowanych reguł."
+  },
+  "TECH.MAIL_GATEWAY": {
+   "name": "Bezpieczna bramka pocztowa",
+   "description": "System filtrujący, monitorujący i chroniący komunikację e-mail przed spamem, złośliwym oprogramowaniem i nieuprawnionym dostępem"
+  },
+  "TECH.NETWORK_ANTIVIRUS": {
+   "name": "Sieciowy system antywirusowy",
+   "description": "Chroni ruch pocztowy i webowy na brzegu sieci przed złośliwym oprogramowaniem"
+  },
+  "TECH.VLAN": {
+   "name": "Wirtualne sieci lokalne (VLAN)",
+   "description": "Sieci VLAN izolują i segmentują ruch sieciowy, zwiększając bezpieczeństwo i optymalizując wydajność."
+  },
+  "TECH.MICROSEGMENTATION": {
+   "name": "Mikrosegmentacja",
+   "description": "Mikrosegmentacja to strategia bezpieczeństwa polegająca na tworzeniu szczegółowych, uwzględniających kontekst polityk izolujących poszczególne obciążenia (workloads) lub aplikacje w sieci, co ogranicza ruch boczny (lateral movement) i powstrzymuje rozprzestrzenianie się naruszeń."
+  },
+  "TECH.WIFI_SEC": {
+   "name": "Bezpieczeństwo sieci Wi-Fi",
+   "description": "Bezpieczeństwo sieci Wi-Fi zapewnia ochronę komunikacji bezprzewodowej dzięki szyfrowaniu WPA3 Enterprise, silnemu uwierzytelnianiu i zaawansowanym mechanizmom kontroli dostępu. Choć WPA2 Enterprise pozostaje akceptowalne, zdecydowanie zaleca się przejście na WPA3 w celu podniesienia poziomu bezpieczeństwa."
+  },
+  "TECH.REVERSE_PROXY": {
+   "name": "Serwer pośredniczący (reverse proxy)",
+   "description": "Reverse proxy przekazuje żądania klientów do serwerów zaplecza (backend), zwiększając bezpieczeństwo, umożliwiając równoważenie obciążenia i poprawiając wydajność."
+  },
+  "TECH.WAF": {
+   "name": "Zapora aplikacji webowych (WAF)",
+   "description": "Zapora aplikacji webowych (WAF) chroni aplikacje internetowe, filtrując i monitorując ruch HTTP w celu blokowania złośliwej aktywności."
+  },
+  "TECH.IDS": {
+   "name": "System wykrywania włamań (IDS)",
+   "description": "System wykrywania włamań (IDS) monitoruje ruch sieciowy, aby wykrywać potencjalne zagrożenia bezpieczeństwa lub nieuprawnione działania i alarmować o nich."
+  },
+  "TECH.WEB_PROXY": {
+   "name": "Serwer pośredniczący WWW (web proxy)",
+   "description": "Web proxy filtruje i monitoruje ruch WWW, egzekwuje polityki bezpieczeństwa i obsługuje uwierzytelnianie użytkowników, aby kontrolować i zabezpieczać dostęp do internetu."
+  },
+  "TECH.VPN": {
+   "name": "Wirtualna sieć prywatna (VPN)",
+   "description": "Wirtualna sieć prywatna (VPN) zabezpiecza transmisję danych, szyfrując ruch z użyciem protokołów takich jak IPSec, co zapewnia poufność i ochronę przed przechwyceniem."
+  },
+  "TECH.MFA": {
+   "name": "Uwierzytelnianie wieloskładnikowe (MFA)",
+   "description": "Uwierzytelnianie wieloskładnikowe (MFA) zwiększa bezpieczeństwo, wymagając dwóch składników weryfikacji z różnych kategorii: coś, co wiesz (np. hasło), coś, co masz (np. token lub smartfon), oraz coś, czym jesteś (np. odcisk palca lub rozpoznawanie twarzy)."
+  },
+  "POL.APP_CONTROL": {
+   "name": "Polityka kontroli aplikacji i białych list (allowlisting)",
+   "description": "Zasady umieszczania autoryzowanego oprogramowania, bibliotek i skryptów na białych listach (allowlisting) na aktywach organizacji.\nZakres: urządzenia końcowe użytkowników, serwery, obciążenia produkcyjne.\nProces zatwierdzania nowego oprogramowania.\nPostępowanie w przypadku wykrycia nieautoryzowanego oprogramowania."
+  },
+  "POL.HARDENING": {
+   "name": "Polityka bezpiecznej konfiguracji i utwardzania (hardening)",
+   "description": "Bazowe bezpieczne konfiguracje aktywów organizacji i oprogramowania.\nOdwołania do CIS Benchmarks, wytycznych producentów, STIG.\nZarządzanie odstępstwami, monitorowanie zgodności, cykl ponownej certyfikacji."
+  },
+  "POL.PENTEST": {
+   "name": "Polityka testów penetracyjnych",
+   "description": "Program testów penetracyjnych i zasady ich autoryzacji.\nZakres, częstotliwość (testy wewnętrzne / zewnętrzne), zasady prowadzenia testów (rules of engagement).\nProces usuwania podatności wykrytych w testach."
+  },
+  "POL.RETENTION": {
+   "name": "Polityka retencji danych",
+   "description": "Zasady przechowywania i usuwania danych według klasy danych i jurysdykcji.\nProcedura wstrzymania usuwania danych ze względów prawnych (legal hold).\nWymagania dotyczące usuwania danych po upływie okresu przechowywania."
+  },
+  "PROC.IR_EXERCISE": {
+   "name": "Procedura ćwiczeń z reagowania na incydenty",
+   "description": "Planowanie, przeprowadzanie i ocena ćwiczeń sztabowych (tabletop) i technicznych z reagowania na incydenty.\nMinimalna częstotliwość, role, scenariusze, dokumentowanie wniosków (lessons learned)."
+  },
+  "PROC.PENTEST": {
+   "name": "Procedura testów penetracyjnych",
+   "description": "Procedura operacyjna określania zakresu, przeprowadzania i raportowania wewnętrznych i zewnętrznych testów penetracyjnych.\nKlasyfikacja ustaleń i śledzenie działań naprawczych."
+  },
+  "PROC.POST_INCIDENT": {
+   "name": "Procedura przeglądu poincydentalnego",
+   "description": "Ustrukturyzowane wyciąganie wniosków (lessons learned) po incydentach bezpieczeństwa.\nAnaliza przyczyn źródłowych, odtworzenie przebiegu zdarzeń w czasie, przypisanie działań korygujących."
+  },
+  "PROC.RBAC": {
+   "name": "Procedura administrowania kontrolą dostępu opartą na rolach (RBAC)",
+   "description": "Definiowanie ról, mapowanie ról na uprawnienia, cykl życia ról, kontrola rozdziału obowiązków.\nCykl przeglądów i ponownej certyfikacji ról."
+  },
+  "PROC.SBOM": {
+   "name": "Procedura zarządzania wykazem komponentów oprogramowania (SBOM)",
+   "description": "Generowanie, gromadzenie i aktualizowanie SBOM dla oprogramowania własnego i pochodzącego od dostawców zewnętrznych.\nMonitorowanie podatności w komponentach ujętych w wykazie."
+  },
+  "PROC.SDLC": {
+   "name": "Procedura bezpiecznego cyklu wytwarzania oprogramowania (SDLC)",
+   "description": "Włączenie zabezpieczeń na wszystkich etapach cyklu wytwarzania oprogramowania.\nWymagania bezpieczeństwa, przegląd projektu, bezpieczne programowanie, testy i bramki wydania."
+  },
+  "PROC.SOFTWARE_LIFECYCLE": {
+   "name": "Procedura zarządzania cyklem życia oprogramowania",
+   "description": "Śledzenie wspieranych wersji oprogramowania, monitorowanie końca wsparcia (EOL) i planowanie zastąpienia oprogramowania niewspieranego."
+  },
+  "PROC.THREAT_MODELING": {
+   "name": "Procedura modelowania zagrożeń",
+   "description": "Ustrukturyzowane modelowanie zagrożeń na etapie projektowania.\nMetodyka (STRIDE, PASTA, LINDDUN), produkty prac, cykl przeglądów."
+  },
+  "PROC.TPRM_ASSESSMENT": {
+   "name": "Procedura oceny ryzyka dostawców (TPRM)",
+   "description": "Ocena i bieżące monitorowanie dostawców i usługodawców.\nKategoryzacja dostawców (tiering), częstotliwość ocen, kwestionariusze, przegląd dowodów."
+  },
+  "TECH.APP_CONTROL": {
+   "name": "Mechanizm kontroli aplikacji / białych list (allowlisting)",
+   "description": "Rozwiązanie techniczne wymuszające białe listy autoryzowanych aplikacji, bibliotek i skryptów.\nZazwyczaj zapewniane przez AppLocker, WDAC, rozwiązania allowlistingu innych producentów lub funkcje EDR."
+  },
+  "TECH.ASSET_DISCOVERY": {
+   "name": "Aktywne i pasywne wykrywanie aktywów",
+   "description": "Automatyczne wykrywanie aktywów podłączonych do sieci organizacji poprzez aktywne skanowanie, pasywny nasłuch ruchu oraz korelację danych DHCP i logów."
+  },
+  "TECH.DLP": {
+   "name": "Zapobieganie wyciekom danych (DLP)",
+   "description": "Rozwiązanie techniczne wykrywające i blokujące nieuprawnione wyprowadzanie danych wrażliwych z urządzeń końcowych, sieci i chmury."
+  },
+  "TECH.DNS_FILTER": {
+   "name": "Filtrowanie DNS / bezpieczny DNS",
+   "description": "Ochronna usługa DNS filtrująca domeny złośliwe, wysokiego ryzyka lub naruszające polityki, z rejestrowaniem zapytań DNS."
+  },
+  "TECH.EMAIL_AUTH": {
+   "name": "Uwierzytelnianie poczty e-mail (DMARC / SPF / DKIM)",
+   "description": "Uwierzytelnianie nadawców poczty e-mail za pomocą SPF, DKIM i DMARC z polityką egzekwowania i raportowaniem."
+  },
+  "TECH.IAM": {
+   "name": "Scentralizowane zarządzanie tożsamością i dostępem (IAM)",
+   "description": "Scentralizowane repozytorium tożsamości z funkcjami SSO, nadawania i odbierania dostępu oraz nadzoru nad uprawnieniami, zintegrowane z aplikacjami organizacji."
+  },
+  "TECH.MDM": {
+   "name": "Zarządzanie urządzeniami mobilnymi (MDM)",
+   "description": "Rozwiązanie MDM / UEM wymuszające blokadę urządzenia, zdalne usuwanie danych, separację przestrzeni służbowej oraz konfiguracje bazowe na urządzeniach mobilnych i przenośnych."
+  },
+  "TECH.PAW": {
+   "name": "Stacje robocze do dostępu uprzywilejowanego (PAW)",
+   "description": "Dedykowane, utwardzone stacje robocze lub serwery przesiadkowe (jump host) używane wyłącznie do prac administracyjnych, odizolowane od stanowisk ogólnego przeznaczenia."
+  },
+  "TECH.SAST_DAST": {
+   "name": "Skanowanie bezpieczeństwa kodu (SAST / DAST)",
+   "description": "Zautomatyzowane statyczne i dynamiczne testy bezpieczeństwa aplikacji zintegrowane z potokami CI/CD, z analizą i priorytetyzacją wyników (triage)."
+  },
+  "TECH.SW_INVENTORY": {
+   "name": "Automatyczna inwentaryzacja oprogramowania",
+   "description": "Automatyczne wykrywanie i śledzenie oprogramowania zainstalowanego na aktywach organizacji, zasilające ewidencję oprogramowania."
+  },
+  "TECH.VULN_SCANNER": {
+   "name": "Skaner podatności",
+   "description": "Zautomatyzowane skanowanie podatności obejmujące aktywa wewnętrzne i dostępne z zewnątrz.\nSkanowanie uwierzytelnione tam, gdzie jest to możliwe."
+  },
+  "TECH.ZTNA": {
+   "name": "Dostęp sieciowy w modelu Zero Trust (ZTNA)",
+   "description": "Dostęp do aplikacji wewnętrznych i zasobów zdalnych przyznawany dla każdej sesji na podstawie tożsamości, bez tradycyjnego udostępniania całej sieci przez VPN."
+  },
+  "TRAIN.SECDEV": {
+   "name": "Szkolenie z bezpiecznego wytwarzania oprogramowania",
+   "description": "Szkolenie dla programistów z bezpiecznego programowania, typowych podatności, pułapek specyficznych dla frameworków oraz podstaw modelowania zagrożeń."
+  },
+  "POL.PRIVACY": {
+   "name": "Polityka prywatności i ochrony danych osobowych",
+   "description": "Ramy zgodnego z prawem przetwarzania danych osobowych: cele, podstawy prawne, minimalizacja danych, retencja, prawa osób, których dane dotyczą, transgraniczne przekazywanie danych."
+  },
+  "PROC.DPIA": {
+   "name": "Procedura oceny skutków dla ochrony danych (DPIA)",
+   "description": "Procedura przeprowadzania DPIA / PIA dla operacji przetwarzania wysokiego ryzyka.\nKryteria uruchomienia, metodyka, konsultacje z interesariuszami, śledzenie wyników."
+  },
+  "PROC.DATA_SUBJECT_RIGHTS": {
+   "name": "Procedura realizacji praw osób, których dane dotyczą",
+   "description": "Przyjmowanie, weryfikacja tożsamości, realizacja i ewidencjonowanie żądań osób, których dane dotyczą (dostęp, sprostowanie, usunięcie, przenoszenie, sprzeciw)."
+  },
+  "PROC.BREACH_NOTIF": {
+   "name": "Procedura zgłaszania naruszeń ochrony danych osobowych",
+   "description": "Wykrywanie i ocena naruszeń ochrony danych osobowych, zgłaszanie ich organowi nadzorczemu oraz zawiadamianie osób, których dane dotyczą, w terminach wymaganych przepisami."
+  },
+  "DOC.ROPA": {
+   "name": "Rejestr czynności przetwarzania (RCP)",
+   "description": "Centralny rejestr czynności przetwarzania danych osobowych obejmujący cele, kategorie danych, odbiorców, okresy przechowywania i zabezpieczenia."
+  },
+  "DOC.DPA_REGISTER": {
+   "name": "Rejestr umów powierzenia przetwarzania danych",
+   "description": "Wykaz obowiązujących umów powierzenia przetwarzania danych z podmiotami przetwarzającymi oraz uzgodnień ze współadministratorami."
+  },
+  "POL.AI": {
+   "name": "Polityka nadzoru nad AI i dopuszczalnego użycia AI",
+   "description": "Zasady i reguły tworzenia, nabywania i wykorzystywania systemów AI.\nDopuszczalne użycie, zakazane przypadki użycia, przejrzystość, nadzór człowieka."
+  },
+  "PROC.AI_RISK": {
+   "name": "Procedura oceny ryzyka systemów AI",
+   "description": "Identyfikacja, klasyfikacja i ocena ryzyk specyficznych dla systemów AI: stronniczość (bias), halucynacje, wyciek danych, bezpieczeństwo, wyjaśnialność."
+  },
+  "PROC.AI_LIFECYCLE": {
+   "name": "Procedura zarządzania cyklem życia systemów AI",
+   "description": "Zabezpieczenia na wszystkich etapach cyklu życia systemów AI: pozyskiwanie danych, trenowanie modeli, walidacja, wdrożenie, monitorowanie i wycofanie z użycia."
+  },
+  "DOC.AI_INVENTORY": {
+   "name": "Rejestr systemów i modeli AI",
+   "description": "Wykaz wdrożonych systemów i modeli AI wraz z ich przeznaczeniem, źródłami danych, klasyfikacją ryzyka i właścicielami."
+  },
+  "PROC.BIA": {
+   "name": "Procedura analizy wpływu na działalność (BIA)",
+   "description": "Procedura identyfikacji krytycznych działań, zależności, celów RTO/RPO oraz narastania skutków zakłóceń w czasie."
+  },
+  "PROC.DRP": {
+   "name": "Procedura uruchamiania planu odtwarzania po awarii (DRP)",
+   "description": "Aktywacja, realizacja i weryfikacja planów odtwarzania po awarii (DR) dla systemów IT wspierających krytyczne działania."
+  },
+  "PROC.BCP_EXERCISE": {
+   "name": "Procedura ćwiczeń BCP / DR",
+   "description": "Planowanie i przeprowadzanie ćwiczeń ciągłości działania i odtwarzania po awarii (DR).\nCele, rodzaje scenariuszy, ocena, wnioski (lessons learned)."
+  },
+  "DOC.BIA": {
+   "name": "Raport z analizy wpływu na działalność (BIA)",
+   "description": "Skonsolidowany raport z analizy wpływu na działalność (BIA) dla danego zakresu, wskazujący krytyczne działania, zależności i cele odtworzenia."
+  },
+  "TECH.DR_SITE": {
+   "name": "Zapasowy ośrodek przetwarzania (DR) / przetwarzanie alternatywne",
+   "description": "Alternatywny ośrodek przetwarzania (zimny, ciepły lub gorący) oraz mechanizmy replikacji umożliwiające odtworzenie w zdefiniowanych czasach RTO/RPO."
+  },
+  "POL.CLOUD": {
+   "name": "Polityka bezpieczeństwa chmury",
+   "description": "Zasady wdrażania i eksploatacji usług chmurowych.\nModel współdzielonej odpowiedzialności, zatwierdzeni dostawcy, konfiguracje bazowe, ograniczenia wynikające z klasyfikacji danych."
+  },
+  "PROC.CLOUD_CONFIG": {
+   "name": "Procedura bezpiecznej konfiguracji chmury",
+   "description": "Przygotowanie i utrzymanie bezpiecznych konfiguracji dzierżaw (tenantów), kont i obciążeń chmurowych z wykorzystaniem konfiguracji bazowych i infrastruktury jako kodu (IaC)."
+  },
+  "TECH.CSPM": {
+   "name": "Zarządzanie stanem bezpieczeństwa chmury (CSPM)",
+   "description": "Ciągła ocena konfiguracji zasobów chmurowych względem bazowych wymagań bezpieczeństwa, z alertami o odchyleniach (drift) i błędnych konfiguracjach."
+  },
+  "TECH.CWPP": {
+   "name": "Platforma ochrony obciążeń chmurowych (CWPP)",
+   "description": "Ochrona obciążeń chmurowych w czasie działania (maszyny wirtualne, kontenery, serverless): skanowanie podatności, ochrona przed złośliwym oprogramowaniem, monitorowanie integralności, wykrywanie behawioralne."
+  },
+  "TECH.CASB": {
+   "name": "Broker bezpieczeństwa dostępu do chmury (CASB)",
+   "description": "Widoczność i kontrola nad korzystaniem z zatwierdzonych i niezatwierdzonych usług SaaS, z egzekwowaniem polityk dla przepływów danych i uwierzytelniania."
+  },
+  "PHYS.SECURE_AREA": {
+   "name": "Obszary bezpieczne i strefowanie fizyczne",
+   "description": "Wyznaczanie i egzekwowanie fizycznych granic bezpieczeństwa i stref ze stopniowaną kontrolą dostępu odpowiednią do wrażliwości obszaru."
+  },
+  "PHYS.VISITOR_MGMT": {
+   "name": "Obsługa gości (osób odwiedzających)",
+   "description": "Rejestracja, identyfikacja, eskortowanie i śledzenie obecności gości na terenie chronionym."
+  },
+  "PHYS.CCTV": {
+   "name": "Monitoring wizyjny (CCTV)",
+   "description": "Monitoring wizyjny chronionych pomieszczeń i punktów wejścia, z kontrolą okresu przechowywania nagrań i dostępu do nich."
+  },
+  "PHYS.CLEAR_DESK": {
+   "name": "Egzekwowanie zasady czystego biurka i czystego ekranu",
+   "description": "Wymagania dotyczące uprzątania dokumentów i nośników wymiennych oraz blokowania ekranów, gdy stanowisko pracy pozostaje bez nadzoru."
+  },
+  "PHYS.EQUIPMENT_DISPOSAL": {
+   "name": "Bezpieczna utylizacja sprzętu i nośników",
+   "description": "Fizyczne niszczenie lub bezpieczne czyszczenie (sanityzacja) wycofanego sprzętu i nośników wymiennych zawierających informacje wrażliwe."
+  },
+  "PHYS.POWER_ENV": {
+   "name": "Zasilanie i zabezpieczenia środowiskowe",
+   "description": "Ochrona obiektów przed utratą zasilania i zagrożeniami środowiskowymi: UPS, agregaty prądotwórcze, HVAC (klimatyzacja i wentylacja), systemy gaśnicze, wykrywanie wycieków."
+  },
+  "PROC.KEY_MGMT": {
+   "name": "Procedura zarządzania kluczami kryptograficznymi",
+   "description": "Kompleksowe zarządzanie kluczami kryptograficznymi i certyfikatami: generowanie, dystrybucja, przechowywanie, rotacja, unieważnianie, archiwizacja, niszczenie."
+  },
+  "TECH.PKI": {
+   "name": "Infrastruktura klucza publicznego (PKI) / zarządzanie certyfikatami",
+   "description": "Wydawanie, inwentaryzacja, monitorowanie i odnawianie certyfikatów cyfrowych używanych do uwierzytelniania, podpisywania i szyfrowania."
+  },
+  "TECH.HSM": {
+   "name": "Sprzętowy moduł bezpieczeństwa (HSM) / sejf kluczy",
+   "description": "Wykorzystanie modułów HSM lub zarządzanych sejfów kluczy (key vault) do ochrony kluczy kryptograficznych o wysokiej wartości, z audytem i kontrolą dostępu."
+  },
+  "PROC.COMPLIANCE_MONITORING": {
+   "name": "Procedura monitorowania zgodności",
+   "description": "Okresowe monitorowanie zgodności z politykami wewnętrznymi oraz wymaganiami umownymi i regulacyjnymi, z gromadzeniem dowodów i raportowaniem."
+  },
+  "PROC.EXCEPTION_MGMT": {
+   "name": "Procedura zarządzania wyjątkami i odstępstwami od zasad bezpieczeństwa",
+   "description": "Zgłaszanie, przegląd, zatwierdzanie, akceptacja ryzyka i wygasanie wyjątków od ustanowionych zabezpieczeń."
+  },
+  "DOC.EXCEPTION_REGISTER": {
+   "name": "Rejestr wyjątków od zasad bezpieczeństwa",
+   "description": "Centralny rejestr zatwierdzonych wyjątków od zasad bezpieczeństwa wraz z ich zakresem, zabezpieczeniami kompensacyjnymi, właścicielem i terminem wygaśnięcia."
+  },
+  "TRAIN.PRIVACY": {
+   "name": "Szkolenie z ochrony prywatności i danych osobowych",
+   "description": "Szkolenie dostosowane do roli z obowiązków w zakresie ochrony danych osobowych, zasad postępowania z danymi i zgłaszania incydentów."
+  },
+  "TRAIN.AI": {
+   "name": "Szkolenie z kompetencji w zakresie AI i nadzoru nad AI",
+   "description": "Szkolenie z bezpiecznego i odpowiedzialnego korzystania z AI, obejmujące ryzyka, polityki, higienę tworzenia promptów i kanały zgłaszania."
+  },
+  "POL.WEB_SEC": {
+   "name": "Polityka bezpieczeństwa aplikacji webowych",
+   "description": "Wymagania bezpieczeństwa dla usług webowych udostępnianych klientom: stosowanie WAF i reverse proxy, zarządzanie sesjami i plikami cookie, silne uwierzytelnianie klienta, walidacja danych wejściowych, utwardzanie oraz bezpieczne udostępnianie usług wewnętrznych."
+  },
+  "POL.CHANGE_MGMT": {
+   "name": "Polityka zarządzania zmianą",
+   "description": "Wymagania dotyczące inicjowania, oceny, zatwierdzania, komunikowania i przeglądu zmian w systemach informacyjnych i usługach.\nAnaliza wpływu na bezpieczeństwo, wycofanie zmian (rollback), separacja środowisk."
+  },
+  "PROC.CHANGE_MGMT": {
+   "name": "Procedura zarządzania zmianą",
+   "description": "Procedura operacyjna obsługi wniosków o zmianę, oceny ryzyka i wpływu na bezpieczeństwo, etapów zatwierdzania, harmonogramowania, testowania, wdrażania i przeglądu po wdrożeniu."
+  },
+  "PROC.CAPACITY_MGMT": {
+   "name": "Procedura zarządzania pojemnością i wydajnością",
+   "description": "Monitorowanie bieżącej i prognozowanej pojemności i wydajności, z planowaniem i skalowaniem zasobów w celu utrzymania dostępności i docelowych poziomów usług."
+  },
+  "PROC.THREAT_INTEL": {
+   "name": "Procedura obsługi informacji o zagrożeniach (threat intelligence)",
+   "description": "Gromadzenie, analiza, priorytetyzacja i dystrybucja informacji o zagrożeniach (threat intelligence) ze źródeł otwartych, komercyjnych i sektorowych na potrzeby wykrywania i decyzji dotyczących ryzyka."
+  },
+  "PROC.THREAT_HUNT": {
+   "name": "Procedura aktywnego poszukiwania zagrożeń (threat hunting)",
+   "description": "Proaktywne, oparte na hipotezach poszukiwanie aktywności przeciwnika w systemach organizacji, uzupełniające wykrywanie oparte na sygnaturach."
+  },
+  "PROC.INSIDER_THREAT": {
+   "name": "Procedura zarządzania zagrożeniami wewnętrznymi",
+   "description": "Wykrywanie ryzyk pochodzących od osób z wewnątrz organizacji i reagowanie na nie, łączące monitorowanie behawioralne, kontrolę dostępu uprzywilejowanego, współpracę z HR i ukierunkowane działania uświadamiające."
+  },
+  "PROC.VULN_DISCLOSURE": {
+   "name": "Procedura programu zgłaszania podatności (CVD / VDP)",
+   "description": "Przyjmowanie, wstępna ocena (triage), koordynacja i usuwanie podatności zgłoszonych z zewnątrz.\nPubliczny kontakt ds. bezpieczeństwa, deklaracja bezpiecznej przystani (safe harbor), opcjonalny program bug bounty."
+  },
+  "POL.OT": {
+   "name": "Polityka bezpieczeństwa systemów OT / ICS / IoT / wbudowanych",
+   "description": "Wymagania bezpieczeństwa dla technologii operacyjnej (OT), przemysłowych systemów sterowania (ICS), IoT i urządzeń wbudowanych.\nIdentyfikacja, klasyfikacja, separacja IT-OT, ograniczony tryb wprowadzania zmian, zarządzanie cyklem życia, postępowanie z ryzykiem spójne z wymaganiami bezpieczeństwa funkcjonalnego (safety)."
+  },
+  "PROC.OT_SEGMENTATION": {
+   "name": "Procedura segmentacji sieci OT / IT",
+   "description": "Wdrożenie i utrzymanie segmentacji w modelu stref i kanałów (zones and conduits) pomiędzy sieciami OT / ICS / IoT a siecią IT organizacji, z kontrolowanymi interfejsami, diodami danych tam, gdzie jest to zasadne, oraz ograniczonym dostępem zdalnym."
+  },
+  "DOC.OT_INVENTORY": {
+   "name": "Rejestr urządzeń OT / ICS / IoT / wbudowanych",
+   "description": "Wykaz urządzeń OT / ICS / IoT / wbudowanych z właścicielem, lokalizacją, etapem cyklu życia, krytycznością i klasyfikacją wpływu na bezpieczeństwo funkcjonalne (safety)."
+  },
+  "PROC.CRISIS_MGMT": {
+   "name": "Procedura zarządzania kryzysowego",
+   "description": "Ogłaszanie kryzysu, nadzór nad nim i prowadzenie działań kryzysowych, odrębnie od operacyjnego reagowania na incydenty.\nSkład i uprawnienia zespołu kryzysowego, komunikacja wewnętrzna i zewnętrzna, zawiadomienia regulacyjne, rejestrowanie decyzji i zakończenie stanu kryzysu."
+  },
+  "PROC.DISCIPLINARY": {
+   "name": "Postępowanie dyscyplinarne w przypadku naruszeń bezpieczeństwa",
+   "description": "Formalny proces postępowania w przypadku potwierdzonych naruszeń polityk bezpieczeństwa informacji przez personel.\nPostępowanie wyjaśniające, postępowanie z dowodami, proporcjonalne sankcje, współpraca z HR i działem prawnym."
+  },
+  "POL.REMOVABLE_MEDIA": {
+   "name": "Polityka korzystania z nośników wymiennych",
+   "description": "Zasady dopuszczalnego użycia, szyfrowania, skanowania, rejestrowania, białych list i fizycznej ochrony nośników wymiennych (USB, dyski zewnętrzne, nośniki optyczne, karty pamięci).\nTransport, przechowywanie i bezpieczne niszczenie nośników zawierających dane wrażliwe."
+  },
+  "DOC.RISK_APPETITE": {
+   "name": "Deklaracja apetytu na ryzyko i tolerancji ryzyka",
+   "description": "Zatwierdzona przez zarząd deklaracja określająca poziom ryzyka cyberbezpieczeństwa, jaki organizacja jest gotowa zaakceptować, aby osiągnąć swoje cele, wraz z progami tolerancji dla poszczególnych kategorii ryzyka i cyklem przeglądu."
+  },
+  "PROC.FORENSICS": {
+   "name": "Procedura analizy powłamaniowej (informatyki śledczej) i zabezpieczania dowodów",
+   "description": "Gromadzenie, zabezpieczanie, analiza i raportowanie dowodów cyfrowych w trakcie incydentów bezpieczeństwa i po ich zakończeniu.\nŁańcuch dowodowy (chain of custody), integralność i pochodzenie dowodów, narzędzia, koordynacja z działem prawnym i organami regulacyjnymi."
+  },
+  "PROC.TLPT": {
+   "name": "Procedura testów penetracyjnych opartych na analizie zagrożeń (TLPT)",
+   "description": "Oparte na scenariuszach i informacjach o zagrożeniach (threat intelligence) testy penetracyjne symulujące rzeczywiste taktyki, techniki i procedury przeciwnika wobec produkcyjnych systemów, ludzi i procesów.\nRóżnią się od standardowych testów penetracyjnych zakresem, czasem trwania i realizmem. Zgodne z TIBER-EU, jeśli ma to zastosowanie."
+  },
+  "PROC.BG_SCREENING": {
+   "name": "Procedura weryfikacji kandydatów i pracowników",
+   "description": "Weryfikacja personelu przed zatrudnieniem i okresowo, adekwatnie do wrażliwości roli: potwierdzenie tożsamości, sprawdzenie niekaralności, referencji i kwalifikacji, a w uzasadnionych przypadkach także wiarygodności finansowej.\nWspółpraca z HR i działem prawnym z uwzględnieniem ograniczeń wynikających z ochrony danych osobowych."
+  },
+  "DOC.PRODUCT_TECHDOC": {
+   "name": "Dokumentacja techniczna produktu",
+   "description": "Dokumentacja techniczna każdego produktu obejmująca funkcje i architekturę bezpieczeństwa, decyzje projektowe i rozwojowe, ocenę ryzyka cyberbezpieczeństwa, procedury obsługi podatności i aktualizacji oraz okres wsparcia.\nAktualizowana na bieżąco i przechowywana przez cały okres wsparcia."
+  },
+  "PROC.PRODUCT_CONFORMITY": {
+   "name": "Procedura oceny zgodności produktu",
+   "description": "Określenie i przeprowadzenie procedury oceny zgodności właściwej dla każdego produktu, sporządzenie i aktualizowanie deklaracji zgodności UE oraz oznakowanie CE.\nWskazanie właściwych organów nadzoru rynku oraz obowiązków w zakresie współpracy z nimi i dokonywania zgłoszeń."
+  },
+  "DOC.PRODUCT_SUPPORT": {
+   "name": "Okres wsparcia produktu i zobowiązanie dotyczące końca cyklu życia (EOL)",
+   "description": "Skierowane do klientów zobowiązanie dla każdego produktu określające okres wsparcia, w którym dostarczane są aktualizacje zabezpieczeń, daty końca cyklu życia i kluczowe etapy cyklu życia.\nInformowanie o zakończeniu wsparcia oraz o obowiązkach użytkowników po zakończeniu cyklu życia."
+  }
+ },
+ "typical_evidence": {
+  "Signed document, approved and dated": "Podpisany dokument, zatwierdzony i opatrzony datą",
+  "Ownership / accountability records": "Zapisy o właścicielach i odpowiedzialności",
+  "Periodic review / update records": "Zapisy z okresowych przeglądów i aktualizacji",
+  "Stakeholder map with needs and expectations": "Mapa interesariuszy z ich potrzebami i oczekiwaniami",
+  "ISMS scope statement linked to certificates": "Deklaracja zakresu SZBI powiązana z certyfikatami",
+  "Register export with current entries": "Eksport rejestru z aktualnymi wpisami",
+  "Applicability analysis per requirement": "Analiza zastosowania dla każdego wymagania",
+  "Per-control inclusion/exclusion with justification": "Uwzględnienie lub wyłączenie każdego zabezpieczenia wraz z uzasadnieniem",
+  "Multi-year audit programme": "Wieloletni program audytów",
+  "Gap analysis vs role requirements": "Analiza luk względem wymagań dla ról",
+  "Role-to-responsibility assignment": "Przypisanie odpowiedzialności do ról",
+  "Stakeholder matrix and channels": "Macierz interesariuszy i kanały komunikacji",
+  "Per-risk owner, treatment, status": "Właściciel, sposób postępowania i status dla każdego ryzyka",
+  "KPIs and measurement frequency": "Wskaźniki KPI i częstotliwość pomiaru",
+  "Minutes of management reviews": "Protokoły z przeglądów zarządzania",
+  "Action items tracker": "Rejestr działań do realizacji",
+  "Completion records": "Zapisy potwierdzające ukończenie",
+  "Delivery evidence per session": "Dowody przeprowadzenia każdej sesji",
+  "Version control and approval status": "Kontrola wersji i status zatwierdzenia",
+  "Linkage to underlying policies": "Powiązanie z politykami nadrzędnymi",
+  "Corrective actions with owner and due date": "Działania korygujące z właścicielem i terminem realizacji",
+  "Employee acknowledgement records": "Potwierdzenia zapoznania się pracowników z dokumentem",
+  "Per-asset owner and criticality": "Właściciel i krytyczność każdego aktywa",
+  "Tier / criticality classification": "Klasyfikacja poziomu i krytyczności",
+  "Delivery schedule per audience": "Harmonogram realizacji dla poszczególnych grup odbiorców",
+  "Requirements-to-measures mapping": "Mapowanie wymagań na środki",
+  "System diagrams and data flows": "Diagramy systemów i przepływów danych",
+  "Classification / severity per incident": "Klasyfikacja i poziom istotności każdego incydentu",
+  "Source-destination-protocol-purpose entries": "Wpisy źródło-cel-protokół-przeznaczenie",
+  "Design review checkpoints": "Punkty kontrolne przeglądu projektu",
+  "Procedure document": "Dokument procedury",
+  "PAM tool session logs": "Logi sesji z narzędzia PAM",
+  "Approval / traceability trail": "Ścieżka zatwierdzeń i identyfikowalności",
+  "Recertification campaign records": "Zapisy z kampanii recertyfikacji",
+  "Onboarding / offboarding records": "Zapisy z procesów onboardingu i offboardingu",
+  "Execution / activity records": "Zapisy z wykonania działań",
+  "Applied GPO / MDM baselines": "Zastosowane konfiguracje bazowe GPO i MDM",
+  "Patch deployment reports": "Raporty z wdrażania poprawek",
+  "Destruction / sanitization certificates": "Certyfikaty zniszczenia lub trwałego usunięcia danych",
+  "Time-drift monitoring records": "Zapisy z monitorowania odchyleń czasu",
+  "Email gateway policy exports": "Eksporty polityk bramy poczty e-mail",
+  "Log source coverage report": "Raport pokrycia źródeł logów",
+  "Signed policy document": "Podpisany dokument polityki",
+  "Board / management approval record": "Zapis zatwierdzenia przez zarząd lub kierownictwo",
+  "Annual review records": "Zapisy z corocznych przeglądów",
+  "Approved algorithms / protocols list": "Lista zatwierdzonych algorytmów i protokołów",
+  "Data classification scheme": "Schemat klasyfikacji danych",
+  "Audit programme linkage": "Powiązanie z programem audytów",
+  "Linked BIA and continuity strategy": "Powiązana analiza BIA i strategia ciągłości działania",
+  "SoD conflict matrix": "Macierz konfliktów rozdziału obowiązków (SoD)",
+  "Linked RBAC / IAM standards": "Powiązane standardy RBAC i IAM",
+  "Linked endpoint-protection standards": "Powiązane standardy ochrony stacji końcowych",
+  "Risk appetite linkage": "Powiązanie z apetytem na ryzyko",
+  "Linked asset inventory standards": "Powiązane standardy inwentaryzacji aktywów",
+  "Backup schedule and retention rules": "Harmonogram kopii zapasowych i zasady retencji",
+  "Contract clause library": "Biblioteka klauzul umownych",
+  "Log source inventory": "Inwentarz źródeł logów",
+  "Approved transfer channels": "Zatwierdzone kanały przekazywania informacji",
+  "Linked SDLC and coding standards": "Powiązane standardy SDLC i kodowania",
+  "Linked facility-security standards": "Powiązane standardy bezpieczeństwa obiektów",
+  "Network security standards / baselines": "Standardy i konfiguracje bazowe bezpieczeństwa sieci",
+  "Security gate checklists": "Listy kontrolne bramek bezpieczeństwa",
+  "Source inventory and distribution rules": "Wykaz źródeł i zasady dystrybucji",
+  "Linked incident procedure": "Powiązana procedura obsługi incydentów",
+  "Maintenance schedule standards": "Standardy harmonogramów konserwacji",
+  "Severity rating / SLA table": "Tabela poziomów krytyczności i SLA",
+  "Training curriculum / content": "Program i materiały szkoleniowe",
+  "Refresher cadence and attendance": "Częstotliwość szkoleń przypominających i listy obecności",
+  "Deployment inventory / coverage report": "Wykaz wdrożeń lub raport pokrycia",
+  "Configuration baseline / policy": "Konfiguracja bazowa lub polityka konfiguracji",
+  "Monitoring alerts / logs": "Alerty i logi z monitorowania",
+  "Log retention configuration": "Konfiguracja retencji logów",
+  "Vault policy configuration": "Konfiguracja polityk sejfu (vault)",
+  "Usage / rotation evidence": "Dowody użycia i rotacji",
+  "Key management records": "Zapisy z zarządzania kluczami",
+  "Compliance reports": "Raporty zgodności",
+  "Immutability / WORM configuration": "Konfiguracja niezmienności (WORM)",
+  "Restore test records": "Zapisy z testów odtwarzania",
+  "Data source integrations": "Integracje źródeł danych",
+  "Use-case catalog": "Katalog przypadków użycia",
+  "Compliance checks": "Kontrole zgodności",
+  "Ruleset baselines": "Bazowe zestawy reguł",
+  "Filtering policy configuration": "Konfiguracja polityk filtrowania",
+  "VLAN plan / diagrams": "Plan i diagramy VLAN",
+  "Rogue-AP monitoring records": "Zapisy z monitorowania nieautoryzowanych punktów dostępowych (rogue AP)",
+  "Ruleset and tuning records": "Zestawy reguł i zapisy z ich strojenia",
+  "Signature / rule updates": "Aktualizacje sygnatur i reguł",
+  "Crypto-suite configuration": "Konfiguracja zestawów szyfrów",
+  "Enrollment / coverage reports": "Raporty rejestracji urządzeń i pokrycia",
+  "Signed application control policy document": "Podpisany dokument polityki kontroli aplikacji",
+  "List of allowed applications / publishers": "Lista dozwolonych aplikacji i wydawców",
+  "Exception handling records": "Zapisy z obsługi wyjątków",
+  "Signed hardening policy": "Podpisana polityka utwardzania systemów",
+  "Hardening baselines per asset class": "Konfiguracje bazowe utwardzania dla każdej klasy aktywów",
+  "Deviation register": "Rejestr odstępstw",
+  "Signed pentest policy": "Podpisana polityka testów penetracyjnych",
+  "Rules of engagement template": "Szablon zasad prowadzenia testów (rules of engagement)",
+  "Annual pentest plan": "Roczny plan testów penetracyjnych",
+  "Signed retention policy": "Podpisana polityka retencji",
+  "Retention schedule per data class": "Okresy retencji dla poszczególnych klas danych",
+  "Legal hold register": "Rejestr zabezpieczenia danych na potrzeby postępowań (legal hold)",
+  "Annual IR exercise plan": "Roczny plan ćwiczeń reagowania na incydenty",
+  "Tabletop / exercise reports": "Raporty z ćwiczeń, w tym sztabowych (tabletop)",
+  "Action-item tracking": "Śledzenie realizacji działań",
+  "Pentest engagement reports": "Raporty z testów penetracyjnych",
+  "Remediation tracker linked to findings": "Rejestr działań naprawczych powiązany z ustaleniami",
+  "Retest evidence": "Dowody z retestów",
+  "Post-incident review reports": "Raporty z przeglądów poincydentalnych",
+  "Corrective action tracker": "Rejestr działań korygujących",
+  "Updated runbooks": "Zaktualizowane instrukcje operacyjne (runbooki)",
+  "Role catalog": "Katalog ról",
+  "Role recertification evidence": "Dowody recertyfikacji ról",
+  "SBOM repository": "Repozytorium SBOM",
+  "SBOM-based vulnerability alerts": "Alerty o podatnościach oparte na SBOM",
+  "Supplier SBOM intake records": "Zapisy z przyjmowania SBOM od dostawców",
+  "SDLC workflow diagrams": "Diagramy przepływu prac SDLC",
+  "Security gate evidence per release": "Dowody przejścia bramek bezpieczeństwa dla każdego wydania",
+  "Code review records": "Zapisy z przeglądów kodu",
+  "Software inventory with EOL dates": "Inwentarz oprogramowania z datami EOL",
+  "Replacement roadmap": "Plan wymiany (roadmapa)",
+  "Exceptions for unsupported software": "Wyjątki dla niewspieranego oprogramowania",
+  "Threat model documents": "Dokumenty modelowania zagrożeń",
+  "Design review sign-off": "Zatwierdzenie przeglądu projektu",
+  "Mitigation tracker": "Rejestr działań ograniczających ryzyko",
+  "Completed third-party assessments": "Przeprowadzone oceny stron trzecich",
+  "Supplier monitoring reports": "Raporty z monitorowania dostawców",
+  "Remediation tracking": "Śledzenie działań naprawczych",
+  "Deployment coverage report": "Raport pokrycia wdrożenia",
+  "Allowlist policy configuration": "Konfiguracja polityki listy dozwolonych (allowlist)",
+  "Blocked execution events": "Zdarzenia zablokowanego uruchomienia",
+  "Discovery tool deployment": "Wdrożenie narzędzia do wykrywania aktywów",
+  "Scheduled scan configuration": "Konfiguracja harmonogramu skanowań",
+  "Discovered-vs-inventoried reconciliation": "Uzgodnienie aktywów wykrytych z ujętymi w inwentarzu",
+  "DLP deployment scope": "Zakres wdrożenia DLP",
+  "DLP policy configuration": "Konfiguracja polityk DLP",
+  "Violation / quarantine reports": "Raporty naruszeń i kwarantanny",
+  "Protective DNS deployment": "Wdrożenie ochronnego DNS (Protective DNS)",
+  "Filtering category policy": "Polityka kategorii filtrowania",
+  "Blocked-query reports": "Raporty zablokowanych zapytań",
+  "SPF / DKIM / DMARC DNS records": "Rekordy DNS SPF, DKIM i DMARC",
+  "DMARC aggregate reports": "Raporty zbiorcze DMARC",
+  "Enforcement policy (p=reject / quarantine)": "Polityka egzekwowania (p=reject lub quarantine)",
+  "IAM / SSO platform inventory": "Inwentarz platform IAM i SSO",
+  "Integration coverage report": "Raport pokrycia integracji",
+  "Access review exports": "Eksporty z przeglądów uprawnień",
+  "MDM enrollment coverage": "Pokrycie rejestracji urządzeń w MDM",
+  "Remote wipe test records": "Zapisy z testów zdalnego czyszczenia urządzeń",
+  "Configuration profile catalog": "Katalog profili konfiguracyjnych",
+  "PAW inventory": "Inwentarz stacji PAW",
+  "Isolation architecture diagram": "Diagram architektury izolacji",
+  "Access logs to PAW": "Logi dostępu do stacji PAW",
+  "Tool integration in pipeline": "Integracja narzędzi z pipeline CI/CD",
+  "Scan frequency configuration": "Konfiguracja częstotliwości skanowania",
+  "Findings dashboards": "Dashboardy z ustaleniami",
+  "Software inventory tool deployment": "Wdrożenie narzędzia do inwentaryzacji oprogramowania",
+  "Inventory coverage %": "Pokrycie inwentaryzacji (%)",
+  "Unauthorized-software alerts": "Alerty o nieautoryzowanym oprogramowaniu",
+  "Scanner deployment and scope": "Wdrożenie i zakres skanera",
+  "Scan schedule": "Harmonogram skanowań",
+  "Finding export samples": "Przykładowe eksporty ustaleń",
+  "ZTNA platform deployment": "Wdrożenie platformy ZTNA",
+  "Application coverage inventory": "Wykaz aplikacji objętych ochroną",
+  "Per-application access policies": "Polityki dostępu dla poszczególnych aplikacji",
+  "Training curriculum": "Program szkolenia",
+  "Completion records per developer": "Potwierdzenia ukończenia dla każdego programisty",
+  "Certification renewal tracking": "Śledzenie odnowień certyfikacji",
+  "Signed privacy policy": "Podpisana polityka ochrony danych osobowych",
+  "Legal basis register": "Rejestr podstaw prawnych przetwarzania",
+  "Rights handling workflow": "Proces obsługi żądań osób, których dane dotyczą",
+  "DPIA template": "Szablon DPIA",
+  "Completed DPIAs": "Przeprowadzone oceny DPIA",
+  "DPIA register": "Rejestr DPIA",
+  "Rights request intake log": "Rejestr wpływu żądań osób, których dane dotyczą",
+  "Response templates": "Szablony odpowiedzi",
+  "SLA compliance reports": "Raporty dotrzymania SLA",
+  "Breach notification workflow": "Proces zgłaszania naruszeń ochrony danych",
+  "Authority notification templates": "Szablony zgłoszeń do organu nadzorczego",
+  "Breach log": "Rejestr naruszeń",
+  "ROPA master register": "Główny rejestr czynności przetwarzania (ROPA)",
+  "Periodic review records": "Zapisy z okresowych przeglądów",
+  "Linked DPIAs": "Powiązane oceny DPIA",
+  "DPA register export": "Eksport rejestru umów powierzenia (DPA)",
+  "Signed DPAs linked to suppliers": "Podpisane umowy powierzenia powiązane z dostawcami",
+  "Cross-border transfer mechanisms": "Mechanizmy transgranicznego przekazywania danych",
+  "Signed AI policy": "Podpisana polityka AI",
+  "Approval workflow for AI use cases": "Proces zatwierdzania przypadków użycia AI",
+  "Employee AI acceptable-use acknowledgements": "Potwierdzenia zapoznania się pracowników z zasadami dozwolonego użycia AI",
+  "AI risk assessment template": "Szablon oceny ryzyka AI",
+  "Completed AI risk assessments": "Przeprowadzone oceny ryzyka AI",
+  "AI system datasheets": "Karty danych systemów AI",
+  "Model cards": "Karty modeli (model cards)",
+  "Post-deployment monitoring reports": "Raporty z monitorowania po wdrożeniu",
+  "AI inventory register": "Rejestr systemów AI",
+  "Risk classification per system": "Klasyfikacja ryzyka dla każdego systemu",
+  "Owner assignment": "Przypisanie właścicieli",
+  "BIA methodology document": "Dokument metodyki BIA",
+  "Completed BIA per activity": "Przeprowadzona analiza BIA dla każdego działania",
+  "RTO / RPO catalog": "Katalog RTO i RPO",
+  "DRP runbooks per system": "Instrukcje operacyjne DRP dla każdego systemu",
+  "Activation criteria": "Kryteria aktywacji",
+  "Recovery exercise reports": "Raporty z ćwiczeń odtwarzania",
+  "Annual BCP/DR exercise plan": "Roczny plan ćwiczeń BCP/DR",
+  "Exercise reports": "Raporty z ćwiczeń",
+  "Signed BIA report": "Podpisany raport BIA",
+  "Dependency maps": "Mapy zależności",
+  "RTO/RPO summary": "Zestawienie RTO/RPO",
+  "Alternate-site architecture": "Architektura ośrodka zapasowego",
+  "Replication dashboards": "Dashboardy replikacji",
+  "Failover test records": "Zapisy z testów przełączenia awaryjnego (failover)",
+  "Signed cloud security policy": "Podpisana polityka bezpieczeństwa chmury",
+  "Approved cloud provider list": "Lista zatwierdzonych dostawców chmury",
+  "Shared-responsibility matrix": "Macierz podziału odpowiedzialności (shared responsibility)",
+  "Cloud baseline definitions": "Definicje konfiguracji bazowych chmury",
+  "IaC repositories": "Repozytoria IaC",
+  "Drift detection reports": "Raporty wykrywania odchyleń konfiguracji (drift)",
+  "CSPM tool deployment": "Wdrożenie narzędzia CSPM",
+  "Remediation tracker": "Rejestr działań naprawczych",
+  "CWPP deployment inventory": "Wykaz wdrożeń CWPP",
+  "Coverage by workload type": "Pokrycie według rodzaju obciążeń (workload)",
+  "Incident signal samples": "Przykładowe sygnały o incydentach",
+  "CASB deployment scope": "Zakres wdrożenia CASB",
+  "Shadow-IT discovery reports": "Raporty wykrywania Shadow IT",
+  "DLP / policy coverage": "Pokrycie DLP i polityk",
+  "Site zoning plan": "Plan stref obiektu",
+  "Access matrix per zone": "Macierz dostępu dla każdej strefy",
+  "Physical access logs": "Logi dostępu fizycznego",
+  "Visitor log": "Rejestr gości",
+  "Visitor badge inventory": "Ewidencja identyfikatorów dla gości",
+  "Escort procedures": "Procedury eskortowania gości",
+  "Camera coverage plan": "Plan rozmieszczenia i pokrycia kamer",
+  "Retention configuration": "Konfiguracja retencji",
+  "Access logs to recordings": "Logi dostępu do nagrań",
+  "Clear desk policy clause": "Postanowienie polityki czystego biurka",
+  "Awareness training records": "Zapisy ze szkoleń uświadamiających",
+  "Inspection / spot-check reports": "Raporty z inspekcji i kontroli wyrywkowych",
+  "Disposal records": "Zapisy z utylizacji",
+  "Certificates of destruction": "Certyfikaty zniszczenia",
+  "Sanitization tool logs": "Logi narzędzi do bezpiecznego usuwania danych",
+  "Facility resilience design": "Projekt odporności obiektu",
+  "UPS / generator test records": "Zapisy z testów UPS i agregatów prądotwórczych",
+  "Environmental monitoring alerts": "Alerty z monitorowania warunków środowiskowych",
+  "Key management procedure document": "Dokument procedury zarządzania kluczami",
+  "Key inventory / registry": "Inwentarz lub rejestr kluczy",
+  "Rotation evidence": "Dowody rotacji",
+  "Certificate inventory": "Inwentarz certyfikatów",
+  "Expiry monitoring alerts": "Alerty z monitorowania terminów wygaśnięcia",
+  "CA hierarchy diagram": "Diagram hierarchii CA",
+  "HSM / key vault inventory": "Inwentarz HSM i sejfów kluczy (key vault)",
+  "Key access audit logs": "Logi audytowe dostępu do kluczy",
+  "Compliance attestations (FIPS / Common Criteria)": "Poświadczenia zgodności (FIPS, Common Criteria)",
+  "Compliance calendar": "Kalendarz obowiązków zgodności",
+  "Monitoring reports": "Raporty z monitorowania",
+  "Non-compliance escalation log": "Rejestr eskalacji niezgodności",
+  "Exception request template": "Szablon wniosku o wyjątek",
+  "Exception approval records": "Zapisy zatwierdzenia wyjątków",
+  "Expiry tracking": "Śledzenie terminów wygaśnięcia",
+  "Exception register export": "Eksport rejestru wyjątków",
+  "Linked risk acceptance records": "Powiązane zapisy akceptacji ryzyka",
+  "Refresher cadence": "Częstotliwość szkoleń przypominających",
+  "Role-specific modules": "Moduły dostosowane do ról",
+  "Signed web security policy": "Podpisana polityka bezpieczeństwa aplikacji webowych",
+  "WAF / reverse proxy deployment matrix": "Macierz wdrożeń WAF i reverse proxy",
+  "Secure framework / library standards": "Standardy bezpiecznych frameworków i bibliotek",
+  "Signed change management policy": "Podpisana polityka zarządzania zmianą",
+  "Change advisory board terms of reference": "Regulamin komitetu ds. zmian (CAB)",
+  "Change authorization matrix": "Macierz autoryzacji zmian",
+  "Change tickets with impact assessment": "Zgłoszenia zmian z oceną wpływu",
+  "Approval records per change type": "Zapisy zatwierdzeń dla każdego typu zmiany",
+  "Post-implementation review records": "Zapisy z przeglądów powdrożeniowych",
+  "Capacity plan": "Plan zarządzania pojemnością",
+  "Performance monitoring dashboards": "Dashboardy monitorowania wydajności",
+  "Scaling decision records": "Zapisy decyzji o skalowaniu",
+  "Intel source inventory": "Wykaz źródeł informacji o zagrożeniach",
+  "Intelligence bulletins issued": "Wydane biuletyny o zagrożeniach",
+  "Integration with SIEM / detection tooling": "Integracja z SIEM i narzędziami detekcji",
+  "Hunting hypotheses register": "Rejestr hipotez threat huntingu",
+  "Hunt reports with findings": "Raporty z threat huntingu wraz z ustaleniami",
+  "Detection rules derived from hunts": "Reguły detekcji opracowane na podstawie threat huntingu",
+  "Insider threat program charter": "Karta programu przeciwdziałania zagrożeniom wewnętrznym",
+  "Behavioral monitoring use cases": "Przypadki użycia monitorowania behawioralnego",
+  "Case handling records": "Zapisy z obsługi spraw",
+  "security.txt / disclosure page": "Plik security.txt lub strona zgłaszania podatności",
+  "Triage workflow": "Proces wstępnej oceny zgłoszeń (triaż)",
+  "Case log with response SLAs": "Rejestr spraw z SLA na odpowiedź",
+  "Signed OT security policy": "Podpisana polityka bezpieczeństwa OT",
+  "OT scope and classification": "Zakres i klasyfikacja środowiska OT",
+  "IT-OT boundary architecture": "Architektura granicy IT-OT",
+  "Zones & conduits architecture document": "Dokument architektury stref i kanałów komunikacyjnych (zones and conduits)",
+  "Interface firewall rule baselines": "Bazowe reguły zapór sieciowych na styku stref",
+  "Remote-access to OT review records": "Zapisy z przeglądów zdalnego dostępu do OT",
+  "OT inventory register": "Rejestr aktywów OT",
+  "Criticality classification": "Klasyfikacja krytyczności",
+  "Linked safety impact assessments": "Powiązane oceny wpływu na bezpieczeństwo ludzi i procesów (safety)",
+  "Crisis management plan": "Plan zarządzania kryzysowego",
+  "Crisis team roster and contact tree": "Skład zespołu kryzysowego i drzewo kontaktów",
+  "Crisis exercise / activation records": "Zapisy z ćwiczeń i uruchomienia procedur kryzysowych",
+  "Disciplinary procedure document": "Dokument procedury dyscyplinarnej",
+  "Case handling log": "Rejestr obsługi spraw",
+  "HR and legal coordination records": "Zapisy z koordynacji z HR i działem prawnym",
+  "Signed removable media policy": "Podpisana polityka nośników wymiennych",
+  "USB control / allowlisting configuration": "Konfiguracja kontroli USB i list dozwolonych urządzeń",
+  "Media transport and disposal records": "Zapisy z transportu i utylizacji nośników",
+  "Signed risk appetite statement": "Podpisana deklaracja apetytu na ryzyko",
+  "Tolerance thresholds per risk category": "Progi tolerancji dla każdej kategorii ryzyka",
+  "Board approval records": "Zapisy zatwierdzenia przez zarząd",
+  "Forensics procedure document": "Dokument procedury informatyki śledczej",
+  "Chain of custody forms": "Formularze łańcucha dowodowego",
+  "Forensic tooling inventory and acquisition logs": "Wykaz narzędzi informatyki śledczej i logi zabezpieczania dowodów",
+  "TLPT engagement scope and rules of engagement": "Zakres testów TLPT i zasady ich prowadzenia",
+  "Threat intelligence dossier informing the test": "Raport analizy zagrożeń (threat intelligence) stanowiący podstawę testu",
+  "Red team report and remediation tracker": "Raport z testów red team i rejestr działań naprawczych",
+  "Signed background screening procedure": "Podpisana procedura weryfikacji kandydatów i pracowników",
+  "Screening records per role class": "Zapisy z weryfikacji dla każdej kategorii ról",
+  "Third-party screening provider agreements": "Umowy z zewnętrznymi dostawcami usług weryfikacji",
+  "Technical documentation file per product": "Dokumentacja techniczna dla każdego produktu",
+  "Documentation review and update records": "Zapisy z przeglądów i aktualizacji dokumentacji",
+  "Traceability to risk assessment and design decisions": "Identyfikowalność względem oceny ryzyka i decyzji projektowych",
+  "Conformity assessment records per product": "Zapisy z oceny zgodności dla każdego produktu",
+  "EU declaration of conformity": "Deklaracja zgodności UE",
+  "Register of applicable authorities and notification channels": "Rejestr właściwych organów i kanałów zgłoszeń",
+  "Published support and end-of-life policy per product": "Opublikowana polityka wsparcia i wycofania (end-of-life) dla każdego produktu",
+  "Support period register with end dates": "Rejestr okresów wsparcia z datami zakończenia",
+  "Customer end-of-support notifications": "Powiadomienia klientów o zakończeniu wsparcia"
+ }
+}

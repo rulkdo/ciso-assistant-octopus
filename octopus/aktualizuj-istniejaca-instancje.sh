@@ -9,7 +9,7 @@ set -euo pipefail
 
 REPO_RAW="${REPO_RAW:-https://raw.githubusercontent.com/rulkdo/ciso-assistant-octopus/octopus-nis2/octopus}"
 FRONTEND_IMAGE="${FRONTEND_IMAGE:-ghcr.io/rulkdo/ciso-assistant-octopus/frontend:octopus-v4.1.5}"
-LIBS="octopus-lab-ksc-obowiazki-krajowe.yaml octopus-lab-ocena-dostawcy-ict.yaml octopus-lab-macierz-ryzyka-5x5-pxw.yaml octopus-lab-macierz-ryzyka-4x4-sxp.yaml preset-octopus-nis2-ksc-iso27005-5x5.yaml preset-octopus-nis2-ksc-octopus-4x4.yaml intuitem-common-catalog.yaml"
+LIBS="octopus-lab-ksc-obowiazki-krajowe.yaml octopus-lab-ocena-dostawcy-ict.yaml octopus-lab-macierz-ryzyka-5x5-pxw.yaml octopus-lab-macierz-ryzyka-4x4-sxp.yaml preset-octopus-nis2-ksc-iso27005-5x5.yaml preset-octopus-nis2-ksc-octopus-4x4.yaml intuitem-common-catalog.yaml key-reference-controls.yaml iso27001-2022.yaml"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 
 say() { printf '\n== %s\n' "$*"; }
@@ -82,7 +82,7 @@ say "Domyslny jezyk instancji: polski"
 
 say "Aktualizacja bibliotek podmienionych przez Octopus Lab (polskie tlumaczenia)"
 "${OCTO[@]}" exec -T backend python manage.py shell -c "from core.models import LoadedLibrary as L
-for urn in ['urn:intuitem:risk:library:intuitem-common-catalog']:
+for urn in ['urn:intuitem:risk:library:intuitem-common-catalog', 'urn:intuitem:risk:library:doc-pol', 'urn:intuitem:risk:library:iso27001-2022']:
     lib = L.objects.filter(urn=urn).first()
     print(urn, (lib.update() or 'zaktualizowana') if lib and lib.has_update else 'bez zmian')" \
   || echo "Nie udalo sie zaktualizowac bibliotek, zrob to recznie: Biblioteki, Aktualizuj."

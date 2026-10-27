@@ -24,6 +24,9 @@ x-octopus-libraries: &octopus-libraries
   - ./libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:/code/library/libraries/preset-octopus-nis2-ksc-octopus-4x4.yaml:ro
   # polskie tlumaczenia zagrozen ICT-001..ICT-023 (w miejsce oryginalu intuitem)
   - ./libraries/intuitem-common-catalog.yaml:/code/library/libraries/intuitem-common-catalog.yaml:ro
+  # polskie wzorcowe srodki: katalog intuitem i ISO/IEC 27001:2022 zal. A (w miejsce oryginalow intuitem)
+  - ./libraries/key-reference-controls.yaml:/code/library/libraries/key-reference-controls.yaml:ro
+  - ./libraries/iso27001-2022.yaml:/code/library/libraries/iso27001-2022.yaml:ro
 
 x-hardening: &hardening
   read_only: true
